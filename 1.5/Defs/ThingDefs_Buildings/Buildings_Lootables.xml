@@ -995,4 +995,76 @@
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military box with an ancient tome</label>
+		<defName>VQE_SmallMilitaryCrateWithATome</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A small, rusted military box. It seems to hold some creepy, ancient knowledge in the form of a tome.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_SmallEquipmentCrate_AncientTome</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(1, 1)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>90</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li Name="BasicCarParts">
+						<thing>Tome</thing>
+						<count>1</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptySmallMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	
+	<!-- Ancient weapon boxes -->
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQE_EmptyAncientWeaponBox</defName>
+		<label>opened weapon box</label>
+		<description>A long, rotting wooden box that usually stores weapons. This one is empty.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(1,2)</size>
+		<costList>
+			<WoodLog>12</WoodLog>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Lootable/MysteriousWeaponCrate_Open</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
 </Defs>
