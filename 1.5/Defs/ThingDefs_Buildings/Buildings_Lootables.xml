@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- Crates -->
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQE_EmptyMilitaryCrate</defName>
+		<label>empty military crate</label>
+		<description>An empty, rusted military crate. Its contents are long gone.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military crate of gold</label>
+		<defName>VQE_MilitaryCrateOfGold</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A rusted, military crate containing gold. The fact that the silo has been sealed for generations prevented it from being stolen.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_Gold</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Gold</thing>
+						<count>250</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military crate of silver</label>
+		<defName>VQE_MilitaryCrateOfSilver</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A rusted, military crate containing silver. The fact that the silo has been sealed for generations prevented it from being stolen.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_Silver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Silver</thing>
+						<count>850</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military crate of deadlife shells</label>
+		<defName>VQE_MilitaryCrateOfDeadlifeShells</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A rusted military crate with deadlife shells. These artillery shells are packed with a dust-like substance that, after exploding into a cloud, will settle on nearby human and animal corpses and raise them as shamblers. Many of those shells have lost their potency, but some may still work.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_DeadlifeShells</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Shell_Deadlife</thing>
+						<count>6</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military crate of bioferrite</label>
+		<defName>VQE_MilitaryCrateOfBioferrite</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A rusted military crate, packed to the brim with bioferrite, extracted from some mysterious source by the ancient military.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_Bioferrite</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Bioferrite</thing>
+						<count>220</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military crate of medicine</label>
+		<defName>VQE_MilitaryCrateOfMedicine</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A rusted military crate containing advanced glitterworld medicine. While some of it may no longer be usable, it’s possible to recover a few intact boxes from the crate.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_GlitterworldMedicine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>MedicineUltratech</thing>
+						<count>6</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military crate of hemogen</label>
+		<defName>VQE_MilitaryCrateOfHemogen</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A rusted military crate containing some old hemogen packs, mostly expired. With the right mindset, it’s possible to extract some hemogen packs from it.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_Hemogen</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
+						<thing>HemogenPack</thing>
+						<count>12</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<requiredMod>Biotech</requiredMod>
+				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<!-- Pallets -->
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQE_EmptyMilitaryPallet</defName>
+		<label>empty military pallet</label>
+		<description>An empty military pallet. If it held anything of value, it’s gone now.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Lootable/EmptyMilitaryPallet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of steel</label>
+		<defName>VQE_MilitaryPalletOfSteel</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A storage pallet stacked with steel beams. The metal shows signs of surface oxidation but remains structurally sound.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Steel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Steel</thing>
+						<count>250</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of plasteel</label>
+		<defName>VQE_MilitaryPalletOfPlasteel</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A tightly packed pallet of dense, lightweight plasteel. Still in usable condition.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Plasteel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Plasteel</thing>
+						<count>75</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of industrial components</label>
+		<defName>VQE_MilitaryPalletOfComponents</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A reinforced pallet of industrial-grade components. Each part seems to be untouched since storage.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_IndustrialComponents</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>ComponentIndustrial</thing>
+						<count>10</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of advanced components</label>
+		<defName>VQE_MilitaryPalletOfAdvancedComponents</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A rare cache of precision-engineered components, carefully preserved for use in high-tech systems. Remarkably intact.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_SpacerComponents</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>ComponentSpacer</thing>
+						<count>4</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of medicine</label>
+		<defName>VQE_MilitaryPalletOfMedicine</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>Boxes of standard-issue medical supplies, sealed against decay. Some packaging shows wear, but the contents remain viable.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Medicine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>MedicineIndustrial</thing>
+						<count>18</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of rations</label>
+		<defName>VQE_MilitaryPalletOfRations</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>Stacks of packaged survival meals, labeled for long-term emergency use. Still sealed, still edible. Probably.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_SurvivalMeals</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>MealSurvivalPack</thing>
+						<count>20</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of synthread</label>
+		<defName>VQE_MilitaryPalletOfSynthread</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>Rolls of synthetic fiber cloth wrapped and labeled for logistics. Faint chemical odor suggests it’s been stored for decades.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Synthread</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Synthread</thing>
+						<count>125</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of hyperweave</label>
+		<defName>VQE_MilitaryPalletOfHyperweave</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A high-security fabric pallet containing rolls of hyperweave. The dense weave still resists tearing or decay.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Hyperweave</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Hyperweave</thing>
+						<count>75</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of high-explosive shells</label>
+		<defName>VQE_MilitaryPalletOfHEShells</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>An ammunition pallet loaded with high-explosive artillery shells. Armed and dangerous.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_HEShells</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Shell_HighExplosive</thing>
+						<count>12</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="VFECore.CompProperties_Explosive_Shells">
+				<wickTicks>60~240</wickTicks>
+				<explosiveRadius>9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<shell>Shell_HighExplosive</shell>
+				<shellCount>4~4</shellCount>
+				<shellDist>3~20</shellDist>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of incendiary shells</label>
+		<defName>VQE_MilitaryPalletOfIncendiaryShells</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A cache of incendiary shells packed in insulated cases. Volatile, even after years of storage.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_IncendiaryShells</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Shell_Incendiary</thing>
+						<count>12</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="VFECore.CompProperties_Explosive_Shells">
+				<wickTicks>60~240</wickTicks>
+				<explosiveRadius>9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<shell>Shell_Incendiary</shell>
+				<shellCount>4~4</shellCount>
+				<shellDist>3~20</shellDist>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of chemfuel</label>
+		<defName>VQE_MilitaryPalletOfChemfuel</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A heavily marked pallet of sealed chemfuel containers. The liquid inside sloshes with worrying consistency.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Chemfuel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Chemfuel</thing>
+						<count>250</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>9.9</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<wickTicks>60~240</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of books</label>
+		<defName>VQE_MilitaryPalletOfBooks</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A crate of old books, many military-issue. Pages are slightly warped but readable, filled with technical and tactical data.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Books</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>TextBook</thing>
+					</li>
+					<li>
+						<thing>Novel</thing>
+					</li>
+					<li>
+						<thing>Schematic</thing>
+					</li>
+				</contents>
+				<randomFromContents>true</randomFromContents>
+				<totalRandomLoops>4</totalRandomLoops>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of basic car parts</label>
+		<defName>VQE_MilitaryPalletOfBasicCarParts</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A stack of labeled vehicle components, built for standard-issue transport units. Light corrosion on outer frames.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_BasicCarParts</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li Name="BasicCarParts">
+						<thing>ComponentIndustrial</thing>
+						<count>4</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of advanced car parts</label>
+		<defName>VQE_MilitaryPalletOfAdvancedCarParts</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>Precision vehicle parts, packed with extreme care. These components were never meant to be used lightly.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_AdvancedCarParts</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li Name="BasicCarParts">
+						<thing>ComponentIndustrial</thing>
+						<count>8</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	
+	<!-- Small crates -->
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQE_EmptySmallMilitaryCrate</defName>
+		<label>empty military box</label>
+		<description>A small, rusted and empty military box. Anything of value is gone.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(1,1)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_SmallEquipmentCrate_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military box of flares</label>
+		<defName>VQE_SmallMilitaryCrateOfFlares</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A small, rusted military box. It seems to contain some valuable disruptor flares.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_SmallEquipmentCrate_Flares</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(1, 1)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>90</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li Name="BasicCarParts">
+						<thing>VQE_DisruptorFlare</thing>
+						<count>1</count>
+					</li>
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptySmallMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+</Defs>
