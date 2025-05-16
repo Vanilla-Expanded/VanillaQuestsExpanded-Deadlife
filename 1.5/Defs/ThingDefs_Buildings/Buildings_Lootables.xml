@@ -2,7 +2,7 @@
 <Defs>
 	<!-- Crates -->
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
-		<defName>VQE_EmptyMilitaryCrate</defName>
+		<defName>VQED_EmptyMilitaryCrate</defName>
 		<label>empty military crate</label>
 		<description>An empty, rusted military crate. Its contents are long gone.</description>
 		<thingClass>Building</thingClass>
@@ -32,7 +32,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military crate of gold</label>
-		<defName>VQE_MilitaryCrateOfGold</defName>
+		<defName>VQED_MilitaryCrateOfGold</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A rusted, military crate containing gold. The fact that the silo has been sealed for generations prevented it from being stolen.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -73,7 +73,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military crate of silver</label>
-		<defName>VQE_MilitaryCrateOfSilver</defName>
+		<defName>VQED_MilitaryCrateOfSilver</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A rusted, military crate containing silver. The fact that the silo has been sealed for generations prevented it from being stolen.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -114,7 +114,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military crate of deadlife shells</label>
-		<defName>VQE_MilitaryCrateOfDeadlifeShells</defName>
+		<defName>VQED_MilitaryCrateOfDeadlifeShells</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A rusted military crate with deadlife shells. These artillery shells are packed with a dust-like substance that, after exploding into a cloud, will settle on nearby human and animal corpses and raise them as shamblers. Many of those shells have lost their potency, but some may still work.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -155,7 +155,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military crate of bioferrite</label>
-		<defName>VQE_MilitaryCrateOfBioferrite</defName>
+		<defName>VQED_MilitaryCrateOfBioferrite</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A rusted military crate, packed to the brim with bioferrite, extracted from some mysterious source by the ancient military.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -196,7 +196,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military crate of medicine</label>
-		<defName>VQE_MilitaryCrateOfMedicine</defName>
+		<defName>VQED_MilitaryCrateOfMedicine</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A rusted military crate containing advanced glitterworld medicine. While some of it may no longer be usable, it’s possible to recover a few intact boxes from the crate.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -237,7 +237,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military crate of hemogen</label>
-		<defName>VQE_MilitaryCrateOfHemogen</defName>
+		<defName>VQED_MilitaryCrateOfHemogen</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A rusted military crate containing some old hemogen packs, mostly expired. With the right mindset, it’s possible to extract some hemogen packs from it.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -279,7 +279,7 @@
 	</ThingDef>
 	<!-- Pallets -->
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
-		<defName>VQE_EmptyMilitaryPallet</defName>
+		<defName>VQED_EmptyMilitaryPallet</defName>
 		<label>empty military pallet</label>
 		<description>An empty military pallet. If it held anything of value, it’s gone now.</description>
 		<thingClass>Building</thingClass>
@@ -309,7 +309,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of steel</label>
-		<defName>VQE_MilitaryPalletOfSteel</defName>
+		<defName>VQED_MilitaryPalletOfSteel</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A storage pallet stacked with steel beams. The metal shows signs of surface oxidation but remains structurally sound.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -350,7 +350,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of plasteel</label>
-		<defName>VQE_MilitaryPalletOfPlasteel</defName>
+		<defName>VQED_MilitaryPalletOfPlasteel</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A tightly packed pallet of dense, lightweight plasteel. Still in usable condition.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -391,7 +391,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of industrial components</label>
-		<defName>VQE_MilitaryPalletOfComponents</defName>
+		<defName>VQED_MilitaryPalletOfComponents</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A reinforced pallet of industrial-grade components. Each part seems to be untouched since storage.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -432,7 +432,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of advanced components</label>
-		<defName>VQE_MilitaryPalletOfAdvancedComponents</defName>
+		<defName>VQED_MilitaryPalletOfAdvancedComponents</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A rare cache of precision-engineered components, carefully preserved for use in high-tech systems. Remarkably intact.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -473,7 +473,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of medicine</label>
-		<defName>VQE_MilitaryPalletOfMedicine</defName>
+		<defName>VQED_MilitaryPalletOfMedicine</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>Boxes of standard-issue medical supplies, sealed against decay. Some packaging shows wear, but the contents remain viable.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -514,7 +514,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of rations</label>
-		<defName>VQE_MilitaryPalletOfRations</defName>
+		<defName>VQED_MilitaryPalletOfRations</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>Stacks of packaged survival meals, labeled for long-term emergency use. Still sealed, still edible. Probably.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -555,7 +555,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of synthread</label>
-		<defName>VQE_MilitaryPalletOfSynthread</defName>
+		<defName>VQED_MilitaryPalletOfSynthread</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>Rolls of synthetic fiber cloth wrapped and labeled for logistics. Faint chemical odor suggests it’s been stored for decades.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -596,7 +596,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of hyperweave</label>
-		<defName>VQE_MilitaryPalletOfHyperweave</defName>
+		<defName>VQED_MilitaryPalletOfHyperweave</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A high-security fabric pallet containing rolls of hyperweave. The dense weave still resists tearing or decay.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -637,7 +637,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of high-explosive shells</label>
-		<defName>VQE_MilitaryPalletOfHEShells</defName>
+		<defName>VQED_MilitaryPalletOfHEShells</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>An ammunition pallet loaded with high-explosive artillery shells. Armed and dangerous.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -691,7 +691,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of incendiary shells</label>
-		<defName>VQE_MilitaryPalletOfIncendiaryShells</defName>
+		<defName>VQED_MilitaryPalletOfIncendiaryShells</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A cache of incendiary shells packed in insulated cases. Volatile, even after years of storage.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -745,7 +745,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of chemfuel</label>
-		<defName>VQE_MilitaryPalletOfChemfuel</defName>
+		<defName>VQED_MilitaryPalletOfChemfuel</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A heavily marked pallet of sealed chemfuel containers. The liquid inside sloshes with worrying consistency.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -795,7 +795,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of books</label>
-		<defName>VQE_MilitaryPalletOfBooks</defName>
+		<defName>VQED_MilitaryPalletOfBooks</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A crate of old books, many military-issue. Pages are slightly warped but readable, filled with technical and tactical data.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -843,7 +843,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of basic car parts</label>
-		<defName>VQE_MilitaryPalletOfBasicCarParts</defName>
+		<defName>VQED_MilitaryPalletOfBasicCarParts</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A stack of labeled vehicle components, built for standard-issue transport units. Light corrosion on outer frames.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -884,7 +884,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military pallet of advanced car parts</label>
-		<defName>VQE_MilitaryPalletOfAdvancedCarParts</defName>
+		<defName>VQED_MilitaryPalletOfAdvancedCarParts</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>Precision vehicle parts, packed with extreme care. These components were never meant to be used lightly.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -926,7 +926,7 @@
 	
 	<!-- Small crates -->
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
-		<defName>VQE_EmptySmallMilitaryCrate</defName>
+		<defName>VQED_EmptySmallMilitaryCrate</defName>
 		<label>empty military box</label>
 		<description>A small, rusted and empty military box. Anything of value is gone.</description>
 		<thingClass>Building</thingClass>
@@ -956,7 +956,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military box of flares</label>
-		<defName>VQE_SmallMilitaryCrateOfFlares</defName>
+		<defName>VQED_SmallMilitaryCrateOfFlares</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A small, rusted military box. It seems to contain some valuable disruptor flares.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -997,7 +997,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<label>military box with an ancient tome</label>
-		<defName>VQE_SmallMilitaryCrateWithATome</defName>
+		<defName>VQED_SmallMilitaryCrateWithATome</defName>
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<description>A small, rusted military box. It seems to hold some creepy, ancient knowledge in the form of a tome.</description>
 		<clearBuildingArea>true</clearBuildingArea>
@@ -1039,7 +1039,7 @@
 	
 	<!-- Ancient weapon boxes -->
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
-		<defName>VQE_EmptyAncientWeaponBox</defName>
+		<defName>VQED_EmptyAncientWeaponBox</defName>
 		<label>opened weapon box</label>
 		<description>A long, rotting wooden box that usually stores weapons. This one is empty.</description>
 		<thingClass>Building</thingClass>
@@ -1061,6 +1061,44 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,2)</drawSize>
 		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>mysterious weapon crate</label>
+		<defName>VQED_MysteriousAncientWeaponBox</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A long, rotting wooden box that usually stores weapons. Can be opened, but there’s no way to tell what weapon is inside.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/MysteriousWeaponCrate</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(1, 2)</size>
+		<statBases>
+			<Flammability>1</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<costList>
+				<WoodLog>12</WoodLog>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					
+				</contents>
+				<useBaseGameOpen>true</useBaseGameOpen>
+				<buildingLeft>VQE_EmptyAncientWeaponBox</buildingLeft>
+			</li>
+		</modExtensions>
 		<building>
 			<paintable>false</paintable>
 			<claimable>false</claimable>
