@@ -4,4 +4,5 @@
 	<VQED_KickstartDesc>Choose someone to kickstart the burnout generator, creating a temporary power source.</VQED_KickstartDesc>
 	<VQED_KickstartedSuccess>{0} has successfully kickstarted the generator</VQED_KickstartedSuccess>
 	<VQED_KickStartTimer>Will stop working in {0}</VQED_KickStartTimer>
+	<VQE_DebugNextSpawn>DEBUG: Spawning shamblers in {0}</VQE_DebugNextSpawn>
 </LanguageData>

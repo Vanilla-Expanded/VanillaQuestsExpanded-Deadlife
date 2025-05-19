@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_DeathPit</defName>
+		<label>death pit</label>
+		<description>A sealed containment pit lined with ancient restraints. Faint trails of deadlife dust seep from the cracks, and something inside constantly shifts, pushing, scraping, trying to crawl free.</description>
+		<thingClass>VanillaQuestsExpandedDeadlife.DeathPit</thingClass>
+		<altitudeLayer>Floor</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0</fillPercent>
+		<size>(5,5)</size>
+		<tickerType>Normal</tickerType>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Security/DeathPit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_DeadlifeNode</defName>
+		<label>deadlife node</label>
+		<description>A volatile node buried in the facility. Proximity or movement causes instability and discharge of deadlife particles.</description>
+		<rotatable>false</rotatable>
+		<thingClass>VanillaQuestsExpandedDeadlife.DeadlifeNode</thingClass>
+		<graphicData>
+			<texPath>Things/Security/DeadlifeNode</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.7, 0.5, 0.7)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(1, 1)</size>
+		<fillPercent>0.30</fillPercent>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>480</wickTicks>
+				<explosiveRadius>6.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<damageAmountBase>10</damageAmountBase>
+				<explodeOnKilled>true</explodeOnKilled>
+				<startWickHitPointsPercent>0.99</startWickHitPointsPercent>
+				<extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+				<postExplosionGasType>DeadlifeDust</postExplosionGasType>
+			</li>
+		</comps>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+</Defs>

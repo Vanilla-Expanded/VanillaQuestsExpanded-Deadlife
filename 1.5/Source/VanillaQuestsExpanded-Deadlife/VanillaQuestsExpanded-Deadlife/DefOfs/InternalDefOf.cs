@@ -18,6 +18,8 @@ namespace VanillaQuestsExpandedDeadlife
 
 		public static JobDef VQED_KickstartGenerator;
 
+        public static ThingDef VQED_PawnFlyer_Stun;
+
 
     }
 }

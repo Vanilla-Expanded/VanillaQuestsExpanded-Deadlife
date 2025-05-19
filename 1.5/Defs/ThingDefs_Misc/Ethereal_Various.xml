@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PawnFlyerBase">
+		<defName>VQED_PawnFlyer_Stun</defName> 
+		<pawnFlyer>
+			<flightDurationMin>0.75</flightDurationMin>
+			<flightSpeed>8</flightSpeed>
+			<stunDurationTicksRange>60~180</stunDurationTicksRange>
+		</pawnFlyer>
+	</ThingDef> 
+</Defs>
