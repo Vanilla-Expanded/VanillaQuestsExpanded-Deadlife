@@ -62,7 +62,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -103,7 +103,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -144,7 +144,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -185,7 +185,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -226,7 +226,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -268,7 +268,7 @@
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
 				<requiredMod>Biotech</requiredMod>
-				<buildingLeft>VQE_EmptyMilitaryCrate</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -339,7 +339,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -380,7 +380,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -421,7 +421,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -462,7 +462,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -503,7 +503,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -544,7 +544,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -585,7 +585,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -626,7 +626,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -668,7 +668,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -722,7 +722,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -776,7 +776,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -832,7 +832,7 @@
 				<randomFromContents>true</randomFromContents>
 				<totalRandomLoops>4</totalRandomLoops>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -873,7 +873,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -914,7 +914,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyMilitaryPallet</buildingLeft>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -986,7 +986,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptySmallMilitaryCrate</buildingLeft>
+				<buildingLeft>VQED_EmptySmallMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -1027,7 +1027,7 @@
 					</li>
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptySmallMilitaryCrate</buildingLeft>
+				<buildingLeft>VQED_EmptySmallMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>
@@ -1047,7 +1047,7 @@
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
 		<fillPercent>0.4</fillPercent>
-		<size>(1,2)</size>
+		<size>(2,1)</size>
 		<costList>
 			<WoodLog>12</WoodLog>
 		</costList>
@@ -1059,7 +1059,7 @@
 		<graphicData>
 			<texPath>Things/Lootable/MysteriousWeaponCrate_Open</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,2)</drawSize>
+			<drawSize>(2,1)</drawSize>
 		</graphicData>
 		<building>
 			<paintable>false</paintable>
@@ -1079,10 +1079,10 @@
 		<graphicData>
 			<texPath>Things/Lootable/MysteriousWeaponCrate</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,2)</drawSize>
+			<drawSize>(2,1)</drawSize>
 		</graphicData>
 		<rotatable>false</rotatable>
-		<size>(1, 2)</size>
+		<size>(2, 1)</size>
 		<statBases>
 			<Flammability>1</Flammability>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -1096,7 +1096,7 @@
 					
 				</contents>
 				<useBaseGameOpen>true</useBaseGameOpen>
-				<buildingLeft>VQE_EmptyAncientWeaponBox</buildingLeft>
+				<buildingLeft>VQED_EmptyAncientWeaponBox</buildingLeft>
 			</li>
 		</modExtensions>
 		<building>

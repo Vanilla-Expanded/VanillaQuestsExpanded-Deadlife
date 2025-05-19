@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientKinoScreen</defName>
+		<label>ancient kino screen</label>
+		<description>A massive, old-world display once used for communal viewing. Grainy visuals flicker to life only when paired with a functioning kino projector. Still strangely captivating despite the static and distortion.</description>
+		<graphicData>
+			<texPath>Things/Recreation/KinoScreen</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(2.5, 0.6, 0.1)</volume>
+				<offset>(0, 0, 0.2)</offset>
+			</shadowData>
+			<drawSize>(7,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.6</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<costList>
+			<Steel>150</Steel>
+		</costList>
+		<statBases>
+			<WorkToBuild>80000</WorkToBuild>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Mass>40</Mass>
+			<JoyGainFactor>1.6</JoyGainFactor>
+		</statBases>
+		<pathCost>50</pathCost>
+		<passability>PassThroughOnly</passability>
+		<size>(7,2)</size>
+		<building>
+			<joyKind>Television</joyKind>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>2~9</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>9</watchBuildingStandRectWidth>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>WatchingTelevision</effectWatching>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientKinoProjector</defName>
+		<label>ancient kino projector</label>
+		<description>An old projector unit positioned for use with a matching screen. Works when powered, but only if pointed at the kino screen.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.3</fillPercent>
+		<size>(1,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Mass>5</Mass>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Recreation/KinoProjector</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+	</ThingDef>
+</Defs>

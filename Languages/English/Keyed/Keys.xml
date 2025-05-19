@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<VQED_Kickstart>Kickstart burnout generator</VQED_Kickstart>
+	<VQED_KickstartDesc>Choose someone to kickstart the burnout generator, creating a temporary power source.</VQED_KickstartDesc>
+	<VQED_KickstartedSuccess>{0} has successfully kickstarted the generator</VQED_KickstartedSuccess>
+	<VQED_KickStartTimer>Will stop working in {0}</VQED_KickStartTimer>
+</LanguageData>

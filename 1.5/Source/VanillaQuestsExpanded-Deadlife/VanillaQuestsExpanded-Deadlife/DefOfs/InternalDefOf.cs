@@ -16,7 +16,8 @@ namespace VanillaQuestsExpandedDeadlife
 			DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));
 		}
 
-		
+		public static JobDef VQED_KickstartGenerator;
 
-	}
+
+    }
 }

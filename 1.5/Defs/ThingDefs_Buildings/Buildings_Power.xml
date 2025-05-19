@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientBurnoutGenerator</defName>
+		<label>ancient burnout generator</label>
+		<thingClass>VanillaQuestsExpandedDeadlife.Kickstartable</thingClass>
+		<description>A compact generator built for short-term use. Needs to be kickstarted to work, and will only operate for a limited amount of time before it shuts down. It can then be kickstarted again.</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>50</pathCost>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<graphicData>
+			<texPath>Things/Power/PortableAncientGenerator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.65</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<damageAmountBase>10</damageAmountBase>
+				<chanceNeverExplodeFromDamage>0.3</chanceNeverExplodeFromDamage>
+				<startWickHitPointsPercent>0.35</startWickHitPointsPercent>
+				<wickTicks>70~150</wickTicks>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			</li>
+			<li Class="VanillaQuestsExpandedDeadlife.CompProperties_KickstartablePower">
+				<compClass>VanillaQuestsExpandedDeadlife.CompKickstartablePowerPlant</compClass>
+				<basePowerConsumption>-300</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_IndustrialBurnoutGenerator</defName>
+		<label>industrial burnout generator</label>
+		<thingClass>VanillaQuestsExpandedDeadlife.Kickstartable</thingClass>
+		<description>A large emergency generator stored deep underground. Needs to be kickstarted to work, and will only operate for a limited amount of time before it shuts down. It can then be kickstarted again.</description>
+		<size>(3,3)</size>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>50</pathCost>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>750</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+		</costList>
+		<graphicData>
+			<texPath>Things/Power/AncientIndustrialGenerator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>7.65</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<damageAmountBase>10</damageAmountBase>
+				<chanceNeverExplodeFromDamage>0.3</chanceNeverExplodeFromDamage>
+				<startWickHitPointsPercent>0.266</startWickHitPointsPercent>
+				<wickTicks>70~150</wickTicks>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			</li>
+			<li Class="VanillaQuestsExpandedDeadlife.CompProperties_KickstartablePower">
+				<compClass>VanillaQuestsExpandedDeadlife.CompKickstartablePowerPlant</compClass>
+				<basePowerConsumption>-1000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+				<kickStartableTimer>30000</kickStartableTimer>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

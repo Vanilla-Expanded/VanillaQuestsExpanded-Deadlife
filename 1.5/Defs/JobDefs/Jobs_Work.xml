@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>VQED_KickstartGenerator</defName>
+		<driverClass>VanillaQuestsExpandedDeadlife.JobDriver_KickstartGenerator</driverClass>
+		<reportString>kickstarting TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+</Defs>

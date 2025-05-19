@@ -638,7 +638,7 @@
 			<Flammability>0.7</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/AncientProps/RustedTooldbox</texPath>
+			<texPath>Things/AncientProps/RustedToolbox</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,1)</drawSize>
 		</graphicData>

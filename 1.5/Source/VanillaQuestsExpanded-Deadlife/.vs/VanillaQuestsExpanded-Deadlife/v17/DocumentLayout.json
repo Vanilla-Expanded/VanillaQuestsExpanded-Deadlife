@@ -1,21 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\",
+  "WorkspaceRootPath": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\harmony\\harmonyinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|solutionrelative:vanillaquestsexpanded-deadlife\\harmony\\harmonyinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|e:\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\comps\\properties\\compproperties_kickstartablepower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|solutionrelative:vanillaquestsexpanded-deadlife\\comps\\properties\\compproperties_kickstartablepower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|e:\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\comps\\compkickstartablepowerplant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|solutionrelative:vanillaquestsexpanded-deadlife\\comps\\compkickstartablepowerplant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|e:\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\building\\kickstartable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|solutionrelative:vanillaquestsexpanded-deadlife\\building\\kickstartable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|e:\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\ai\\jobdriver\\jobdriver_kickstartgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|solutionrelative:vanillaquestsexpanded-deadlife\\ai\\jobdriver\\jobdriver_kickstartgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|e:\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\ai\\workgiver\\workgiver_kickstartgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|solutionrelative:vanillaquestsexpanded-deadlife\\ai\\workgiver\\workgiver_kickstartgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|e:\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|solutionrelative:vanillaquestsexpanded-deadlife\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|e:\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\mapcomponents\\mapcomponent_deadlifebuildingsinmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|solutionrelative:vanillaquestsexpanded-deadlife\\mapcomponents\\mapcomponent_deadlifebuildingsinmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|e:\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\harmony\\harmonyinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|solutionrelative:vanillaquestsexpanded-deadlife\\harmony\\harmonyinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|e:\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|solutionrelative:vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|e:\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-deadlife\\1.5\\source\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{46162D33-0837-4B98-B790-A1ED6CC7C5CA}|VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj|solutionrelative:vanillaquestsexpanded-deadlife\\vanillaquestsexpanded-deadlife.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
@@ -31,57 +55,129 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CompProperties_KickstartablePower.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\Comps\\Properties\\CompProperties_KickstartablePower.cs",
+              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Deadlife\\Comps\\Properties\\CompProperties_KickstartablePower.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\Comps\\Properties\\CompProperties_KickstartablePower.cs",
+              "RelativeToolTip": "VanillaQuestsExpanded-Deadlife\\Comps\\Properties\\CompProperties_KickstartablePower.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:56:36.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompKickstartablePowerPlant.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\Comps\\CompKickstartablePowerPlant.cs",
+              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Deadlife\\Comps\\CompKickstartablePowerPlant.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\Comps\\CompKickstartablePowerPlant.cs",
+              "RelativeToolTip": "VanillaQuestsExpanded-Deadlife\\Comps\\CompKickstartablePowerPlant.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAD4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:06:46.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JobDriver_KickstartGenerator.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\AI\\JobDriver\\JobDriver_KickstartGenerator.cs",
+              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Deadlife\\AI\\JobDriver\\JobDriver_KickstartGenerator.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\AI\\JobDriver\\JobDriver_KickstartGenerator.cs",
+              "RelativeToolTip": "VanillaQuestsExpanded-Deadlife\\AI\\JobDriver\\JobDriver_KickstartGenerator.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADoAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:01:56.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WorkGiver_KickstartGenerator.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\AI\\WorkGiver\\WorkGiver_KickstartGenerator.cs",
+              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Deadlife\\AI\\WorkGiver\\WorkGiver_KickstartGenerator.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\AI\\WorkGiver\\WorkGiver_KickstartGenerator.cs",
+              "RelativeToolTip": "VanillaQuestsExpanded-Deadlife\\AI\\WorkGiver\\WorkGiver_KickstartGenerator.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:00:23.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MapComponent_DeadlifeBuildingsInMap.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\MapComponents\\MapComponent_DeadlifeBuildingsInMap.cs",
+              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Deadlife\\MapComponents\\MapComponent_DeadlifeBuildingsInMap.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\MapComponents\\MapComponent_DeadlifeBuildingsInMap.cs",
+              "RelativeToolTip": "VanillaQuestsExpanded-Deadlife\\MapComponents\\MapComponent_DeadlifeBuildingsInMap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T06:52:39.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Kickstartable.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\Building\\Kickstartable.cs",
+              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Deadlife\\Building\\Kickstartable.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\Building\\Kickstartable.cs",
+              "RelativeToolTip": "VanillaQuestsExpanded-Deadlife\\Building\\Kickstartable.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAqwG4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T06:51:06.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "HarmonyInstance.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\Harmony\\HarmonyInstance.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\Harmony\\HarmonyInstance.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Deadlife\\Harmony\\HarmonyInstance.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\Harmony\\HarmonyInstance.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\Harmony\\HarmonyInstance.cs",
               "RelativeToolTip": "VanillaQuestsExpanded-Deadlife\\Harmony\\HarmonyInstance.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T13:02:03.593Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "InternalDefOf.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\DefOfs\\InternalDefOf.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\DefOfs\\InternalDefOf.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Deadlife\\DefOfs\\InternalDefOf.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\DefOfs\\InternalDefOf.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\DefOfs\\InternalDefOf.cs",
               "RelativeToolTip": "VanillaQuestsExpanded-Deadlife\\DefOfs\\InternalDefOf.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T13:01:40.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "VanillaQuestsExpanded-Deadlife",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
               "RelativeToolTip": "VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-15T13:00:23.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T13:00:23.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VanillaQuestsExpanded-Deadlife",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
+              "DocumentIndex": 8,
+              "Title": "VanillaQuestsExpanded-Deadlife.csproj",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Deadlife\\1.5\\Source\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
               "RelativeToolTip": "VanillaQuestsExpanded-Deadlife\\VanillaQuestsExpanded-Deadlife.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-15T13:00:22.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T13:00:22.49Z"
             }
           ]
         }
