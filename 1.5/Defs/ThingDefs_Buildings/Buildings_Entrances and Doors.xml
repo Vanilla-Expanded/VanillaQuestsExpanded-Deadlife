@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_LockedSiloHatch</defName>
+		<label>locked silo hatch</label>
+		<description>A sealed entrance to the deeper facility. Still structurally sound, but heavily pressurized. Can be forced open to allow access.</description>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Impassable</passability>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<selectable>true</selectable>
+		<fillPercent>0</fillPercent>
+		<size>(5,5)</size>
+		<tickerType>Normal</tickerType>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Misc/SiloStaircase_Closed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+			<neverBuildable>true</neverBuildable>
+			<isTargetable>false</isTargetable>
+		</building>
+		<comps>
+			<li Class="VFECore.CompProperties_JammedAirlock">
+				<!-- Interactable -->
+				<doorToConvertTo>VQED_SiloStaircase</doorToConvertTo>
+				<activeTicks>1</activeTicks>
+				<ticksToActivate>3600</ticksToActivate>
+				<activateTexPath>UI/Gizmos/ForceOpenSiloDoor</activateTexPath>
+				<activateLabelString>Force open silo door</activateLabelString>
+				<activateDescString>Choose someone to force the door open, allowing access to the underground silo.</activateDescString>
+				<guiLabelString>Choose who should do this</guiLabelString>
+				<jobString>Force this door open</jobString>
+				<activatingStringPending>forcing door open</activatingStringPending>
+				<activatingString>forcing door open: {1}s</activatingString>
+				<messageCompletedString>{PAWN_nameDef} has successfully forced the door open.</messageCompletedString>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_SiloStaircase</defName>
+		<label>silo staircase</label>
+		<description>A reinforced accessway to the lower levels. Coated in dust and stale air.</description>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Impassable</passability>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<selectable>true</selectable>
+		<fillPercent>0</fillPercent>
+		<size>(5,5)</size>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Misc/SiloStaircase_Open</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+			<neverBuildable>true</neverBuildable>
+			<isTargetable>false</isTargetable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_SiloExitStaircase</defName>
+		<label>silo exit staircase</label>
+		<description>A vertical return route to the surface. Rarely used, but still passable.</description>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Impassable</passability>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<selectable>true</selectable>
+		<fillPercent>0</fillPercent>
+		<size>(5,5)</size>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Misc/SiloStaircase_Exit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+			<neverBuildable>true</neverBuildable>
+			<isTargetable>false</isTargetable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientSiloDoor</defName>
+		<label>ancient silo door</label>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<description>A heavily reinforced door. It is slow to open but very strong. The door requires walls on either side to function.</description>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<fillPercent>1</fillPercent>
+		
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<uiOrder>0</uiOrder>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<drawerType>RealtimeOnly</drawerType>
+		<building>
+			<isInert>true</isInert>
+			<canPlaceOverWall>false</canPlaceOverWall>
+			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+			
+			
+			<ai_chillDestination>false</ai_chillDestination>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+			<roamerCanOpen>false</roamerCanOpen>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Doors/SiloDoor_MenuIcon_south</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>2</drawSize>
+			</blueprintGraphicData>
+			<doorTopGraphic>
+				<texPath>Things/Doors/SiloDoor_Top</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(2.2, 2.2)</drawSize>
+			</doorTopGraphic>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>true</allowNonPlayer>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
+		</placeWorkers>
+		<stealable>false</stealable>
+		<clearBuildingArea>true</clearBuildingArea>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<DoorOpenSpeed>0.25</DoorOpenSpeed>
+			<Beauty>0</Beauty>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>500</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Doors/SiloDoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Doors/SiloDoor_MenuIcon_south</uiIconPath>
+		<size>(1, 1)</size>
+		<rotatable>true</rotatable>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>stuck ancient silo door</label>
+		<defName>VQED_StuckAncientSiloDoor</defName>
+		<description>A heavily reinforced door. Due to malfunction or damage, it needs to be forced open. It is slow to open but very strong. The door requires walls on either side to function.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<graphicData>
+			<texPath>Things/Doors/SiloDoor_Locked</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>500</MaxHitPoints>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="VFECore.CompProperties_JammedAirlock">
+				<!-- Interactable -->
+				<doorToConvertTo>VQED_AncientSiloDoor</doorToConvertTo>
+				<activeTicks>1</activeTicks>
+				<ticksToActivate>1200</ticksToActivate>
+				<activateTexPath>UI/Gizmos/Gizmo_ForceOpenSiloDoor</activateTexPath>
+				<activateLabelString>Force open...</activateLabelString>
+				<activateDescString>Choose someone to force this ancient silo door open.</activateDescString>
+				<guiLabelString>Choose who should do this</guiLabelString>
+				<jobString>Force this ancient silo door open</jobString>
+				<activatingStringPending>forcing ancient silo door open</activatingStringPending>
+				<activatingString>forcing ancient silo door open: {1}s</activatingString>
+				<messageCompletedString>{PAWN_nameDef} has successfully forced the ancient silo door open.</messageCompletedString>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

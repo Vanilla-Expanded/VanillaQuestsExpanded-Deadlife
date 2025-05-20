@@ -5,7 +5,7 @@
 		<label>death pit</label>
 		<description>A sealed containment pit lined with ancient restraints. Faint trails of deadlife dust seep from the cracks, and something inside constantly shifts, pushing, scraping, trying to crawl free.</description>
 		<thingClass>VanillaQuestsExpandedDeadlife.DeathPit</thingClass>
-		<altitudeLayer>Floor</altitudeLayer>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
 		<fillPercent>0</fillPercent>

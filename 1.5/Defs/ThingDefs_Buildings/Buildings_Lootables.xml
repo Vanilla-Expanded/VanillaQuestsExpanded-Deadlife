@@ -61,7 +61,7 @@
 						<count>250</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
@@ -102,7 +102,7 @@
 						<count>850</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
@@ -143,7 +143,7 @@
 						<count>6</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
@@ -184,7 +184,7 @@
 						<count>220</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
@@ -225,7 +225,7 @@
 						<count>6</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
@@ -266,7 +266,7 @@
 						<count>12</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<requiredMod>Biotech</requiredMod>
 				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
 			</li>
@@ -338,7 +338,7 @@
 						<count>250</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -379,7 +379,7 @@
 						<count>75</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -420,7 +420,7 @@
 						<count>10</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -461,7 +461,7 @@
 						<count>4</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -502,7 +502,7 @@
 						<count>18</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -543,7 +543,7 @@
 						<count>20</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -584,7 +584,7 @@
 						<count>125</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -625,7 +625,7 @@
 						<count>75</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -667,7 +667,7 @@
 						<count>12</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -721,7 +721,7 @@
 						<count>12</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -775,7 +775,7 @@
 						<count>250</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -831,7 +831,7 @@
 				</contents>
 				<randomFromContents>true</randomFromContents>
 				<totalRandomLoops>4</totalRandomLoops>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -872,7 +872,7 @@
 						<count>4</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -913,7 +913,7 @@
 						<count>8</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -985,7 +985,7 @@
 						<count>1</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptySmallMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
@@ -1026,7 +1026,7 @@
 						<count>1</count>
 					</li>
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptySmallMilitaryCrate</buildingLeft>
 			</li>
 		</modExtensions>
@@ -1095,7 +1095,7 @@
 				<contents>
 					
 				</contents>
-				<useBaseGameOpen>true</useBaseGameOpen>
+				
 				<buildingLeft>VQED_EmptyAncientWeaponBox</buildingLeft>
 			</li>
 		</modExtensions>
