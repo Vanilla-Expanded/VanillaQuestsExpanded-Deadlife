@@ -30,7 +30,7 @@
 			<isTargetable>false</isTargetable>
 		</building>
 		<comps>
-			<li Class="VFECore.CompProperties_JammedAirlock">
+			<li Class="VanillaFurnitureExpanded.CompProperties_JammedAirlock">
 				<!-- Interactable -->
 				<doorToConvertTo>VQED_SiloStaircase</doorToConvertTo>
 				<activeTicks>1</activeTicks>
@@ -210,7 +210,7 @@
 			<neverBuildable>true</neverBuildable>
 		</building>
 		<comps>
-			<li Class="VFECore.CompProperties_JammedAirlock">
+			<li Class="VanillaFurnitureExpanded.CompProperties_JammedAirlock">
 				<!-- Interactable -->
 				<doorToConvertTo>VQED_AncientSiloDoor</doorToConvertTo>
 				<activeTicks>1</activeTicks>

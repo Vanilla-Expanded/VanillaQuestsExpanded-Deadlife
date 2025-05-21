@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientDesk</defName>
+		<label>ancient desk</label>
+		<description>An old military desk. Nothing useful remains on it.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Lootable/AncientMapTable_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>ancient planning desk</label>
+		<defName>VQED_AncientPlanningDesk</defName>
+		<thingClass>VanillaQuestsExpandedDeadlife.StudiableBuilding_NewSilo</thingClass>
+		<description>An old military desk containing battle maps and plans. Studying it may reveal the location of another ancient silo.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/AncientMapTable</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	
+		<rotatable>false</rotatable>
+	
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>400</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.StudiableBuildingDetails">
+				<gizmoTexture>UI/Gizmos/StudyAncientPlans</gizmoTexture>
+				<gizmoText>VQED_StudyAncientPlansLabel</gizmoText>
+				<gizmoDesc>VQED_StudyAncientPlansDesc</gizmoDesc>
+				<buildingLeft>VQED_AncientDesk</buildingLeft>			
+				<skillForStudying>Intellectual</skillForStudying>
+				<overlayTexture>UI/Overlays/Study_Overlay</overlayTexture>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_EmptyICBMSilo</defName>
+		<label>empty ICBM silo</label>
+		<description>A missile cradle with no payload. Maintenance ports are sealed and fused.</description>		
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Impassable</passability>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<selectable>true</selectable>
+		<fillPercent>0</fillPercent>
+		<size>(7,7)</size>
+	
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/AncientICBMSilo_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(7,7)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_LockedICBMSilo</defName>
+		<label>locked ICBM silo</label>
+		<description>A silo hatch that never received a launch signal. The mechanism has since locked tight.</description>		
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Impassable</passability>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<selectable>true</selectable>
+		<fillPercent>0</fillPercent>
+		<size>(7,7)</size>
+	
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/AncientICBMSilo_Closed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(7,7)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_ICBMSiloLid</defName>
+		<label>ICBM silo lid</label>
+		<description>A solid lid designed to protect an armed warhead. The release system has seized.</description>		
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Impassable</passability>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<selectable>true</selectable>
+		<fillPercent>0</fillPercent>
+		<size>(7,7)</size>
+	
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/AncientICBMSilo_OpenLid</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(7,7)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_LoadedICBMSilo</defName>
+		<label>loaded ICBM silo</label>
+		<description>A still-intact missile lies inside this silo. No signs of activation or maintenance in decades.</description>		
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Impassable</passability>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<selectable>true</selectable>
+		<fillPercent>0</fillPercent>
+		<size>(7,7)</size>
+		<tickerType>Normal</tickerType>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/AncientICBMSilo_Loaded</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(7,7)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_InertDarkPillar</defName>
+		<label>inert dark pillar</label>
+		<description>A towering black pillar of unknown alloy. Though it appears inactive, it hums faintly with a deep, almost imperceptible resonance. The surrounding air feels heavier near it, and equipment readings often fail without reason. No obvious function can be determined, but its presence is deeply unsettling.</description>		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<selectable>true</selectable>
+		<fillPercent>0.5</fillPercent>
+		<size>(2,2)</size>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/InertDeathdoorPillar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_InertDarkObelisk</defName>
+		<label>inert dark obelisk</label>
+		<description>A massive, jagged obelisk with no markings or visible seams. Its surface absorbs light unnaturally, and proximity induces headaches and unease. Though inert for now, occasional vibrations suggest it may not remain dormant forever.</description>		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<selectable>true</selectable>
+		<fillPercent>0.5</fillPercent>
+		<size>(3,3)</size>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/InertDeathdoorObelisk</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_InertDeathDoorway</defName>
+		<label>inert death doorway</label>
+		<description>A shadowed, monolithic doorway sealed into the structure itself. From within, thin streams of deadlife dust drift outward, defying airflow. No hinges, no mechanisms, only the sensation that something waits on the other side.</description>		
+		<thingClass>VanillaQuestsExpandedDeadlife.DeathDoorway</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<selectable>true</selectable>
+		<fillPercent>0.5</fillPercent>
+		<size>(7,2)</size>
+		<tickerType>Normal</tickerType>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/InertDeathdoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(7,7)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_EerieSarcophagus</defName>
+		<label>eerie sarcophagus</label>
+		<description>A sealed black casket. It shows signs of internal pressure, but no visible access points.</description>
+		<thingClass>VanillaQuestsExpandedDeadlife.EerieSarcophagus</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.3</fillPercent>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<size>(2,1)</size>
+		<rotatable>false</rotatable>
+		<blockWind>true</blockWind>
+		
+		<pathCost>42</pathCost>
+		<graphicData>
+			<texPath>Things/AncientProps/GeneralSarcophagus</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
+		</building>
+		
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_EmptyEerieSarcophagus</defName>
+		<label>empty eerie sarcophagus</label>
+		<description>An empty black casket.</description>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.3</fillPercent>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<size>(2,1)</size>
+		<rotatable>false</rotatable>
+		<blockWind>true</blockWind>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+		</statBases>
+		<pathCost>42</pathCost>
+		<graphicData>
+			<texPath>Things/AncientProps/GeneralSarcophagusOpen</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+			
+		</building>
+		
+	</ThingDef>
+</Defs>

@@ -4,5 +4,7 @@
 	<VQED_KickstartDesc>Choose someone to kickstart the burnout generator, creating a temporary power source.</VQED_KickstartDesc>
 	<VQED_KickstartedSuccess>{0} has successfully kickstarted the generator</VQED_KickstartedSuccess>
 	<VQED_KickStartTimer>Will stop working in {0}</VQED_KickStartTimer>
-	<VQE_DebugNextSpawn>DEBUG: Spawning shamblers in {0}</VQE_DebugNextSpawn>
+	<VQED_DebugNextSpawn>DEBUG: Spawning shamblers in {0}</VQED_DebugNextSpawn>
+	<VQED_StudyAncientPlansLabel>Study ancient plans</VQED_StudyAncientPlansLabel>
+	<VQED_StudyAncientPlansDesc>Study the ancient plans to discover the location of another ancient silo.</VQED_StudyAncientPlansDesc>
 </LanguageData>

@@ -830,7 +830,7 @@
 					</li>
 				</contents>
 				<randomFromContents>true</randomFromContents>
-				<totalRandomLoops>4</totalRandomLoops>
+				<totalRandomLoops>4~4</totalRandomLoops>
 				
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
@@ -893,6 +893,49 @@
 		<fillPercent>0.4</fillPercent>
 		<graphicData>
 			<texPath>Things/Lootable/Loot_MilitaryPallet_AdvancedCarParts</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>VQED_Apparel_MilitaryCoat</thing>
+					</li>
+					
+				</contents>
+				<randomFromContents>true</randomFromContents>
+				<totalRandomLoops>3~5</totalRandomLoops>
+				
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>military pallet of apparel</label>
+		<defName>VQED_MilitaryPalletOfApparel</defName>
+		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
+		<description>A crate of old military coats. Despite torn fabric and weird smell, they seem usable.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_MilitaryCoats</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -1093,9 +1136,29 @@
 		<modExtensions>
 			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
 				<contents>
-					
+					<li>
+						<thing>VQED_Gun_Autopistol_Ancient</thing>
+						<count>1</count>
+					</li>
+					<li>
+						<thing>VQED_Gun_MachinePistol_Ancient</thing>
+						<count>1</count>
+					</li>
+					<li>
+						<thing>VQED_Gun_IncendiaryLauncher_Ancient</thing>
+						<count>1</count>
+					</li>
+					<li>
+						<thing>VQED_Gun_PumpShotgun_Ancient</thing>
+						<count>1</count>
+					</li>
+					<li>
+						<thing>VQED_Gun_LMG_Ancient</thing>
+						<count>1</count>
+					</li>
 				</contents>
-				
+				<randomFromContents>true</randomFromContents>
+				<totalRandomLoops>1~1</totalRandomLoops>
 				<buildingLeft>VQED_EmptyAncientWeaponBox</buildingLeft>
 			</li>
 		</modExtensions>

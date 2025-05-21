@@ -112,7 +112,7 @@ namespace VanillaQuestsExpandedDeadlife
         {
             if (Prefs.DevMode)
             {
-                return base.GetInspectString() + "VQE_DebugNextSpawn".Translate((nextCount - tickCounter).ToStringTicksToPeriod());
+                return base.GetInspectString() + "VQED_DebugNextSpawn".Translate((nextCount - tickCounter).ToStringTicksToPeriod());
             }
             else 
 
