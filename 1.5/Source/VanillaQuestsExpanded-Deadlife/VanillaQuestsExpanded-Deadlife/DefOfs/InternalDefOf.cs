@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,9 +18,11 @@ namespace VanillaQuestsExpandedDeadlife
 
 		public static JobDef VQED_KickstartGenerator;
 
-        public static ThingDef VQED_PawnFlyer_Stun;
+		public static ThingDef VQED_PawnFlyer_Stun;
 		public static ThingDef VQED_EmptyEerieSarcophagus;
 
 
-    }
+		public static ThingDef VQED_AncientKinoScreen;
+		public static ThingDef VQED_AncientKinoProjector;
+	}
 }

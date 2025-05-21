@@ -47,7 +47,11 @@
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_WatchArea</li>
+			<li>VanillaQuestsExpandedDeadlife.PlaceWorker_AncientKinoScreen</li>
 		</placeWorkers>
+		<comps>
+			<li Class="VanillaQuestsExpandedDeadlife.CompProperties_KinoScreen" />
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_AncientKinoProjector</defName>
@@ -81,13 +85,16 @@
 			<paintable>false</paintable>
 			<neverBuildable>true</neverBuildable>
 		</building>
+		<placeWorkers>
+			<li>VanillaQuestsExpandedDeadlife.PlaceWorker_AncientKinoProjectorScreens</li>
+		</placeWorkers>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>100</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 	</ThingDef>
 </Defs>

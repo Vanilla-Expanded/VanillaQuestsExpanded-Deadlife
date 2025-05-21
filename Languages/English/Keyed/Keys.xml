@@ -7,4 +7,8 @@
 	<VQED_DebugNextSpawn>DEBUG: Spawning shamblers in {0}</VQED_DebugNextSpawn>
 	<VQED_StudyAncientPlansLabel>Study ancient plans</VQED_StudyAncientPlansLabel>
 	<VQED_StudyAncientPlansDesc>Study the ancient plans to discover the location of another ancient silo.</VQED_StudyAncientPlansDesc>
+	<VQED_MissingKinoProjector>Missing: ancient kino projector</VQED_MissingKinoProjector>
+	<VQED_KinoProjectorUnpowered>Not working: ancient kino projector is unpowered</VQED_KinoProjectorUnpowered>
+	<VQED_KinoScreenWrongRotation>Not working: ancient kino projector doesn't face the kino screen</VQED_KinoScreenWrongRotation>
+	<VQED_KinoScreenRequiresProjector>Ancient kino screen requires an ancient kino projector placed in front of it to work.</VQED_KinoScreenRequiresProjector>
 </LanguageData>
