@@ -1124,7 +1124,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,1)</drawSize>
 		</graphicData>
-		<rotatable>false</rotatable>
+		<rotatable>true</rotatable>
 		<size>(2, 1)</size>
 		<statBases>
 			<Flammability>1</Flammability>
