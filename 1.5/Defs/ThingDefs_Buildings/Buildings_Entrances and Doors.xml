@@ -80,6 +80,21 @@
 			<neverBuildable>true</neverBuildable>
 			<isTargetable>false</isTargetable>
 		</building>
+		<thingClass>VanillaQuestsExpanded_Deadlife.CustomPortalEntry</thingClass>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="VanillaQuestsExpanded_Deadlife.CompProperties_CustomPortal">
+				<mapSize>(100,1,100)</mapSize>
+				<exitDef>VQED_SiloExitStaircase</exitDef>
+				<mapGeneratorDef>VQE_AncientSilo</mapGeneratorDef>
+				<enterTexPath>Things/Misc/SiloStaircase_Open</enterTexPath>
+				<viewDestinationTexPath>UI/Commands/ViewAncientSilo</viewDestinationTexPath>
+				<enterCommandKey>VQE_EnterSilo</enterCommandKey>
+				<viewDestinationCommandKey>VQE_ViewSilo</viewDestinationCommandKey>
+				<viewDestinationDescKey>VQE_ViewSiloDesc</viewDestinationDescKey>
+				<traverseSound>TraversePitGate</traverseSound>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_SiloExitStaircase</defName>
@@ -109,6 +124,21 @@
 			<neverBuildable>true</neverBuildable>
 			<isTargetable>false</isTargetable>
 		</building>
+		<thingClass>VanillaQuestsExpanded_Deadlife.CustomPortalExit</thingClass>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="VanillaQuestsExpanded_Deadlife.CompProperties_CustomPortal">
+				<mapSize>(100,1,100)</mapSize>
+				<exitDef>VQED_SiloStaircase</exitDef>
+				<mapGeneratorDef>VQE_AncientSilo</mapGeneratorDef>
+				<enterTexPath>Things/Misc/SiloStaircase_Exit</enterTexPath>
+				<viewDestinationTexPath>UI/Commands/ViewAncientSilo</viewDestinationTexPath>
+				<enterCommandKey>VQE_ExitSilo</enterCommandKey>
+				<viewDestinationCommandKey>ViewSurface</viewDestinationCommandKey>
+				<viewDestinationDescKey>ViewSurfaceDesc</viewDestinationDescKey>
+				<traverseSound>TraversePitGate</traverseSound>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_AncientSiloDoor</defName>
@@ -117,11 +147,11 @@
 		<description>A heavily reinforced door. It is slow to open but very strong. The door requires walls on either side to function.</description>
 		<altitudeLayer>DoorMoveable</altitudeLayer>
 		<fillPercent>1</fillPercent>
-		
+
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<selectable>true</selectable>
 		<tickerType>Normal</tickerType>
-		
+
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<uiOrder>0</uiOrder>
@@ -136,8 +166,8 @@
 			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
 			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
 			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
-			
-			
+
+
 			<ai_chillDestination>false</ai_chillDestination>
 			<paintable>false</paintable>
 			<deconstructible>false</deconstructible>

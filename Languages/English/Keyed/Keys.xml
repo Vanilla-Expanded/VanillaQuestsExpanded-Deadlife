@@ -12,4 +12,8 @@
 	<VQED_KinoScreenRequiresProjector>Ancient kino screen requires an ancient kino projector placed in front of it to work.</VQED_KinoScreenRequiresProjector>
 	<VQED_WeaponDeterioratedMessage>{0}, equipped by {1}, has fully deteriorated.</VQED_WeaponDeterioratedMessage>
 	<VQED_WeaponDeteriorationInfo>This weapon will deteriorate after a certain number of shots.\nShots remaining: {0}</VQED_WeaponDeteriorationInfo>
+	<VQE_EnterSilo>Enter silo</VQE_EnterSilo>
+	<VQE_ExitSilo>Exit silo</VQE_ExitSilo>
+	<VQE_ViewSilo>View silo</VQE_ViewSilo>
+	<VQE_ViewSiloDesc>View the ancient silo below.</VQE_ViewSiloDesc>
 </LanguageData>

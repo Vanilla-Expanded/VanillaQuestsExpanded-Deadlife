@@ -32,7 +32,7 @@ namespace VanillaQuestsExpandedDeadlife
             GenSpawn.Spawn(hatch, center, map, WipeMode.Vanish);
 
             var spawnRadius = 10;
-            var shamblerCount = 5;
+            var shamblerCount = new IntRange(6, 12).RandomInRange;
 
             var lordJob = new LordJob_DefendPoint(center, spawnRadius);
             var lord = LordMaker.MakeNewLord(Faction.OfEntities, lordJob, map);

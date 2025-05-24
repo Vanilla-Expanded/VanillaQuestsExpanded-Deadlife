@@ -7,20 +7,18 @@
     <combatPower>45</combatPower>
     <gearHealthRange>0.2~0.4</gearHealthRange>
     <itemQuality>Poor</itemQuality>
-    <apparelMoney>200~3000</apparelMoney>
-    <apparelTags>
-      <li>IndustrialMilitaryBasic</li>
-      <li>IndustrialMilitaryAdvanced</li>
-    </apparelTags>
-    <techHediffsMoney>1000~2000</techHediffsMoney>
-    <techHediffsTags>
-      <li>Simple</li>
-      <li>Advanced</li>
-      <li>AdvancedWeapon</li>
-    </techHediffsTags>
+    <apparelMoney>0</apparelMoney>
+    <apparelRequired>
+      <li>VQED_Apparel_MilitaryCoat</li>
+      <li>Apparel_Pants</li>
+      <li>Apparel_CollarShirt</li>
+    </apparelRequired>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <meleeAttackInfectionPathways>
       <li>EntityAttacked</li>
     </meleeAttackInfectionPathways>
   </PawnKindDef>
-  
+
 </Defs>
