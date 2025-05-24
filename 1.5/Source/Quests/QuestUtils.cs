@@ -70,5 +70,22 @@ namespace VanillaQuestsExpandedDeadlife
             }
             return pawns.GroupBy(p => p).Select(group => $"{group.Count()} {group.Key.label}").ToCommaList();
         }
+
+        public static QuestPart_Site GetAssociatedPart(this MapParent parent)
+        {
+            foreach (var quest in Find.QuestManager.QuestsListForReading.Where(x => x.State == QuestState.Ongoing))
+            {
+                List<QuestPart> questParts = quest.PartsListForReading;
+                for (var i = 0; i < questParts.Count; i++)
+                {
+                    if (questParts[i] is QuestPart_Site questSite
+                        && questSite.mapParent == parent)
+                    {
+                        return questSite;
+                    }
+                }
+            }
+            return null;
+        }
     }
 }

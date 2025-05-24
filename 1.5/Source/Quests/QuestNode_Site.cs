@@ -98,6 +98,8 @@ namespace VanillaQuestsExpandedDeadlife
                     quest.End(QuestEndOutcome.Fail, 0, null, null, QuestPart.SignalListenMode.OngoingOnly, sendStandardLetter: true);
                 }, siteMapGeneratedSignal, siteMapRemovedSignal);
             }
+            
+            
             return site;
         }
 

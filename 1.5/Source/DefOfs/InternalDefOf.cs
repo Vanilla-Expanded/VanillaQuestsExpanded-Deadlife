@@ -28,5 +28,7 @@ namespace VanillaQuestsExpandedDeadlife
 		public static SitePartDef VQE_AncientSilo;
 
 		public static ThingDef VQED_LockedSiloHatch;
+		
+		public static PawnKindDef VQE_MilitaryShambler;
 	}
 }
