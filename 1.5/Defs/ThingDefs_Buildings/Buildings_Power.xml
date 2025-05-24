@@ -3,7 +3,6 @@
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_AncientBurnoutGenerator</defName>
 		<label>ancient burnout generator</label>
-		<thingClass>VanillaQuestsExpandedDeadlife.Kickstartable</thingClass>
 		<description>A compact generator built for short-term use. Needs to be kickstarted to work, and will only operate for a limited amount of time before it shuts down. It can then be kickstarted again.</description>
 		<size>(1,1)</size>
 		<passability>PassThroughOnly</passability>
@@ -46,13 +45,29 @@
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
 			</li>
+			<li Class="CompProperties_Interactable">
+				<compClass>VanillaQuestsExpandedDeadlife.CompInteractablePowerPlant</compClass>
+				<ticksToActivate>800</ticksToActivate>
+				<activeTicks>1</activeTicks>
+				<guiLabelString>Choose who should do this</guiLabelString>
+				<jobString>Kickstarting burnout generator</jobString>
+				<activateLabelString>Kickstart burnout generator</activateLabelString>
+				<activateDescString>Choose someone to kickstart the burnout generator, creating a temporary power source.</activateDescString>
+				<activateTexPath>UI/Gizmos/StartBurnoutGenerator</activateTexPath>
+				<activatingStringPending>Kickstarting burnout generator</activatingStringPending>
+				<activatingString>Kickstarting burnout generator: {1}s</activatingString>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
 		</comps>
 	</ThingDef>
-	
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_IndustrialBurnoutGenerator</defName>
 		<label>industrial burnout generator</label>
-		<thingClass>VanillaQuestsExpandedDeadlife.Kickstartable</thingClass>
 		<description>A large emergency generator stored deep underground. Needs to be kickstarted to work, and will only operate for a limited amount of time before it shuts down. It can then be kickstarted again.</description>
 		<size>(3,3)</size>
 		<passability>PassThroughOnly</passability>
@@ -95,6 +110,24 @@
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
 				<kickStartableTimer>30000</kickStartableTimer>
+			</li>
+			<li Class="CompProperties_Interactable">
+				<compClass>VanillaQuestsExpandedDeadlife.CompInteractablePowerPlant</compClass>
+				<ticksToActivate>800</ticksToActivate>
+				<activeTicks>1</activeTicks>
+				<guiLabelString>Choose who should do this</guiLabelString>
+				<jobString>Kickstarting burnout generator</jobString>
+				<activateLabelString>Kickstart burnout generator</activateLabelString>
+				<activateDescString>Choose someone to kickstart the burnout generator, creating a temporary power source.</activateDescString>
+				<activateTexPath>UI/Gizmos/StartBurnoutGenerator</activateTexPath>
+				<activatingStringPending>Kickstarting burnout generator</activatingStringPending>
+				<activatingString>Kickstarting burnout generator: {1}s</activatingString>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
 			</li>
 		</comps>
 	</ThingDef>

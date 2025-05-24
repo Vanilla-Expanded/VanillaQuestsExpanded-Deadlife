@@ -64,5 +64,10 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<tickerType>Normal</tickerType>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
 	</ThingDef>
 </Defs>
