@@ -1144,10 +1144,7 @@
 						<thing>VQED_Gun_MachinePistol_Ancient</thing>
 						<count>1</count>
 					</li>
-					<li>
-						<thing>VQED_Gun_IncendiaryLauncher_Ancient</thing>
-						<count>1</count>
-					</li>
+					
 					<li>
 						<thing>VQED_Gun_PumpShotgun_Ancient</thing>
 						<count>1</count>

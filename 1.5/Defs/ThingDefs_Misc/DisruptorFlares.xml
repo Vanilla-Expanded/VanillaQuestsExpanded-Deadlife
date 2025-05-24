@@ -23,7 +23,7 @@
 		<verbs>
 			<li>
 				<label>throw disruptor flare</label>
-				<verbClass>Verb_ShootOneUse</verbClass>
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<range>12.9</range>
 				<warmupTime>1.5</warmupTime>

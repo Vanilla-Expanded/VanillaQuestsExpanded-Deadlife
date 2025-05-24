@@ -144,60 +144,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="VQED_BaseDeadlifeGun">
-		<defName>VQED_Gun_IncendiaryLauncher_Ancient</defName>
-		<label>ancient incendiary launcher</label>
-		<description>A wide-barreled incendiary bolt launcher. The bolts create small incendiary explosions on impact, starting fires. Due to severe deterioration, this weapon can only fire a limited number of shots before breaking beyond repair.</description>
-		<graphicData>
-			<texPath>Things/Equipment/Weapons/AncientIncendiaryLauncher</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>
-		<generateCommonality>0</generateCommonality>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
-		<statBases>
-			<Mass>3.4</Mass>
-			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
-		</statBases>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_IncendiaryLauncher</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<range>23.9</range>
-				<forcedMissRadius>1.9</forcedMissRadius>
-				<burstShotCount>1</burstShotCount>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>14</muzzleFlashScale>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
+	
 	<ThingDef ParentName="VQED_BaseDeadlifeGun">
 		<defName>VQED_Gun_PumpShotgun_Ancient</defName>
 		<label>ancient shotgun</label>

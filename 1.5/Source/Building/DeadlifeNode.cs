@@ -15,9 +15,10 @@ namespace VanillaQuestsExpandedDeadlife
 {
     public class DeadlifeNode : Building_Trap
     {
-
+        public bool pleaseStopTicking = false;
         protected override void SpringSub(Pawn p)
         {
+            pleaseStopTicking = true;
             GetComp<CompExplosive>().StartWick(p);
         }
 
@@ -26,7 +27,7 @@ namespace VanillaQuestsExpandedDeadlife
             base.Tick();
            
 
-            if (this.IsHashIntervalTick(60))
+            if (this.IsHashIntervalTick(60) &&this.Map!=null &&!pleaseStopTicking)
             {
                 int numCells = GenRadial.NumCellsInRadius(6);
                 for (int i = 0; i < numCells; i++)
