@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <QuestScriptDef>
+        <defName>VQE_Deadlife_AncientSilo</defName>
+        <autoAccept>True</autoAccept>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->[ancient] [silo] [letter][digit][digit]</li>
+                <li>questName->[ancient] Designation: [siloPrefix]-[letter][digit]</li>
+                <li>ancient->Ancient</li>
+                <li>ancient->Forgotten</li>
+                <li>ancient->Old World</li>
+                <li>ancient->Precursor</li>
+                <li>ancient->Legacy</li>
+                <li>ancient->Obsolete</li>
+                <li>ancient->Redacted</li>
+                <li>ancient->Decommissioned</li>
+                <li>silo->Silo</li>
+                <li>silo->Vault</li>
+                <li>silo->Depot</li>
+                <li>silo->Bunker</li>
+                <li>silo->Complex</li>
+                <li>silo->Installation</li>
+                <li>silo->Sector</li>
+                <li>silo->Storage Unit</li>
+                <li>letter->Alpha</li>
+                <li>letter->Echo</li>
+                <li>letter->Sigma</li>
+                <li>letter->Kilo</li>
+                <li>letter->Delta</li>
+                <li>letter->Theta</li>
+                <li>letter->Gamma</li>
+                <li>letter->Zeta</li>
+                <li>digit->1</li>
+                <li>digit->2</li>
+                <li>digit->3</li>
+                <li>digit->4</li>
+                <li>digit->5</li>
+                <li>digit->6</li>
+                <li>digit->7</li>
+                <li>digit->8</li>
+                <li>digit->9</li>
+                <li>digit->0</li>
+                <li>letter->A</li>
+                <li>letter->B</li>
+                <li>letter->D</li>
+                <li>letter->E</li>
+                <li>letter->K</li>
+                <li>letter->Z</li>
+                <li>letter->X</li>
+                <li>letter->R</li>
+                <li>siloPrefix->SILO</li>
+                <li>siloPrefix->NODE</li>
+                <li>siloPrefix->VAULT</li>
+                <li>siloPrefix->UNIT</li>
+                <li>siloPrefix->SITE</li>
+                <li>siloPrefix->BKR</li>
+                <li>siloPrefix->ARC</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has informed us of the location of a [sealed] entrance to one of the [ancientSilos] left behind during Operation: Deadlife, a planet-spanning initiative launched by a [longDeadGovernment] in preparation for global catastrophe.\n\nThese silos were designed to remain sealed for generations, [intention]. Inside, it's believed they contain [containedReward]. The deeper chambers are rumored to hold equipment and supplies capable of restarting civilization itself.\n\n[threat]. [importantLight]. Without the light, you’ll be navigating blind and vulnerable to attack.\n\n[commandMap]. Studying these might reveal the locations of other silos, and more importantly, bring us closer to discovering the Command Headquarters, the nerve center of Operation: Deadlife, where the truth behind this apocalyptic plan may still lie buried.\n\n[questObjective].</li>
+                <li>questDescription(askerIsNull==True)->The ancient battle maps have revealed to us the location of a [sealed] entrance to one of the [ancientSilos] left behind during Operation: Deadlife, a planet-spanning initiative launched by a [longDeadGovernment] in preparation for global catastrophe.\n\nThese silos were designed to remain sealed for generations, [intention]. Inside, it's believed they contain [containedReward]. The deeper chambers are rumored to hold equipment and supplies capable of restarting civilization itself.\n\n[threat]. [importantLight]. Without the light, you’ll be navigating blind and vulnerable to attack.\n\n[commandMap]. Studying these might reveal the locations of other silos, and more importantly, bring us closer to discovering the Command Headquarters, the nerve center of Operation: Deadlife, where the truth behind this apocalyptic plan may still lie buried.\n\n[questObjective].</li>
+                <li>ancientSilos->ancient military silos</li>
+                <li>ancientSilos->sealed war-era bunkers</li>
+                <li>ancientSilos->abandoned military silos</li>
+                <li>ancientSilos->pre-collapse resource vaults</li>
+                <li>ancientSilos->forgotten subterranean complexes</li>
+                <li>ancientSilos->deep-storage logistics sites</li>
+                <li>ancientSilos->decaying military storage facilities</li>
+                <li>ancientSilos->bunkered infrastructure sites</li>
+                <li>ancientSilos->deadlife supply silos</li>
+
+                <li>longDeadGovernment->long-dead government</li>
+                <li>longDeadGovernment->ancient planetary alliance</li>
+                <li>longDeadGovernment->collapsed technocratic regime</li>
+                <li>longDeadGovernment->extinct militarized government</li>
+                <li>longDeadGovernment->forgotten emergency council</li>
+                <li>longDeadGovernment->defunct crisis-state authority</li>
+                <li>longDeadGovernment->long-vanished defense network</li>
+                <li>longDeadGovernment->fallen civil defense command</li>
+
+
+                <li>intention->intended to be opened only when humanity faced collapse</li>
+                <li>intention->built to withstand centuries and reopen in humanity’s darkest hour</li>
+                <li>intention->designed as failsafe supply nodes for rebuilding civilization</li>
+                <li>intention->meant to be activated only during a planetary extinction event</li>
+                <li>intention->set to unlock once the collapse protocols were confirmed</li>
+                <li>intention->intended to serve as last-resort caches for surviving factions</li>
+
+                <li>containedReward->vast stockpiles of resources: steel, plasteel, medicine, weaponry, and even preserved cultural relics</li>
+                <li>containedReward->a wealth of resources: hardened rations, components, medical supplies, and munitions</li>
+                <li>containedReward->critical survival materials: building materials, medicines, weapons, and schematics</li>
+                <li>containedReward->tools to rebuild: fuel, tools, seeds, weapons, and encrypted blueprints</li>
+                <li>containedReward->enough equipment to sustain or restart a new colony</li>
+                <li>containedReward->a treasure trove of essential gear, preserved through time</li>
+
+                <li>threat->Yet the silos are not empty. The corridors within are completely lightless, and something hostile is said to lurk in the dark</li>
+                <li>threat->But time has not left them untouched. The interior is pitch black, and something stirs in the shadows</li>
+                <li>threat->Explorers report movement inside — faint noises, heavy footsteps, shapes in the dark</li>
+                <li>threat->Survivors speak of hostile entities lurking in the corridors, unseen until it’s too late</li>
+                <li>threat->Whatever remains inside is not dormant — something guards these forgotten halls</li>
+                <li>threat->The halls are quiet, but not empty. Something waits inside, cloaked in shadow</li>
+
+                <li>importantLight->Activating the power and lighting systems inside is critical</li>
+                <li>importantLight->Restoring power and activating lights will be vital to survival</li>
+                <li>importantLight->Without illumination, any movement inside the silo is suicide</li>
+                <li>importantLight->Light systems must be activated first — or you’ll be helpless in the dark</li>
+                <li>importantLight->Sight is your only defense. Find a way to power the lights quickly</li>
+                <li>importantLight->Unless you activate the lights, the silo will be a deathtrap</li>
+
+                <li>commandMap->Each silo is also known to contain at least one ancient command desk or map table used to coordinate military movements</li>
+                <li>commandMap->Most silos house ancient desks or battle maps once used by field commanders</li>
+                <li>commandMap->Tactical tables scattered inside may contain encrypted maps to other installations</li>
+                <li>commandMap->Buried among the supplies are command desks filled with strategic data</li>
+                <li>commandMap->Decoding the maps on-site could reveal new locations tied to Operation: Deadlife</li>
+                <li>commandMap->Intact terminals and war tables could lead us to the central command</li>
+
+                <li>questObjective->The quest will complete once you loot at least a quarter of resources from the silo.</li>
+                <li>questObjective->Loot at least 25% of the total resources stored in the silo to complete the quest</li>
+                <li>questObjective->The mission ends once a significant portion of the stored goods have been secured</li>
+                <li>questObjective->Successfully extracting a quarter of the silo’s contents will fulfill the objective</li>
+                <li>questObjective->You’ll need to claim at least a fourth of the silo’s supplies to mark this operation complete</li>
+                <li>questObjective->Once enough materials have been secured and hauled out, the quest will be marked complete</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="VanillaQuestsExpandedDeadlife.QuestNode_Root_AncientSilo"></root>
+        <modExtensions>
+            <li Class="VFECore.QuestChainExtension">
+                <questChainDef>VQE_DeadlifeQuestChain</questChainDef>
+                <isRepeatable>True</isRepeatable>
+                <mtbDaysRepeat>120</mtbDaysRepeat>
+                <grantAgainOnFailure>True</grantAgainOnFailure>
+                <grantAgainOnExpiry>True</grantAgainOnExpiry>
+                <daysUntilGrantAgainOnFailure>120</daysUntilGrantAgainOnFailure>
+                <daysUntilGrantAgainOnExpiry>120</daysUntilGrantAgainOnExpiry>
+                <conditionMinDaysSinceStart>120</conditionMinDaysSinceStart>
+            </li>
+        </modExtensions>
+    </QuestScriptDef>
+</Defs>

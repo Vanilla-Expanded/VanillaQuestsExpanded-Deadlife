@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SitePartDef>
+        <defName>VQE_AncientSilo</defName>
+        <label>ancient silo</label>
+        <description>An ancient underground silo.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>UI/AncientSilo</expandingIconTexture>
+        <tags>
+            <li>VQE_AncientSilo</li>
+        </tags>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>VQE_AncientSilo</defName>
+        <linkWithSite>VQE_AncientSilo</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedDeadlife.GenStep_AncientSilo">
+        </genStep>
+    </GenStepDef>
+</Defs>

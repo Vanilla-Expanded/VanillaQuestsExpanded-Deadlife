@@ -24,5 +24,9 @@ namespace VanillaQuestsExpandedDeadlife
 
 		public static ThingDef VQED_AncientKinoScreen;
 		public static ThingDef VQED_AncientKinoProjector;
+
+		public static SitePartDef VQE_AncientSilo;
+
+		public static ThingDef VQED_LockedSiloHatch;
 	}
 }

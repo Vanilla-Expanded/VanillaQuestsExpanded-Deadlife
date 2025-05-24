@@ -1,0 +1,74 @@
+using RimWorld;
+using RimWorld.Planet;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using Verse;
+
+namespace VanillaQuestsExpandedDeadlife
+{
+    public static class QuestUtils
+    {
+        public static List<PawnKindDef> GeneratePawnKindList(Faction faction, float points, Site site)
+        {
+            PawnGroupMakerParms pawnGroupMakerParms = GetParms(faction, points, site);
+            var minPoints = faction.def.MinPointsToGeneratePawnGroup(pawnGroupMakerParms.groupKind, pawnGroupMakerParms);
+            points = minPoints < float.MaxValue ? Mathf.Max(points, minPoints) : points;
+            pawnGroupMakerParms.points = points;
+            List<PawnKindDef> generatedPawns = new List<PawnKindDef>();
+            while (generatedPawns.Any() is false && points < 99999)
+            {
+                points += 50f;
+                pawnGroupMakerParms.points = points;
+                generatedPawns = GeneratePawnKinds(pawnGroupMakerParms, false).ToList();
+            }
+            return generatedPawns;
+        }
+        public static IEnumerable<PawnKindDef> GeneratePawnKinds(PawnGroupMakerParms parms, bool warnOnZeroResults = true)
+        {
+            if (parms.groupKind == null)
+            {
+                Log.Error("Tried to generate pawns with null pawn group kind def. parms=" + parms);
+                yield break;
+            }
+            if (parms.faction == null)
+            {
+                Log.Error("Tried to generate pawn kinds with null faction. parms=" + parms);
+                yield break;
+            }
+            if (parms.faction.def.pawnGroupMakers.NullOrEmpty())
+            {
+                Log.Error(string.Concat("Faction ", parms.faction, " of def ", parms.faction.def, " has no PawnGroupMakers."));
+                yield break;
+            }
+            if (!PawnGroupMakerUtility.TryGetRandomPawnGroupMaker(parms, out var pawnGroupMaker))
+            {
+                yield break;
+            }
+            foreach (PawnKindDef item in pawnGroupMaker.GeneratePawnKindsExample(parms))
+            {
+                yield return item;
+            }
+        }
+        private static PawnGroupMakerParms GetParms(Faction faction, float points, Site site)
+        {
+            return new PawnGroupMakerParms
+            {
+                groupKind = PawnGroupKindDefOf.Combat,
+                tile = site.Tile,
+                faction = faction,
+                points = points,
+                raidStrategy = RaidStrategyDefOf.ImmediateAttack
+            };
+        }
+
+        public static string FormatPawnListToString(List<PawnKindDef> pawns)
+        {
+            if (pawns == null || !pawns.Any())
+            {
+                return "";
+            }
+            return pawns.GroupBy(p => p).Select(group => $"{group.Count()} {group.Key.label}").ToCommaList();
+        }
+    }
+}
