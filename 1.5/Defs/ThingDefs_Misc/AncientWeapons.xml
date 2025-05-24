@@ -77,6 +77,11 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="VanillaQuestsExpandedDeadlife.CompProperties_WeaponDeteriorable">
+				<shotsBeforeBreak>60</shotsBeforeBreak>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQED_BaseDeadlifeGun">
 		<defName>VQED_Gun_MachinePistol_Ancient</defName>
@@ -133,6 +138,11 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="VanillaQuestsExpandedDeadlife.CompProperties_WeaponDeteriorable">
+				<shotsBeforeBreak>180</shotsBeforeBreak>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQED_BaseDeadlifeGun">
 		<defName>VQED_Gun_IncendiaryLauncher_Ancient</defName>
@@ -240,6 +250,11 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="VanillaQuestsExpandedDeadlife.CompProperties_WeaponDeteriorable">
+				<shotsBeforeBreak>30</shotsBeforeBreak>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQED_BaseDeadlifeGun">
 		<defName>VQED_Gun_LMG_Ancient</defName>
@@ -294,5 +309,10 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="VanillaQuestsExpandedDeadlife.CompProperties_WeaponDeteriorable">
+				<shotsBeforeBreak>180</shotsBeforeBreak>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

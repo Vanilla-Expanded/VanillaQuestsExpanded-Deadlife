@@ -13,7 +13,7 @@
             "command": "dotnet",
             "args": [
                 "build",
-                "${workspaceFolder}/1.5/Source/VanillaQuestsExpanded-Deadlife/VanillaQuestsExpanded-Deadlife/VanillaQuestsExpanded-Deadlife.csproj"
+                "${workspaceFolder}/1.5/Source/VanillaQuestsExpanded-Deadlife.csproj"
             ],
             "problemMatcher": "$msCompile",
             "group": {

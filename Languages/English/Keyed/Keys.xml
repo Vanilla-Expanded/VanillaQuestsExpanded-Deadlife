@@ -11,4 +11,6 @@
 	<VQED_KinoProjectorUnpowered>Not working: ancient kino projector is unpowered</VQED_KinoProjectorUnpowered>
 	<VQED_KinoScreenWrongRotation>Not working: ancient kino projector doesn't face the kino screen</VQED_KinoScreenWrongRotation>
 	<VQED_KinoScreenRequiresProjector>Ancient kino screen requires an ancient kino projector placed in front of it to work.</VQED_KinoScreenRequiresProjector>
+	<VQED_WeaponDeterioratedMessage>{0}, equipped by {1}, has fully deteriorated.</VQED_WeaponDeterioratedMessage>
+	<VQED_WeaponDeteriorationInfo>This weapon will deteriorate after a certain number of shots.\nShots remaining: {0}</VQED_WeaponDeteriorationInfo>
 </LanguageData>
