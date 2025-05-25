@@ -2,7 +2,7 @@
 <Defs>
 
 
-  <!-- Hero -->
+  <!-- General -->
 
 <BackstoryDef ParentName="Solid">
   <defName>VQE_Childhood_OfficersShadow</defName>
@@ -41,7 +41,6 @@
     <li>Social</li>
     <li>Violent</li>
   </requiredWorkTags>
-</BackstoryDef>
     <forcedTraits>
         <VoidFascination>0</VoidFascination>
     </forcedTraits>
