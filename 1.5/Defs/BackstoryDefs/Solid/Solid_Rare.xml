@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!-- Hero -->
+
+<BackstoryDef ParentName="Solid">
+  <defName>VQE_Childhood_OfficersShadow</defName>
+  <title>officer’s shadow</title>
+  <titleShort>shadow</titleShort>
+  <description>[PAWN_nameDef] grew up behind reinforced glass, just beyond the war room where [PAWN_possessive] parent issued silent commands to a dying world. The halls were sterile, the uniforms always grey, and [PAWN_pronoun] quickly learned which doors never opened and which ones never closed. [PAWN_pronoun] was told the flickering silhouettes beyond the viewing screens were simulations, until one of them looked back. No one mentioned it afterward, and neither did [PAWN_pronoun].</description>
+  <slot>Childhood</slot>
+  <skillGains>
+    <Intellectual>3</Intellectual>
+    <Social>2</Social>
+  </skillGains>
+  <spawnCategories>
+        <li>VQE_General</li>
+  </spawnCategories>
+    <shuffleable>False</shuffleable>
+</BackstoryDef>
+
+<BackstoryDef ParentName="Solid">
+  <defName>VQE_TheGeneral</defName>
+  <title>the general</title>
+  <titleShort>general</titleShort>
+  <description>[PAWN_nameDef] designed Operation: Deadlife from the first blueprint to the last breath, believing death could be structured, harnessed, and weaponized. When the Death Door was first opened, [PAWN_pronoun] stepped through without hesitation, alone, unarmed, and smiling. [PAWN_pronoun] returned days later, silent and burned from within, wrapped in binding cloth and sealed inside a containment sarcophagus that no one claimed to understand. The war ended. The door remained open. [PAWN_pronoun] sleeps still - but the seals are growing warm.</description>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <Intellectual>6</Intellectual>
+    <Social>3</Social>
+    <Melee>5</Melee>
+    <Shooting>5</Shooting>
+  </skillGains>
+  <spawnCategories>
+    <li>VQE_General</li>
+  </spawnCategories>
+  <workDisables/>
+  <requiredWorkTags>
+    <li>Intellectual</li>
+    <li>Social</li>
+    <li>Violent</li>
+  </requiredWorkTags>
+</BackstoryDef>
+    <forcedTraits>
+        <VoidFascination>0</VoidFascination>
+    </forcedTraits>
+    <shuffleable>False</shuffleable>
+</BackstoryDef>
+
+</Defs>
