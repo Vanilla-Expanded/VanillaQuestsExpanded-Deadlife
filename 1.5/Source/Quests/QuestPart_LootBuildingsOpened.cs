@@ -26,9 +26,6 @@ namespace VanillaQuestsExpandedDeadlife
         public override void Notify_QuestSignalReceived(Signal signal)
         {
             base.Notify_QuestSignalReceived(signal);
-            Log.Message($"QuestPart_LootBuildingsOpened: Received signal {signal.tag} for quest {this.quest.name}");
-            Log.Message("totalLootBuildings: " + totalLootBuildings);
-            Log.Message("openedLootBuildingsCount: " + openedLootBuildingsCount);
             if (totalLootBuildings <= 0)
             {
                 if (Map != null)
@@ -36,6 +33,14 @@ namespace VanillaQuestsExpandedDeadlife
                     var lootBuildings = Map.listerThings.GetThingsOfType<LootableBuilding>().ToList();
                     totalLootBuildings = lootBuildings.Count;
                     openedLootBuildingsCount = 0;
+                }
+            }
+            if (totalLootBuildings > 0)
+            {
+                var lootBuildings = Map.listerThings.GetThingsOfType<LootableBuilding>().ToList();
+                if (openedLootBuildingsCount + lootBuildings.Count < totalLootBuildings / 2)
+                {
+                    this.quest.End(QuestEndOutcome.Fail);
                 }
             }
             if (signal.tag == inSignal)
@@ -46,9 +51,6 @@ namespace VanillaQuestsExpandedDeadlife
                     this.quest.End(QuestEndOutcome.Success);
                 }
             }
-            Log.Message($"QuestPart_LootBuildingsOpened: Received signal {signal.tag} for quest {this.quest.name}");
-            Log.Message("totalLootBuildings: " + totalLootBuildings);
-            Log.Message("openedLootBuildingsCount: " + openedLootBuildingsCount);
         }
     }
 }

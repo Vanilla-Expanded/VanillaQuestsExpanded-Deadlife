@@ -1,3 +1,4 @@
+using System.Linq;
 using RimWorld;
 using Verse;
 using Verse.AI.Group;
@@ -41,11 +42,19 @@ namespace VanillaQuestsExpandedDeadlife
                 var randomRoot = hatch.OccupiedRect().ExpandedBy(1).EdgeCells.RandomElement();
                 if (CellFinder.TryFindRandomSpawnCellForPawnNear(randomRoot, map, out var spawnCell, spawnRadius, (IntVec3 c) => c.GetFirstBuilding(map) == null))
                 {
-                    var pawn = PawnGenerator.GeneratePawn(InternalDefOf.VQE_MilitaryShambler, Faction.OfEntities);
+                    Pawn pawn = GenerateShambler();
                     GenSpawn.Spawn(pawn, spawnCell, map);
                     lord.AddPawn(pawn);
                 }
             }
+        }
+
+        public static Pawn GenerateShambler(PawnKindDef pawnKindDef = null)
+        {
+            var pawn = PawnGenerator.GeneratePawn(pawnKindDef ??InternalDefOf.VQE_MilitaryShambler, Faction.OfEntities);
+            var backstory = DefDatabase<BackstoryDef>.AllDefs.Where(x => x.spawnCategories != null && x.spawnCategories.Contains("OperationDeadlife")).RandomElement();
+            pawn.story.Adulthood = backstory;
+            return pawn;
         }
     }
 }

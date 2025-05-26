@@ -7,13 +7,6 @@
     <combatPower>45</combatPower>
     <gearHealthRange>0.2~0.4</gearHealthRange>
     <itemQuality>Poor</itemQuality>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>OperationDeadlife</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
     <apparelMoney>0</apparelMoney>
     <apparelRequired>
       <li>VQED_Apparel_MilitaryCoat</li>

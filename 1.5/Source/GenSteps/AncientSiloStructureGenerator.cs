@@ -48,7 +48,8 @@ namespace VanillaQuestsExpandedDeadlife
                                 var spawnCell = CellFinder.RandomSpawnCellForPawnNear(rootCell, map, 5);
                                 if (spawnCell.IsValid)
                                 {
-                                    var pawn = PawnGenerator.GeneratePawn(spawnOption.kind, Faction.OfEntities);
+                                    
+                                    var pawn = GenStep_AncientSilo.GenerateShambler();
                                     GenSpawn.Spawn(pawn, spawnCell, map);
                                     pawns.Add(pawn);
                                 }

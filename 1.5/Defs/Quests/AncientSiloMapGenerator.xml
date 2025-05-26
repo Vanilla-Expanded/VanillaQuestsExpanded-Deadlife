@@ -71,7 +71,7 @@
     <preventNeutralVisitors>true</preventNeutralVisitors>
     <preventIncidents>true</preventIncidents>
     <canBePermanent>true</canBePermanent>
-    <displayOnUI>true</displayOnUI>
+    <displayOnUI>false</displayOnUI>
     <natural>false</natural>
     <allowUnderground>true</allowUnderground>
   </GameConditionDef>

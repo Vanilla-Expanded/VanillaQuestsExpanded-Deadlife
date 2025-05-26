@@ -1,6 +1,7 @@
 using Verse;
 using RimWorld;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace VanillaQuestsExpandedDeadlife
 {
@@ -9,7 +10,7 @@ namespace VanillaQuestsExpandedDeadlife
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            if (!respawningAfterLoad)
+            if (!respawningAfterLoad && parent.Position.Fogged(parent.Map) is false)
             {
                 Messages.Message("VQED_KinoScreenRequiresProjector".Translate(), MessageTypeDefOf.SilentInput);
             }
