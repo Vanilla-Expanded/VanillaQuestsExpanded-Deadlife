@@ -21,20 +21,24 @@ namespace VanillaQuestsExpandedDeadlife
             Scribe_Values.Look(ref totalLootBuildings, "totalLootBuildings");
             Scribe_Values.Look(ref openedLootBuildingsCount, "openedLootBuildingsCount");
         }
+        
 
         public override void Notify_QuestSignalReceived(Signal signal)
         {
             base.Notify_QuestSignalReceived(signal);
-            if (signal.tag == inSignalEnable)
+            Log.Message($"QuestPart_LootBuildingsOpened: Received signal {signal.tag} for quest {this.quest.name}");
+            Log.Message("totalLootBuildings: " + totalLootBuildings);
+            Log.Message("openedLootBuildingsCount: " + openedLootBuildingsCount);
+            if (totalLootBuildings <= 0)
             {
-                if (Map != null && totalLootBuildings <= 0)
+                if (Map != null)
                 {
                     var lootBuildings = Map.listerThings.GetThingsOfType<LootableBuilding>().ToList();
                     totalLootBuildings = lootBuildings.Count;
                     openedLootBuildingsCount = 0;
                 }
             }
-            else if (signal.tag == inSignal)
+            if (signal.tag == inSignal)
             {
                 openedLootBuildingsCount++;
                 if (totalLootBuildings > 0 && (float)openedLootBuildingsCount / (float)totalLootBuildings >= 0.25f)
@@ -42,6 +46,9 @@ namespace VanillaQuestsExpandedDeadlife
                     this.quest.End(QuestEndOutcome.Success);
                 }
             }
+            Log.Message($"QuestPart_LootBuildingsOpened: Received signal {signal.tag} for quest {this.quest.name}");
+            Log.Message("totalLootBuildings: " + totalLootBuildings);
+            Log.Message("openedLootBuildingsCount: " + openedLootBuildingsCount);
         }
     }
 }

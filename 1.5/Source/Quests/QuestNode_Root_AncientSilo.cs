@@ -52,16 +52,14 @@ namespace VanillaQuestsExpandedDeadlife
             }
             var site = GenerateSite(points, tile, Faction.OfAncientsHostile, out string siteMapGeneratedSignal, failWhenMapRemoved: true);
 
-            var questPart = new QuestPart_Site();
-            questPart.mapParent = site;
-            questPart.inSignalEnable = siteMapGeneratedSignal;
-            QuestGen.quest.AddPart(questPart);
-            
             var lootPart = new QuestPart_LootBuildingsOpened();
             lootPart.mapParent = site;
             lootPart.inSignalEnable = siteMapGeneratedSignal;
             lootPart.inSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.LootableBuildingOpened");
+            lootPart.applyOnPocketMap = true;
             QuestGen.quest.AddPart(lootPart);
+            
+            Log.Message("Ancient Silo quest generated successfully." + lootPart.inSignal);
         }
     }
 }

@@ -10,7 +10,24 @@ namespace VanillaQuestsExpandedDeadlife
         public MapParent mapParent;
         public Faction siteFaction;
         private int lastTileChecked = -1;
-        public Map Map => mapParent?.Map;
+
+        public bool applyOnPocketMap;
+        public Map Map
+        {
+            get
+            {
+                if (applyOnPocketMap)
+                {
+                    var pocketMap = Find.World.pocketMaps.FirstOrDefault(mp => mp.sourceMap == mapParent.Map);
+                    if (pocketMap != null)
+                    {
+                        return pocketMap.Map;
+                    }
+                    return null;
+                }
+                return mapParent?.Map;
+            }
+        }
 
         public override void ExposeData()
         {
@@ -18,7 +35,7 @@ namespace VanillaQuestsExpandedDeadlife
             Scribe_References.Look(ref mapParent, "mapParent");
             Scribe_References.Look(ref siteFaction, "siteFaction");
             Scribe_Values.Look(ref lastTileChecked, "lastTileChecked", -1);
-
+            Scribe_Values.Look(ref applyOnPocketMap, "applyOnPocketMap");
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (mapParent != null)
