@@ -536,12 +536,11 @@
 		<modExtensions>
 			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
 				<contents>
-					<li>
-						<thing>VQED_Apparel_MilitaryCoat</thing>
+					<li Name="BasicCarParts">
+						<thing>ComponentIndustrial</thing>
+						<count>8</count>
 					</li>
 				</contents>
-				<randomFromContents>true</randomFromContents>
-				<totalRandomLoops>3~5</totalRandomLoops>
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
 		</modExtensions>
@@ -554,15 +553,17 @@
 			<texPath>Things/Lootable/Loot_MilitaryPallet_MilitaryCoats</texPath>
 		</graphicData>
 		<modExtensions>
-			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
+		<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
 				<contents>
-					<li Name="BasicCarParts">
-						<thing>ComponentIndustrial</thing>
-						<count>8</count>
+					<li>
+						<thing>VQED_Apparel_MilitaryCoat</thing>
 					</li>
 				</contents>
+				<randomFromContents>true</randomFromContents>
+				<totalRandomLoops>3~5</totalRandomLoops>
 				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
 			</li>
+			
 		</modExtensions>
 	</ThingDef>
 	<!-- Small crates -->

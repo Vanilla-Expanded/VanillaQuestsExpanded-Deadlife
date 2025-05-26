@@ -84,6 +84,7 @@ namespace VanillaQuestsExpandedDeadlife
                     PawnKindDef chosenPawn = PawnKindDefOf.ShamblerSwarmer;
 
                     Pawn p = PawnGenerator.GeneratePawn(chosenPawn, Faction.OfEntities);
+                    p.SetFaction(Faction.OfEntities);
                     p.mutant.rotStage = RotStage.Dessicated;
                     IntVec3 randomCell = cellRect.RandomCell;
                     GenSpawn.Spawn(p, randomCell, this.Map);

@@ -58,7 +58,7 @@ namespace VanillaQuestsExpandedDeadlife
                 Log.Error("Failed to find any suitable site tile for the Ancient Silo quest.");
                 return;
             }
-            var site = GenerateSite(points, tile, Faction.OfAncientsHostile, out string siteMapGeneratedSignal, failWhenMapRemoved: true);
+            var site = GenerateSite(points, tile, Faction.OfEntities, out string siteMapGeneratedSignal, failWhenMapRemoved: true);
 
             var lootPart = new QuestPart_LootBuildingsOpened();
             lootPart.mapParent = site;
