@@ -17,29 +17,26 @@ namespace VanillaQuestsExpandedDeadlife
                 var comp = __instance.equipment.Primary.TryGetComp<CompWeaponDeteriorable>();
                 if (comp != null)
                 {
-                    var compInspectString = comp.CompInspectStringExtra();
-                    if (!compInspectString.NullOrEmpty())
+                    var compInspectString = comp.ShotRemainingInfo();
+                    var lines = __result.Split('\n').ToList();
+                    var equippedLineIndex = -1;
+                    for (var i = 0; i < lines.Count; i++)
                     {
-                        var lines = __result.Split('\n').ToList();
-                        var equippedLineIndex = -1;
-                        for (var i = 0; i < lines.Count; i++)
+                        if (lines[i].StartsWith("Equipped".TranslateSimple() + ": "))
                         {
-                            if (lines[i].StartsWith("Equipped".TranslateSimple() + ": "))
-                            {
-                                equippedLineIndex = i;
-                                break;
-                            }
+                            equippedLineIndex = i;
+                            break;
                         }
+                    }
 
-                        if (equippedLineIndex != -1)
-                        {
-                            lines.Insert(equippedLineIndex + 1, compInspectString);
-                            __result = string.Join("\n", lines);
-                        }
-                        else
-                        {
-                            __result += "\n" + compInspectString;
-                        }
+                    if (equippedLineIndex != -1)
+                    {
+                        lines.Insert(equippedLineIndex + 1, compInspectString);
+                        __result = string.Join("\n", lines);
+                    }
+                    else
+                    {
+                        __result += "\n" + compInspectString;
                     }
                 }
             }

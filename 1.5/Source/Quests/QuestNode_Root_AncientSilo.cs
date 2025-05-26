@@ -42,6 +42,14 @@ namespace VanillaQuestsExpandedDeadlife
                 {
                     slate.Set("asker", askerPawn);
                 }
+                else
+                {
+                    slate.Set("askerIsNull", true);
+                }
+            }
+            else
+            {
+                slate.Set("askerIsNull", true);
             }
 
             var points = slate.Get("points", 0f);
@@ -58,8 +66,6 @@ namespace VanillaQuestsExpandedDeadlife
             lootPart.inSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.LootableBuildingOpened");
             lootPart.applyOnPocketMap = true;
             QuestGen.quest.AddPart(lootPart);
-            
-            Log.Message("Ancient Silo quest generated successfully." + lootPart.inSignal);
         }
     }
 }

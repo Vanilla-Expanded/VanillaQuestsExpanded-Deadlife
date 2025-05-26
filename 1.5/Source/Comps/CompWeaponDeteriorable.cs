@@ -20,11 +20,12 @@ namespace VanillaQuestsExpandedDeadlife
         {
             if (Props.shotsBeforeBreak > 0)
             {
-                var shotsRemaining = Props.shotsBeforeBreak - shotsFired;
-                return "VQED_WeaponDeteriorationInfo".Translate(shotsRemaining);
+                return "VQED_WeaponDeteriorationInfo".Translate() +"\n" + ShotRemainingInfo();
             }
             return base.CompInspectStringExtra();
         }
+        
+        public string ShotRemainingInfo() => "VQED_ShotRemaining".Translate(Props.shotsBeforeBreak - shotsFired);
 
         public void Notify_ShotFired(Verb_Shoot verb)
         {

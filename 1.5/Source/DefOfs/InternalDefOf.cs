@@ -31,5 +31,7 @@ namespace VanillaQuestsExpandedDeadlife
 		
 		public static PawnKindDef VQE_MilitaryShambler;
 		public static GameConditionDef VQE_AncientSiloUnderground;
+		
+		public static QuestScriptDef VQE_Deadlife_AncientSilo;
     }
 }

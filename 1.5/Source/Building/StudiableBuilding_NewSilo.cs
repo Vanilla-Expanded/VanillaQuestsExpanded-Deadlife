@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,16 +17,13 @@ namespace VanillaQuestsExpandedDeadlife
 {
     public class StudiableBuilding_NewSilo : StudiableBuilding
     {
-
         public override void Study(Pawn pawn)
         {
             base.Study(pawn);
-
-
-            Log.Message("Taranchuk replaces this with quest code");
-
+            QuestNode_Root_AncientSilo.noAsker = true;
+            Quest quest = QuestUtility.GenerateQuestAndMakeAvailable(InternalDefOf.VQE_Deadlife_AncientSilo, StorytellerUtility.DefaultThreatPointsNow(Find.World));
+            QuestUtility.SendLetterQuestAvailable(quest);
+            QuestNode_Root_AncientSilo.noAsker = false;
         }
-
-
     }
 }
