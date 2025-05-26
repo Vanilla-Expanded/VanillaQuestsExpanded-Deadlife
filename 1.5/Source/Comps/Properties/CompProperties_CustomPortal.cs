@@ -1,6 +1,6 @@
 using Verse;
 
-namespace VanillaQuestsExpanded_Deadlife;
+namespace VanillaQuestsExpandedDeadlife;
 
 public class CompProperties_CustomPortal : CompProperties
 {

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<ThingDef Abstract="True" Name="VQED_LampBase" ParentName="VQE_DeadlifeBuildingBase">
-		<thingClass>Building</thingClass>
+		<thingClass>VanillaQuestsExpandedDeadlife.Building_LampForceRefresh</thingClass>
+		<tickerType>Normal</tickerType>
 		<category>Building</category>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -20,7 +21,7 @@
 			</damageData>
 		</graphicData>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>

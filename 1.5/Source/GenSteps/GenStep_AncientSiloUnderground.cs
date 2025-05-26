@@ -45,6 +45,8 @@ namespace VanillaQuestsExpandedDeadlife
 
             GenSpawn.Spawn(ThingMaker.MakeThing(exitDef), cell, map);
             MapGenerator.PlayerStartSpot = cell;
+            var cond = GameConditionMaker.MakeConditionPermanent(InternalDefOf.VQE_AncientSiloUnderground);
+            map.gameConditionManager.RegisterCondition(cond);
         }
     }
 }

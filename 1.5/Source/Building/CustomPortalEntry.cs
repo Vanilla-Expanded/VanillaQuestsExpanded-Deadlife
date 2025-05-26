@@ -6,7 +6,7 @@ using Verse.Sound;
 using RimWorld;
 using RimWorld.Planet;
 
-namespace VanillaQuestsExpanded_Deadlife;
+namespace VanillaQuestsExpandedDeadlife;
 
 public class CustomPortalEntry : MapPortal
 {

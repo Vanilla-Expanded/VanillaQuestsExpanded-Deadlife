@@ -80,10 +80,10 @@
 			<neverBuildable>true</neverBuildable>
 			<isTargetable>false</isTargetable>
 		</building>
-		<thingClass>VanillaQuestsExpanded_Deadlife.CustomPortalEntry</thingClass>
+		<thingClass>VanillaQuestsExpandedDeadlife.CustomPortalEntry</thingClass>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="VanillaQuestsExpanded_Deadlife.CompProperties_CustomPortal">
+			<li Class="VanillaQuestsExpandedDeadlife.CompProperties_CustomPortal">
 				<mapSize>(100,1,100)</mapSize>
 				<exitDef>VQED_SiloExitStaircase</exitDef>
 				<mapGeneratorDef>VQE_AncientSilo</mapGeneratorDef>
@@ -124,10 +124,10 @@
 			<neverBuildable>true</neverBuildable>
 			<isTargetable>false</isTargetable>
 		</building>
-		<thingClass>VanillaQuestsExpanded_Deadlife.CustomPortalExit</thingClass>
+		<thingClass>VanillaQuestsExpandedDeadlife.CustomPortalExit</thingClass>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="VanillaQuestsExpanded_Deadlife.CompProperties_CustomPortal">
+			<li Class="VanillaQuestsExpandedDeadlife.CompProperties_CustomPortal">
 				<mapSize>(100,1,100)</mapSize>
 				<exitDef>VQED_SiloStaircase</exitDef>
 				<mapGeneratorDef>VQE_AncientSilo</mapGeneratorDef>
