@@ -31,14 +31,32 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="VQED_LootableCrateBase">
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_EmptyMilitaryCrate</defName>
 		<label>empty military crate</label>
 		<description>An empty, rusted military crate. Its contents are long gone.</description>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQED_LootableCrateBase">
 		<label>military crate of gold</label>
@@ -84,6 +102,7 @@
 		<description>A rusted military crate with deadlife shells. These artillery shells are packed with a dust-like substance that, after exploding into a cloud, will settle on nearby human and animal corpses and raise them as shamblers. Many of those shells have lost their potency, but some may still work.</description>
 		<graphicData>
 			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_DeadlifeShells</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<modExtensions>
 			<li Class="VanillaFurnitureExpanded.LootableBuildingDetails">
@@ -160,6 +179,7 @@
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<selectable>true</selectable>
 		<fillPercent>0.4</fillPercent>
 		<size>(2,2)</size>
@@ -186,14 +206,35 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="VQED_LootablePalletBase">
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_EmptyMilitaryPallet</defName>
 		<label>empty military pallet</label>
 		<description>An empty military pallet. If it held anything of value, it’s gone now.</description>
 		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
 		<graphicData>
 			<texPath>Things/Lootable/EmptyMilitaryPallet</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQED_LootablePalletBase">
 		<label>military pallet of steel</label>
@@ -528,6 +569,7 @@
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<selectable>true</selectable>
 		<fillPercent>0.4</fillPercent>
 		<size>(1,1)</size>
@@ -549,14 +591,35 @@
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
-	<ThingDef ParentName="VQED_SmallLootableCrateBase">
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_EmptySmallMilitaryCrate</defName>
 		<label>empty military box</label>
 		<description>A small, rusted and empty military box. Anything of value is gone.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Lootable/Loot_SmallEquipmentCrate_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(1,1)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQED_SmallLootableCrateBase">
 		<label>military box of flares</label>
