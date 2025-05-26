@@ -22,7 +22,7 @@ namespace VanillaQuestsExpandedDeadlife
             }
             return base.TestRunInt(slate);
         }
-        
+
         private Pawn GetAsker()
         {
             var friendlyFaction = Find.FactionManager.AllFactionsVisible.Where(f => f.def.humanlikeFaction && !f.HostileTo(Faction.OfPlayer) && f.leader != null).RandomElementWithFallback();
@@ -43,7 +43,7 @@ namespace VanillaQuestsExpandedDeadlife
                     slate.Set("asker", askerPawn);
                 }
             }
-            
+
             var points = slate.Get("points", 0f);
             if (!TryFindSiteTile(out var tile))
             {
@@ -56,6 +56,12 @@ namespace VanillaQuestsExpandedDeadlife
             questPart.mapParent = site;
             questPart.inSignalEnable = siteMapGeneratedSignal;
             QuestGen.quest.AddPart(questPart);
+            
+            var lootPart = new QuestPart_LootBuildingsOpened();
+            lootPart.mapParent = site;
+            lootPart.inSignalEnable = siteMapGeneratedSignal;
+            lootPart.inSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.LootableBuildingOpened");
+            QuestGen.quest.AddPart(lootPart);
         }
     }
 }

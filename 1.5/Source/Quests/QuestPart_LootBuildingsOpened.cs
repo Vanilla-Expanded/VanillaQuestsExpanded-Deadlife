@@ -14,7 +14,6 @@ namespace VanillaQuestsExpandedDeadlife
         public string inSignal;
         private int totalLootBuildings;
         private int openedLootBuildingsCount;
-
         public override void ExposeData()
         {
             base.ExposeData();

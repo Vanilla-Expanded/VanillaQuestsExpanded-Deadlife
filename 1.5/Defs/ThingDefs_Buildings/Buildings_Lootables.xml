@@ -25,6 +25,11 @@
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
 		</building>
+		<comps>
+			<li Class="VFECore.CompProperties_BouncingArrow">
+				<startBouncingArrowUponSpawning>True</startBouncingArrowUponSpawning>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQED_LootableCrateBase">
 		<defName>VQED_EmptyMilitaryCrate</defName>
@@ -175,6 +180,11 @@
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
 		</building>
+		<comps>
+			<li Class="VFECore.CompProperties_BouncingArrow">
+				<startBouncingArrowUponSpawning>True</startBouncingArrowUponSpawning>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQED_LootablePalletBase">
 		<defName>VQED_EmptyMilitaryPallet</defName>
