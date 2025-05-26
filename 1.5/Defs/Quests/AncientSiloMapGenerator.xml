@@ -24,6 +24,7 @@
     <order>300</order>
     <genStep Class="VanillaQuestsExpandedDeadlife.GenStep_AncientSiloUnderground">
       <exitDef>VQED_SiloExitStaircase</exitDef>
+      <structureSetDef>VQED_AncientSilo</structureSetDef>
     </genStep>
   </GenStepDef>
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <VanillaQuestsExpandedDeadlife.AncientSiloStructureSetDef>
+        <defName>VQED_AncientSilo</defName>
+        <structureLayouts>
+            <li>
+                <pattern>VQED_.*_TopLeft</pattern>
+                <offset>(-1, 0, 1)</offset>
+                <spawnEnemies>
+                    <VQE_MilitaryShambler>3~7</VQE_MilitaryShambler>
+                </spawnEnemies>
+            </li>
+            <li>
+                <pattern>VQED_.*_Top</pattern>
+                <offset>(0, 0, 1)</offset>
+                <spawnEnemies>
+                    <VQE_MilitaryShambler>3~7</VQE_MilitaryShambler>
+                </spawnEnemies>
+            </li>
+            <li>
+                <pattern>VQED_.*_TopRight</pattern>
+                <offset>(1, 0, 1)</offset>
+                <spawnEnemies>
+                    <VQE_MilitaryShambler>3~7</VQE_MilitaryShambler>
+                </spawnEnemies>
+            </li>
+            <li>
+                <pattern>VQED_.*_CenterLeft</pattern>
+                <offset>(-1, 0, 0)</offset>
+                <spawnEnemies>
+                    <VQE_MilitaryShambler>3~7</VQE_MilitaryShambler>
+                </spawnEnemies>
+            </li>
+            <li>
+                <pattern>VQED_.*_Center</pattern>
+                <offset>(0, 0, 0)</offset>
+            </li>
+            <li>
+                <pattern>VQED_.*_CenterRight</pattern>
+                <offset>(1, 0, 0)</offset>
+                <spawnEnemies>
+                    <VQE_MilitaryShambler>3~7</VQE_MilitaryShambler>
+                </spawnEnemies>
+            </li>
+            <li>
+                <pattern>VQED_.*_BottomLeft</pattern>
+                <offset>(-1, 0, -1)</offset>
+                <spawnEnemies>
+                    <VQE_MilitaryShambler>3~7</VQE_MilitaryShambler>
+                </spawnEnemies>
+            </li>
+            <li>
+                <pattern>VQED_.*_Bottom</pattern>
+                <offset>(0, 0, -1)</offset>
+                <spawnEnemies>
+                    <VQE_MilitaryShambler>3~7</VQE_MilitaryShambler>
+                </spawnEnemies>
+            </li>
+            <li>
+                <pattern>VQED_.*_BottomRight</pattern>
+                <offset>(1, 0, -1)</offset>
+                <spawnEnemies>
+                    <VQE_MilitaryShambler>3~7</VQE_MilitaryShambler>
+                </spawnEnemies>
+            </li>
+        </structureLayouts>
+    </VanillaQuestsExpandedDeadlife.AncientSiloStructureSetDef>
+
+</Defs>

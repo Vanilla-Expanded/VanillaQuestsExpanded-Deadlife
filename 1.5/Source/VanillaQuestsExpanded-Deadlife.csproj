@@ -2,29 +2,29 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net472</TargetFramework> <!-- Ensure this matches the original framework version -->
+    <TargetFramework>net472</TargetFramework>    <!-- Ensure this matches the original framework version -->
     <RootNamespace>VanillaQuestsExpandedDeadlife</RootNamespace>
     <AssemblyName>VanillaQuestsExpandedDeadlife</AssemblyName>
     <LangVersion>latest</LangVersion>
     <Deterministic>true</Deterministic>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath> <!-- Prevent appending target framework to the output path -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>    <!-- Prevent appending target framework to the output path -->
   </PropertyGroup>
 
   <!-- Debug configuration -->
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Optimize>true</Optimize>
-    <OutputPath>..\Assemblies\</OutputPath> <!-- Output directly to Assemblies -->
+    <OutputPath>..\Assemblies\</OutputPath>    <!-- Output directly to Assemblies -->
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>none</DebugType>
-    <WarningLevel>2</WarningLevel> <!-- Set to 'none' to exclude debug info -->
+    <WarningLevel>2</WarningLevel>    <!-- Set to 'none' to exclude debug info -->
   </PropertyGroup>
 
   <!-- Release configuration -->
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <Optimize>true</Optimize>
-    <OutputPath>..\Assemblies\</OutputPath> <!-- Output directly to Assemblies -->
+    <OutputPath>..\Assemblies\</OutputPath>    <!-- Output directly to Assemblies -->
     <DefineConstants>TRACE</DefineConstants>
-    <DebugType>none</DebugType> <!-- Set to 'none' to exclude debug info -->
+    <DebugType>none</DebugType>    <!-- Set to 'none' to exclude debug info -->
   </PropertyGroup>
 
   <ItemGroup>
@@ -38,6 +38,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="VFECore">
       <HintPath>..\..\..\VanillaExpandedFramework\1.5\Assemblies\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="KCSG">
+      <HintPath>..\..\..\VanillaExpandedFramework\1.5\Assemblies\KCSG.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

@@ -4,7 +4,7 @@
         <defName>VQE_AncientSilo</defName>
         <label>ancient silo</label>
         <description>An ancient underground silo.</description>
-        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <siteTexture>UI/AncientSilo_ZoomedIn</siteTexture>
         <expandingIconTexture>UI/AncientSilo</expandingIconTexture>
         <tags>
             <li>VQE_AncientSilo</li>
