@@ -10,7 +10,6 @@ namespace VanillaQuestsExpandedDeadlife
 {
     public class QuestPart_LootBuildingsOpened : QuestPart_Site
     {
-        [NoTranslate]
         public string inSignal;
         private int totalLootBuildings;
         private int openedLootBuildingsCount;
@@ -38,7 +37,7 @@ namespace VanillaQuestsExpandedDeadlife
             else if (signal.tag == inSignal)
             {
                 openedLootBuildingsCount++;
-                if (totalLootBuildings > 0 && (float)openedLootBuildingsCount / totalLootBuildings >= 0.25f)
+                if (totalLootBuildings > 0 && (float)openedLootBuildingsCount / (float)totalLootBuildings >= 0.25f)
                 {
                     this.quest.End(QuestEndOutcome.Success);
                 }
