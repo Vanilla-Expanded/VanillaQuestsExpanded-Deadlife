@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +12,9 @@ using Verse.AI;
 using Mono.Unix.Native;
 using Verse.AI.Group;
 using VFECore;
+using KCSG;
+using HarmonyLib;
+using System.Reflection;
 
 namespace VanillaQuestsExpandedDeadlife
 {
@@ -68,11 +71,9 @@ namespace VanillaQuestsExpandedDeadlife
             deadDustCounter = 300;
             
         }
-
+        public static readonly FieldInfo field = AccessTools.Field(typeof(LordJob_DefendBaseNoEat), "baseCenter");
         public void Notify_EjectShamblers()
         {
-            
-
             for (int i = 0; i < shamblerAmount.RandomInRange; i++) {
                 int amountShamblersInMap = this.Map.mapPawns.SpawnedShamblers.Count;
                 if (amountShamblersInMap <= 50)
@@ -88,6 +89,13 @@ namespace VanillaQuestsExpandedDeadlife
                     p.mutant.rotStage = RotStage.Dessicated;
                     IntVec3 randomCell = cellRect.RandomCell;
                     GenSpawn.Spawn(p, randomCell, this.Map);
+                    var lords = this.Map.lordManager.lords.Where(x => x.LordJob is LordJob_DefendBaseNoEat).ToList();
+                    var nearestLord = lords
+                        .Where(lord => lord.LordJob is LordJob_DefendBaseNoEat)
+                        .MinBy(lord => (field.GetValue(lord.LordJob) as IntVec3?)?.DistanceTo(randomCell)
+                                ?? float.MaxValue
+                        );
+                    nearestLord.AddPawn(p);
                     if (CellFinder.TryFindRandomCellNear(this.Position, this.Map, 3, (IntVec3 c) => !c.Fogged(this.Map) && c.Walkable(this.Map) && !c.Impassable(this.Map), out IntVec3 result))
                     {
                         p.rotationTracker.FaceCell(result);

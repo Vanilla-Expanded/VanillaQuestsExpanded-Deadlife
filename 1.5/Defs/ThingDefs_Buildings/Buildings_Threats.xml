@@ -58,7 +58,6 @@
 				<explodeOnKilled>true</explodeOnKilled>
 				<startWickHitPointsPercent>0.99</startWickHitPointsPercent>
 				<extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
-				<postExplosionGasType>DeadlifeDust</postExplosionGasType>
 			</li>
 		</comps>
 		<passability>PassThroughOnly</passability>

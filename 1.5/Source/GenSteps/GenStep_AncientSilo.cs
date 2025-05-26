@@ -51,7 +51,7 @@ namespace VanillaQuestsExpandedDeadlife
 
         public static Pawn GenerateShambler(PawnKindDef pawnKindDef = null)
         {
-            var pawn = PawnGenerator.GeneratePawn(pawnKindDef ??InternalDefOf.VQE_MilitaryShambler, Faction.OfEntities);
+            var pawn = PawnGenerator.GeneratePawn(pawnKindDef ?? InternalDefOf.VQE_MilitaryShambler, Faction.OfEntities);
             var backstory = DefDatabase<BackstoryDef>.AllDefs.Where(x => x.spawnCategories != null && x.spawnCategories.Contains("OperationDeadlife")).RandomElement();
             pawn.story.Adulthood = backstory;
             return pawn;

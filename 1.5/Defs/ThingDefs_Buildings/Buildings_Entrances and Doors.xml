@@ -132,7 +132,7 @@
 				<exitDef>VQED_SiloStaircase</exitDef>
 				<mapGeneratorDef>VQE_AncientSilo</mapGeneratorDef>
 				<enterTexPath>Things/Misc/SiloStaircase_Exit</enterTexPath>
-				<viewDestinationTexPath>UI/Commands/ViewAncientSilo</viewDestinationTexPath>
+				<viewDestinationTexPath>UI/ViewSilo</viewDestinationTexPath>
 				<enterCommandKey>VQE_ExitSilo</enterCommandKey>
 				<viewDestinationCommandKey>ViewSurface</viewDestinationCommandKey>
 				<viewDestinationDescKey>ViewSurfaceDesc</viewDestinationDescKey>
