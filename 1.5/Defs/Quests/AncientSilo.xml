@@ -98,15 +98,15 @@
 
                 <li>threat->Yet the silos are not empty. The corridors within are completely lightless, and something hostile is said to lurk in the dark</li>
                 <li>threat->But time has not left them untouched. The interior is pitch black, and something stirs in the shadows</li>
-                <li>threat->Explorers report movement inside — faint noises, heavy footsteps, shapes in the dark</li>
+                <li>threat->Explorers report movement inside: faint noises, heavy footsteps, shapes in the dark</li>
                 <li>threat->Survivors speak of hostile entities lurking in the corridors, unseen until it’s too late</li>
-                <li>threat->Whatever remains inside is not dormant — something guards these forgotten halls</li>
+                <li>threat->Whatever remains inside is not dormant, something guards these forgotten halls</li>
                 <li>threat->The halls are quiet, but not empty. Something waits inside, cloaked in shadow</li>
 
                 <li>importantLight->Activating the power and lighting systems inside is critical</li>
                 <li>importantLight->Restoring power and activating lights will be vital to survival</li>
                 <li>importantLight->Without illumination, any movement inside the silo is suicide</li>
-                <li>importantLight->Light systems must be activated first — or you’ll be helpless in the dark</li>
+                <li>importantLight->Light systems must be activated first, or you’ll be helpless in the dark</li>
                 <li>importantLight->Sight is your only defense. Find a way to power the lights quickly</li>
                 <li>importantLight->Unless you activate the lights, the silo will be a deathtrap</li>
 
