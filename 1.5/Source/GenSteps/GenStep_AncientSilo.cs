@@ -10,9 +10,8 @@ namespace VanillaQuestsExpandedDeadlife
         public override void Generate(Map map, GenStepParams parms)
         {
             var center = map.Center;
-            var clearRadius = 10;
-
-            foreach (var cell in CellRect.CenteredOn(center, clearRadius))
+            var clearRadius = 5;
+            foreach (var cell in GenRadial.RadialCellsAround(center, clearRadius, useCenter: true))
             {
                 if (cell.InBounds(map))
                 {
