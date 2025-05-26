@@ -4,10 +4,14 @@ namespace VanillaQuestsExpandedDeadlife;
 
 public class Building_LampForceRefresh : Building
 {
+    public bool isFogged = true;
     public override void Tick()
     {
         base.Tick();
-        Map.glowGrid.DirtyCache(Position);
-        Map.glowGrid.Rebuild();
+        if (isFogged &&Spawned && Position.Fogged(Map) is false)
+        {
+            isFogged = false;
+            Map.glowGrid.DirtyCache(Position);
+        }
     }
 }
