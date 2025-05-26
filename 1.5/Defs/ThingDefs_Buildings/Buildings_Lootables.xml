@@ -178,6 +178,7 @@
 	<ThingDef Abstract="true" Name="VQED_LootablePalletBase" ParentName="VQE_DeadlifeBuildingBase">
 		<thingClass>VanillaFurnitureExpanded.LootableBuilding</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<passability>PassThroughOnly</passability>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<selectable>true</selectable>
