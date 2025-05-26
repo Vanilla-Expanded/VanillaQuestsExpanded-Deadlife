@@ -10,7 +10,7 @@ namespace VanillaQuestsExpandedDeadlife
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            if (!respawningAfterLoad && parent.Position.Fogged(parent.Map) is false)
+            if (!respawningAfterLoad && MapGenerator.mapBeingGenerated is null && parent.Position.Fogged(parent.Map) is false)
             {
                 Messages.Message("VQED_KinoScreenRequiresProjector".Translate(), MessageTypeDefOf.SilentInput);
             }
