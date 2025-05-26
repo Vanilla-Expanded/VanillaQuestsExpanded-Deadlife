@@ -180,7 +180,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<passability>PassThroughOnly</passability>
-		<drawerType>MapMeshAndRealTime</drawerType>
+		
 		<selectable>true</selectable>
 		<fillPercent>0.4</fillPercent>
 		<size>(2,2)</size>
