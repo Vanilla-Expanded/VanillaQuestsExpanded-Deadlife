@@ -24,7 +24,7 @@ namespace VanillaQuestsExpandedDeadlife
         public int nextCount;
         public int deadDustCounter=0;
         public bool emittingDeaddust = false;
-        public IntRange nextShamblerEmergence = new IntRange(3600, 8400);
+        public IntRange nextShamblerEmergence = new IntRange(8400, 12000);
         public IntRange shamblerAmount = new IntRange(2, 4);
 
         public override void ExposeData()
