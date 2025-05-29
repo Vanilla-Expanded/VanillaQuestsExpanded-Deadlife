@@ -26,6 +26,7 @@ namespace VanillaQuestsExpandedDeadlife
 		public static ThingDef VQED_AncientKinoProjector;
 
 		public static SitePartDef VQE_AncientSilo;
+		[DefAlias("VQE_AncientSilo")] public static BiomeDef VQE_AncientSiloBiome;
 
 		public static ThingDef VQED_LockedSiloHatch;
 		
