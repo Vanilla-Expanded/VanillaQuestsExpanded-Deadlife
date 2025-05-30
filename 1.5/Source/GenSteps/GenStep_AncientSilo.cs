@@ -2,6 +2,7 @@ using System.Linq;
 using RimWorld;
 using Verse;
 using Verse.AI.Group;
+using AnimalBehaviours;
 
 namespace VanillaQuestsExpandedDeadlife
 {
@@ -54,6 +55,13 @@ namespace VanillaQuestsExpandedDeadlife
             var pawn = PawnGenerator.GeneratePawn(pawnKindDef ?? InternalDefOf.VQE_MilitaryShambler, Faction.OfEntities);
             var backstory = DefDatabase<BackstoryDef>.AllDefs.Where(x => x.spawnCategories != null && x.spawnCategories.Contains("OperationDeadlife")).RandomElement();
             pawn.story.Adulthood = backstory;
+            return pawn;
+        }
+
+        public static Pawn GenerateAnimalShambler()
+        {
+           Pawn pawn = PawnGenerator.GeneratePawn(DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.race.race.Animal == true && x.race.race.baseBodySize <= 2f && !AnimalCollectionClass.questDisabledAnimals.Contains(x)).RandomElement(), Faction.OfEntities);
+            MutantUtility.SetPawnAsMutantInstantly(pawn, MutantDefOf.Shambler);
             return pawn;
         }
     }

@@ -14,11 +14,11 @@ namespace VanillaQuestsExpandedDeadlife
         public override void Tick()
         {
             base.Tick();
-            if (this.IsHashIntervalTick(30))
+            if (this.IsHashIntervalTick(20))
             {
-                GasUtility.AddGas(Position, Map, GasType.DeadlifeDust, 0.2f);
+                GasUtility.AddDeadifeGas(Position, Map, Faction.OfEntities, 250);
             }
-            
+
         }
 
 

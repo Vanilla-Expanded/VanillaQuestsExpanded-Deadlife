@@ -15,6 +15,7 @@ using VFECore;
 using KCSG;
 using HarmonyLib;
 using System.Reflection;
+using VanillaFurnitureExpanded;
 
 namespace VanillaQuestsExpandedDeadlife
 {
@@ -26,6 +27,22 @@ namespace VanillaQuestsExpandedDeadlife
         public bool emittingDeaddust = false;
         public IntRange nextShamblerEmergence = new IntRange(8400, 12000);
         public IntRange shamblerAmount = new IntRange(2, 4);
+        public int deadLifeAmount = 35;
+        public bool displayFillGizmo = true;
+
+        DeathPitDetails cachedExtension;
+
+        public DeathPitDetails DeathPitDetailsExtension
+        {
+            get
+            {
+                if (cachedExtension is null)
+                {
+                    cachedExtension = this.def.GetModExtension<DeathPitDetails>();
+                }
+                return cachedExtension;
+            }
+        }
 
         public override void ExposeData()
         {
@@ -55,7 +72,7 @@ namespace VanillaQuestsExpandedDeadlife
             }
             if (emittingDeaddust)
             {
-                GasUtility.AddGas(Position, Map, GasType.DeadlifeDust, 0.2f);
+                GasUtility.AddDeadifeGas(Position, Map, Faction.OfEntities, DeathPitDetailsExtension.deadLifeAmount);
                 deadDustCounter--;
                 if (deadDustCounter < 0) { 
                     emittingDeaddust = false;
@@ -74,7 +91,7 @@ namespace VanillaQuestsExpandedDeadlife
         public static readonly FieldInfo field = AccessTools.Field(typeof(LordJob_DefendBaseNoEat), "baseCenter");
         public void Notify_EjectShamblers()
         {
-            for (int i = 0; i < shamblerAmount.RandomInRange; i++) {
+            for (int i = 0; i < DeathPitDetailsExtension.shamblerAmount.RandomInRange; i++) {
                 int amountShamblersInMap = this.Map.mapPawns.SpawnedShamblers.Count;
                 if (amountShamblersInMap <= 50)
                 {
@@ -85,17 +102,22 @@ namespace VanillaQuestsExpandedDeadlife
                     PawnKindDef chosenPawn = PawnKindDefOf.ShamblerSwarmer;
 
                     Pawn p = PawnGenerator.GeneratePawn(chosenPawn, Faction.OfEntities);
-                    p.SetFaction(Faction.OfEntities);
+                   
                     p.mutant.rotStage = RotStage.Dessicated;
                     IntVec3 randomCell = cellRect.RandomCell;
                     GenSpawn.Spawn(p, randomCell, this.Map);
                     var lords = this.Map.lordManager.lords.Where(x => x.LordJob is LordJob_DefendBaseNoEat).ToList();
-                    var nearestLord = lords
-                        .Where(lord => lord.LordJob is LordJob_DefendBaseNoEat)
-                        .MinBy(lord => (field.GetValue(lord.LordJob) as IntVec3?)?.DistanceTo(randomCell)
-                                ?? float.MaxValue
-                        );
-                    nearestLord.AddPawn(p);
+                    Lord nearestLord = null;
+                    var lordList = lords.Where(lord => lord.LordJob is LordJob_DefendBaseNoEat);
+                    if (lordList.Count() > 0)
+                    {
+                        nearestLord = lordList.MinBy(lord => (field.GetValue(lord.LordJob) as IntVec3?)?.DistanceTo(randomCell) ?? float.MaxValue);
+                    }
+
+                    if (nearestLord != null) {
+                        nearestLord.AddPawn(p);
+                    }
+                    
                     if (CellFinder.TryFindRandomCellNear(this.Position, this.Map, 3, (IntVec3 c) => !c.Fogged(this.Map) && c.Walkable(this.Map) && !c.Impassable(this.Map), out IntVec3 result))
                     {
                         p.rotationTracker.FaceCell(result);
@@ -126,6 +148,48 @@ namespace VanillaQuestsExpandedDeadlife
             else 
 
                 return base.GetInspectString();
+        }
+
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+
+            foreach (Gizmo c in base.GetGizmos())
+            {
+                yield return c;
+            }
+            if (DeathPitDetailsExtension.displayFillGizmo)
+            {
+
+                Command_Action command_Action = new Command_Action();
+                command_Action.defaultDesc = "VQED_FillPitDesc".Translate();
+                command_Action.defaultLabel = "VQED_FillPit".Translate();
+                command_Action.icon = ContentFinder<Texture2D>.Get("UI/Gizmos/FillInDeathPit", true);
+                command_Action.hotKey = KeyBindingDefOf.Misc1;
+                command_Action.action = delegate
+                {
+                    Utils.PlaceDistinctBlueprint(this, InternalDefOf.VQED_BuriedDeathPit);
+                };
+
+                yield return command_Action;
+
+            }
+            if (Prefs.DevMode)
+            {
+
+                Command_Action command_Action2 = new Command_Action();
+
+                command_Action2.defaultLabel = "Release shamblers now";
+
+                command_Action2.action = delegate
+                {
+                    tickCounter=nextCount-60;
+                };
+
+                yield return command_Action2;
+
+            }
+
+
         }
 
     }

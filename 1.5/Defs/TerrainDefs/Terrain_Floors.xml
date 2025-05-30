@@ -52,4 +52,17 @@
 			<Beauty>-1</Beauty>
 		</statBases>
 	</TerrainDef>
+	<TerrainDef ParentName="VQED_DeadlifeFloorBase">
+		<defName>VQED_EerieFloor</defName>
+		<label>eerie floor</label>
+		<description>Mysterious floor of an unknown origin, with eerily smooth surface and etchings.</description>
+		<texturePath>Terrains/DeathFloor</texturePath>
+		<edgeType>Hard</edgeType>
+		<changeable>false</changeable>
+		<renderPrecedence>71</renderPrecedence>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+	</TerrainDef>
 </Defs>

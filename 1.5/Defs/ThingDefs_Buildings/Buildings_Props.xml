@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_AncientHawk</defName>
 		<label>ancient hawk</label>
@@ -30,7 +29,6 @@
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
-	
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_AncientLandship</defName>
 		<label>ancient landship</label>
@@ -80,6 +78,35 @@
 		</statBases>
 		<graphicData>
 			<texPath>Things/AncientProps/AncientLightTank</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_UnwrappedAncientTank</defName>
+		<label>ancient tank</label>
+		<description>A preserved armored vehicle. Its electronics and hydraulics have deteriorated with age.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.5</fillPercent>
+		<size>(2,4)</size>
+		<costList>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/AncientLightTankUnwrapped</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,5)</drawSize>
 		</graphicData>
@@ -157,7 +184,6 @@
 		<selectable>true</selectable>
 		<fillPercent>0.2</fillPercent>
 		<size>(1,1)</size>
-		
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
@@ -213,7 +239,6 @@
 		<selectable>true</selectable>
 		<fillPercent>0.2</fillPercent>
 		<size>(1,1)</size>
-		
 		<rotatable>true</rotatable>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -240,7 +265,6 @@
 		<selectable>true</selectable>
 		<fillPercent>0.2</fillPercent>
 		<size>(1,1)</size>
-		
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -267,7 +291,6 @@
 		<selectable>true</selectable>
 		<fillPercent>0.3</fillPercent>
 		<size>(2,2)</size>
-		
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -294,7 +317,6 @@
 		<selectable>true</selectable>
 		<fillPercent>0.3</fillPercent>
 		<size>(1,1)</size>
-		
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
@@ -321,7 +343,6 @@
 		<selectable>true</selectable>
 		<fillPercent>0.3</fillPercent>
 		<size>(2,2)</size>
-		
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
@@ -348,7 +369,6 @@
 		<selectable>true</selectable>
 		<fillPercent>0.4</fillPercent>
 		<size>(2,2)</size>
-		
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -408,7 +428,6 @@
 		<useHitPoints>false</useHitPoints>
 		<rotatable>false</rotatable>
 		<statBases>
-			
 			<Flammability>0</Flammability>
 		</statBases>
 		<graphicData>
@@ -490,7 +509,6 @@
 		<selectable>true</selectable>
 		<fillPercent>0.3</fillPercent>
 		<size>(1,1)</size>
-		
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -517,7 +535,6 @@
 		<selectable>true</selectable>
 		<fillPercent>0.4</fillPercent>
 		<size>(2,2)</size>
-		
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -544,7 +561,6 @@
 		<selectable>true</selectable>
 		<fillPercent>0.4</fillPercent>
 		<size>(2,2)</size>
-		
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -803,5 +819,128 @@
 		<thingCategories>
 			<li>BuildingsFurniture</li>
 		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientFuelPipeline</defName>
+		<label>ancient fuel pipeline</label>
+		<description>A large fuel pipeline for transporting chemfuel. Now rusted and badly damaged.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(4,2)</size>
+		<costList>
+			<ChunkSlagSteel>6</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/FuelPipeline</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_OpenDeadlifeCasket</defName>
+		<label>empty deadlife casket</label>
+		<description>An ancient military casket that suspends a high ranking soldier using the deadlife particles. Whatever has lied inside is no longer there.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.5</fillPercent>
+		<size>(1,2)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+			<Steel>25</Steel>
+			<Uranium>3</Uranium>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<WorkToMake>2000</WorkToMake>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Security/AncientCasket_Empty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_EmptyAncientKennel</defName>
+		<label>empty ancient kennel</label>
+		<description>A large kennel that could hold several animals suspended in a deadlife dust-induced coma. It’s completely empty.</description>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0.7</Flammability>
+			<MaxHitPoints>400</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Security/AncientKennel_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_BuriedDeathPit</defName>
+		<label>buried death pit</label>
+		<description>An old containment pit now completely covered in twisted metal and scrap, preventing anything that lied dormant inside from crawling out.</description>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<thingClass>VanillaQuestsExpandedDeadlife.BuriedDeathPit</thingClass>
+		<selectable>true</selectable>
+		<fillPercent>0</fillPercent>
+		<size>(5,5)</size>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<costList>
+			<ChunkSlagSteel>6</ChunkSlagSteel>
+		</costList>
+		<statBases>
+			<Flammability>0</Flammability>
+			<WorkToBuild>3500</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Security/BuriedDeathPit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<designationCategory>Furniture</designationCategory>
+		<clearBuildingArea>false</clearBuildingArea>
 	</ThingDef>
 </Defs>

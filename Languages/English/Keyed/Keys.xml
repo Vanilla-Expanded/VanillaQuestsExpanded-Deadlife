@@ -17,4 +17,6 @@
 	<VQE_ExitSilo>Exit silo</VQE_ExitSilo>
 	<VQE_ViewSilo>View silo</VQE_ViewSilo>
 	<VQE_ViewSiloDesc>View the ancient silo below.</VQE_ViewSiloDesc>
+	<VQED_FillPit>Fill in the death pit</VQED_FillPit>
+	<VQED_FillPitDesc>Cover the death pit with twisted metal slags to prevent anything from crawling out.</VQED_FillPitDesc>
 </LanguageData>
