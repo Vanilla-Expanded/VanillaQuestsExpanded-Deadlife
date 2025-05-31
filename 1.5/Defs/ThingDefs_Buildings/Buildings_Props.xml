@@ -829,7 +829,7 @@
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
 		<fillPercent>0.4</fillPercent>
-		<size>(4,2)</size>
+		<size>(2,4)</size>
 		<costList>
 			<ChunkSlagSteel>6</ChunkSlagSteel>
 		</costList>
@@ -841,7 +841,7 @@
 		<graphicData>
 			<texPath>Things/AncientProps/FuelPipeline</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4,3)</drawSize>
+			<drawSize>(3,4)</drawSize>
 		</graphicData>
 		<building>
 			<paintable>false</paintable>
