@@ -65,7 +65,7 @@ namespace VanillaQuestsExpandedDeadlife
         }
 
         protected Site GenerateSite(float points,
-            int tile, Faction parentFaction, out string siteMapGeneratedSignal, bool failWhenMapRemoved = true)
+            int tile, Faction parentFaction, out string siteMapGeneratedSignal, bool failWhenMapRemoved = true, int timeoutTicks = 0)
         {
             SitePartParams sitePartParams = new SitePartParams
             {
@@ -87,7 +87,10 @@ namespace VanillaQuestsExpandedDeadlife
             Slate slate = QuestGen.slate;
             slate.Set("site", site);
             quest.SpawnWorldObject(site);
-
+            if (timeoutTicks > 0)
+            {
+                quest.WorldObjectTimeout(site, timeoutTicks);
+            }
             string siteMapRemovedSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.MapRemoved");
             siteMapGeneratedSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.MapGenerated");
 

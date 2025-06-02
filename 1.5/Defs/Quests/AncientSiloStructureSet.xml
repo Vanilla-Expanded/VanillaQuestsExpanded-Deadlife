@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <VanillaQuestsExpandedDeadlife.AncientSiloStructureSetDef>
+    <VanillaQuestsExpandedDeadlife.StructureSetDef>
         <defName>VQED_AncientSilo</defName>
         <structureLayouts>
             <li>
@@ -65,6 +65,6 @@
                 </spawnEnemies>
             </li>
         </structureLayouts>
-    </VanillaQuestsExpandedDeadlife.AncientSiloStructureSetDef>
+    </VanillaQuestsExpandedDeadlife.StructureSetDef>
 
 </Defs>

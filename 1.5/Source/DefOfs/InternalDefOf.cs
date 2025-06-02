@@ -33,5 +33,7 @@ namespace VanillaQuestsExpandedDeadlife
 		public static GameConditionDef VQE_AncientSiloUnderground;
 		
 		public static QuestScriptDef VQE_Deadlife_AncientSilo;
-    }
+
+		public static SitePartDef VQE_AncientICBMLaunchSite;
+	}
 }

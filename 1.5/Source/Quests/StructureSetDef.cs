@@ -6,7 +6,7 @@ using System.Xml;
 
 namespace VanillaQuestsExpandedDeadlife
 {
-    public class AncientSiloStructureSetDef : Def
+    public class StructureSetDef : Def
     {
         public List<StructurePatternOffset> structureLayouts;
     }

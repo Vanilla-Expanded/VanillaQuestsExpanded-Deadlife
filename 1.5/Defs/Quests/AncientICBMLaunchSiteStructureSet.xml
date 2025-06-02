@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <VanillaQuestsExpandedDeadlife.StructureSetDef>
+        <defName>VQED_AncientICBMLaunchSite</defName>
+        <structureLayouts>
+            <li>
+                <pattern>HQMap_Left_.*</pattern>
+                <offset>(-1, 0, 0)</offset>
+            </li>
+            <li>
+                <pattern>HQMap_Center_.*</pattern>
+                <offset>(0, 0, 0)</offset>
+            </li>
+            <li>
+                <pattern>HQMap_Right_.*</pattern>
+                <offset>(1, 0, 0)</offset>
+            </li>
+        </structureLayouts>
+    </VanillaQuestsExpandedDeadlife.StructureSetDef>
+</Defs>

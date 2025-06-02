@@ -11,9 +11,9 @@ using UnityEngine;
 
 namespace VanillaQuestsExpandedDeadlife
 {
-    public static class AncientSiloStructureGenerator
+    public static class StructureSetGenerator
     {
-        public static List<CellRect> Generate(Map map, AncientSiloStructureSetDef structureSetDef)
+        public static List<CellRect> Generate(Map map, StructureSetDef structureSetDef)
         {
             var generatedRects = new List<CellRect>();
             var mapCenter = map.Center;
@@ -48,15 +48,14 @@ namespace VanillaQuestsExpandedDeadlife
                                 var spawnCell = CellFinder.RandomSpawnCellForPawnNear(rootCell, map, 5);
                                 if (spawnCell.IsValid)
                                 {
-                                    
-                                    var pawn = GenStep_AncientSilo.GenerateShambler();
+                                    var pawn = GenStep_AncientSilo.GenerateShambler(spawnOption.kind);
                                     GenSpawn.Spawn(pawn, spawnCell, map);
                                     pawns.Add(pawn);
                                 }
                             }
                         }
                     }
-                    
+
                     if (pawns.Any())
                     {
                         var lordJob = new LordJob_DefendBaseNoEat(Faction.OfEntities, walkableCells.RandomElement());

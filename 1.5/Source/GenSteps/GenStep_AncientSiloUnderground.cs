@@ -8,10 +8,10 @@ namespace VanillaQuestsExpandedDeadlife
     {
         public ThingDef exitDef;
         public override int SeedPart => 987654321;
-        public AncientSiloStructureSetDef structureSetDef;
+        public StructureSetDef structureSetDef;
         public override void Generate(Map map, GenStepParams parms)
         {
-            var structureRects = AncientSiloStructureGenerator.Generate(map, structureSetDef);
+            var structureRects = StructureSetGenerator.Generate(map, structureSetDef);
             var cell = map.Center;
             foreach (var item in GenRadial.RadialCellsAround(cell, 4.5f, useCenter: true))
             {
