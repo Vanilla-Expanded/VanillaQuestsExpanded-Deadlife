@@ -131,10 +131,6 @@
                 <questChainDef>VQE_DeadlifeQuestChain</questChainDef>
                 <isRepeatable>True</isRepeatable>
                 <mtbDaysRepeat>120</mtbDaysRepeat>
-                <grantAgainOnFailure>True</grantAgainOnFailure>
-                <grantAgainOnExpiry>True</grantAgainOnExpiry>
-                <daysUntilGrantAgainOnFailure>120</daysUntilGrantAgainOnFailure>
-                <daysUntilGrantAgainOnExpiry>120</daysUntilGrantAgainOnExpiry>
                 <conditionMinDaysSinceStart>120</conditionMinDaysSinceStart>
             </li>
         </modExtensions>

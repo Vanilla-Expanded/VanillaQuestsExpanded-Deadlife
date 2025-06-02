@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RulePackDef>
+    <defName>VQE_NamerPersonGeneral</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(gender=Male)->[FirstNameMaleList] [LastNameList]</li>
+        <li>r_name(gender=Female)->[FirstNameFemaleList] [LastNameList]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>FirstNameMaleList->Names/General_First_Male</li>
+        <li>FirstNameFemaleList->Names/General_First_Female</li>
+        <li>LastNameList->Names/General_Last</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <CreepJoinerFormKindDef ParentName="BaseCreepJoinerKind">
+    <defName>VQE_General</defName>
+    <label>general</label>
+    <weight>0</weight>
+    <minGenerationAge>40</minGenerationAge>
+    <maxGenerationAge>60</maxGenerationAge>
+    <defaultFactionType>Entities</defaultFactionType>
+    <nameMaker>VQE_NamerPersonGeneral</nameMaker>
+    <fixedChildBackstories>
+      <li>VQE_Childhood_OfficersShadow</li>
+    </fixedChildBackstories>
+    <fixedAdultBackstories>
+      <li>VQE_TheGeneral</li>
+    </fixedAdultBackstories>
+    <apparelRequired>
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Pants</li>
+      <li>VQED_Apparel_MilitaryCoat</li>
+      <li>VQED_Apparel_GeneralsCap</li>
+      <li>VQED_Apparel_GeneralsInsignia</li>
+    </apparelRequired>
+    <requires>
+      <li>ShamblerOverlord</li>
+      <li>Disturbing</li>
+    </requires>
+    <modExtensions>
+      <li Class="VFECore.UniqueCharacterExtension">
+        <tag>General</tag>
+      </li>
+    </modExtensions>
+  </CreepJoinerFormKindDef>
+</Defs>

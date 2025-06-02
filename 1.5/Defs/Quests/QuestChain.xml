@@ -6,6 +6,9 @@
         <iconPath>UI/QuestChainIcon</iconPath>
         <label>Operation: Deadlife</label>
         <description>This quest will let you crack open and loot several underground silos left by an ancient civilization. As you scavenge the dark, ominous corridors, you’re bound to find out who [General_FullName] was and what was the purpose of the Operation: Deadlife.</description>
+        <uniqueCharacters>
+            <li>VQE_General</li>
+        </uniqueCharacters>
     </VFECore.QuestChainDef>
 
 </Defs>
