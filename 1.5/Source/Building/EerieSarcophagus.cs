@@ -1,81 +1,81 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
-using Mono.Unix.Native;
 using RimWorld;
 using Verse;
+using Verse.AI.Group;
 using Verse.Grammar;
-using static RimWorld.DefOf;
-using static UnityEngine.GraphicsBuffer;
 
 namespace VanillaQuestsExpandedDeadlife
 {
     public class EerieSarcophagus : Building_AncientCryptosleepCasket
     {
+        private int ticksToOpen = -1;
+        private Pawn generalPawn;
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
             if (!respawningAfterLoad)
             {
-                /*  Quest code 
+                var questChainDef = InternalDefOf.VQE_DeadlifeQuestChain;
+                generalPawn = questChainDef.Worker.GetUniquePawn("General");
+                questChainDef.Worker.State.RemoveFromDeepSave(generalPawn);
                 innerContainer.ClearAndDestroyContents();
-                Pawn hero = PawnGenerator.GeneratePawn(InternalDefOf.VQE_Hero);
-                GrammarRequest firstNameReq = default;
-                if (hero.gender == Gender.Male)
-                {
-                    firstNameReq.Includes.Add(InternalDefOf.VQE_HeroMaleNames);
-                }
-                else
-                {
-                    firstNameReq.Includes.Add(InternalDefOf.VQE_HeroFemaleNames);
-                }
-                var firstName = GrammarResolver.Resolve("r_first_name", firstNameReq);
-                GrammarRequest lastNameReq = default;
-                lastNameReq.Includes.Add(InternalDefOf.VQE_HeroLastNames);
-                var lastName = GrammarResolver.Resolve("r_last_name", lastNameReq);
-                var name = new NameTriple(firstName, "", lastName);
-                hero.Name = name;
-
-
-                hero.equipment.DestroyAllEquipment();
-                hero.apparel.DestroyAll();
-                hero.inventory.DestroyAll();
-
-                var apparels = new List<Apparel>();
-                apparels.Add(ThingMaker.MakeThing(InternalDefOf.VQE_Apparel_CryptoHeavyHelmet) as Apparel);
-                apparels.Add(ThingMaker.MakeThing(InternalDefOf.VQE_CryptoHeavyArmor) as Apparel);
-                foreach (var apparel in apparels)
-                {
-                    var comp = apparel.TryGetComp<CompQuality>();
-                    if (comp != null)
-                    {
-                        comp.SetQuality(QualityCategory.Legendary, ArtGenerationContext.Outsider);
-                    }
-                    hero.apparel.Wear(apparel);
-                }
-                innerContainer.TryAdd(hero);*/
+                innerContainer.TryAdd(generalPawn);
+                ticksToOpen = Rand.Range(3000, 4500);
             }
+        }
+
+        public override void Tick()
+        {
+            base.Tick();
+            if (ticksToOpen > 0)
+            {
+                ticksToOpen--;
+                if (ticksToOpen == 0)
+                {
+                    EjectContents();
+                }
+            }
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref ticksToOpen, "ticksToOpen", -1);
+            Scribe_References.Look(ref generalPawn, "generalPawn");
         }
 
         public override void EjectContents()
         {
+            contentsKnown = true;
+            ticksToOpen = -1;
             var map = Map;
-            var hero = innerContainer.FirstOrDefault() as Pawn;
+                        
             Effecter effecter = EffecterDefOf.MonolithStage2.Spawn();
-            effecter.Trigger(new TargetInfo(this.Position, map), new TargetInfo(this.Position, map));
+            effecter.Trigger(new TargetInfo(Position, map), new TargetInfo(Position, map));
             effecter.Cleanup();
             base.EjectContents();
 
-            /* Quest code
-             * 
-             * hero.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Wander_Sad, transitionSilently: true);
-             hero.SetFaction(Faction.OfPlayer);
-             hero.health.AddHediff(InternalDefOf.VQE_Guilt);
-             Find.LetterStack.ReceiveLetter("VQE_HeroJoins".Translate(hero.Named("PAWN")), "VQE_HeroJoinsDesc".Translate(hero.Named("PAWN")), LetterDefOf.PositiveEvent, hero);*/
             Thing.allowDestroyNonDestroyable = true;
-            this.Destroy();
+            Destroy();
             Thing.allowDestroyNonDestroyable = false;
             var pod = ThingMaker.MakeThing(InternalDefOf.VQED_EmptyEerieSarcophagus);
             GenSpawn.Spawn(pod, Position, map, Rotation);
+            
+            var hediff = generalPawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.CryptosleepSickness);
+            hediff?.pawn.health.RemoveHediff(hediff);
+            InitializeGeneralAI(generalPawn);
+            
+            var letterLabel = "VQED_GeneralAwakensLabel".Translate(generalPawn.Named("PAWN"));
+            var letterText = "VQED_GeneralAwakensText".Translate(generalPawn.Named("PAWN"));
+            Find.LetterStack.ReceiveLetter(letterLabel, letterText, LetterDefOf.ThreatBig, generalPawn);
+        }
+
+        private void InitializeGeneralAI(Pawn general)
+        {
+            var lordJob = new LordJob_General();
+            var lord = LordMaker.MakeNewLord(general.Faction, lordJob, general.Map);
+            lord.AddPawn(general);
         }
     }
 }

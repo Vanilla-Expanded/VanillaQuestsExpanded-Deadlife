@@ -9,7 +9,7 @@ namespace VanillaQuestsExpandedDeadlife
     public class QuestNode_Root_AncientICBMLaunchSite : QuestNode_Site
     {
         public override SitePartDef QuestSite => QuestDefOf.VQE_AncientICBMLaunchSite;
-        public override Predicate<Map, int> TileValidator => (Map map, int tile) => Find.WorldGrid.ApproxDistanceInTiles(tile, map.Tile) <= 50;
+        public override Predicate<Map, int> TileValidator => (Map map, int tile) => Find.WorldGrid.ApproxDistanceInTiles(tile, map.Tile) <= 50 && Find.WorldGrid[tile].hilliness < RimWorld.Planet.Hilliness.LargeHills;
 
         protected override void RunInt()
         {

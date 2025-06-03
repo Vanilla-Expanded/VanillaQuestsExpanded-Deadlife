@@ -24,20 +24,23 @@
     <maxGenerationAge>60</maxGenerationAge>
     <defaultFactionType>Entities</defaultFactionType>
     <nameMaker>VQE_NamerPersonGeneral</nameMaker>
-    <fixedChildBackstories>
+    <fixedChildBackstories Inherit="False">
       <li>VQE_Childhood_OfficersShadow</li>
     </fixedChildBackstories>
-    <fixedAdultBackstories>
+    <fixedAdultBackstories Inherit="False">
       <li>VQE_TheGeneral</li>
     </fixedAdultBackstories>
-    <apparelRequired>
+    <isFighter>True</isFighter>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>9999</apparelMoney>
+    <apparelRequired Inherit="False">
       <li>Apparel_CollarShirt</li>
       <li>Apparel_Pants</li>
       <li>VQED_Apparel_MilitaryCoat</li>
       <li>VQED_Apparel_GeneralsCap</li>
       <li>VQED_Apparel_GeneralsInsignia</li>
     </apparelRequired>
-    <requires>
+    <requires Inherit="False">
       <li>ShamblerOverlord</li>
       <li>Disturbing</li>
     </requires>

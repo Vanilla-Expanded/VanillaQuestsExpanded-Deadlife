@@ -16,6 +16,8 @@ namespace VanillaQuestsExpandedDeadlife
         public string pattern;
         public IntVec3 offset;
         public List<PawnSpawnOption> spawnEnemies;
+
+        public bool forceSpawnEnemiesIndoor;
     }
 
     public class PawnSpawnOption

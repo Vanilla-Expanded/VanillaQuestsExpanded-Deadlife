@@ -5,6 +5,8 @@ using System.Text;
 using UnityEngine;
 using Verse;
 using RimWorld;
+using VFECore;
+using Verse.AI;
 
 namespace VanillaQuestsExpandedDeadlife
 {
@@ -35,5 +37,18 @@ namespace VanillaQuestsExpandedDeadlife
 		public static QuestScriptDef VQE_Deadlife_AncientSilo;
 
 		public static SitePartDef VQE_AncientICBMLaunchSite;
-	}
+		public static QuestChainDef VQE_DeadlifeQuestChain;
+		public static SoundDef VQED_SiloKeyboardClicking;
+		public static ThingDef VQED_ICBMLaunchTerminal;
+		public static SoundDef VQED_ICBMLaunchSiren;
+		public static ThingDef VQED_ActiveTerminal;
+		public static ThingDef VQED_SealedDeathPit;
+		public static ThingDef VQED_ClosedChute;
+		public static ThingDef VQED_ClosedDeadlifeCasket;
+		public static ThingDef VQED_DormantMilitaryTurret;
+		public static ThingDef VQED_ClosedRotstinkVent;
+		public static ThingDef VQED_AncientKennel;
+		public static JobDef VQE_WorkOnTerminal;
+		public static DutyDef VQE_GeneralAI;
+    }
 }

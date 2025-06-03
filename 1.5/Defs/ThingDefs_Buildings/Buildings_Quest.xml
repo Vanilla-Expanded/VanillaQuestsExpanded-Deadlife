@@ -265,6 +265,7 @@
 		<label>eerie sarcophagus</label>
 		<description>A sealed black casket. It shows signs of internal pressure, but no visible access points.</description>
 		<thingClass>VanillaQuestsExpandedDeadlife.EerieSarcophagus</thingClass>
+		<tickerType>Normal</tickerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
@@ -319,12 +320,14 @@
 		<defName>VQED_ActiveTerminal</defName>
 		<label>active terminal</label>
 		<description>An ancient computer terminal. It seems to still be connected to power, with some cryptic defensive protocols ready to be activated by a person in charge.</description>
-		<thingClass>Building</thingClass>
+		<thingClass>VanillaFurnitureExpanded.SwappableBuilding</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
 		<fillPercent>0.2</fillPercent>
 		<size>(1,1)</size>
+		<interactionCellOffset>(0, 0, 1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
 		<costList>
 			<ChunkSlagSteel>1</ChunkSlagSteel>
 		</costList>
@@ -349,17 +352,24 @@
 				<glowColor>(214, 46, 31,0)</glowColor>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.SwappableBuildingDetails">
+				<buildingLeft>VQED_DefunctTerminal</buildingLeft>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_ICBMLaunchTerminal</defName>
 		<label>ICBM launch terminal</label>
 		<description>An ancient set of computer terminals. The displays contain information about the preparation to launch a series of ICBMs containing deadlife payloads. Once the launch sequence is initiated, it cannot be stopped. It seems only the person in charge of the complex can initiate the launch.</description>
-		<thingClass>Building</thingClass>
+		<thingClass>VanillaFurnitureExpanded.SwappableBuilding</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
 		<fillPercent>0.2</fillPercent>
 		<size>(3,1)</size>
+		<interactionCellOffset>(0, 0, 1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
 		<costList>
 			<ChunkSlagSteel>3</ChunkSlagSteel>
 		</costList>
@@ -384,6 +394,11 @@
 				<glowColor>(214, 46, 31,0)</glowColor>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.SwappableBuildingDetails">
+				<buildingLeft>VQED_DefunctTerminalBank</buildingLeft>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_SealedDeathPit</defName>
@@ -498,7 +513,7 @@
 		<selectable>true</selectable>
 		<fillPercent>0.1</fillPercent>
 		<size>(1,1)</size>
-		
+
 		<rotatable>false</rotatable>
 		<statBases>
 			<Flammability>0</Flammability>
@@ -519,7 +534,7 @@
 		<modExtensions>
 			<li Class="VanillaFurnitureExpanded.SwappableBuildingDetails">
 				<buildingLeft>VQED_ActiveDeadlifeVent</buildingLeft>
-				
+
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -556,7 +571,7 @@
 		<modExtensions>
 			<li Class="VanillaFurnitureExpanded.SwappableBuildingDetails">
 				<buildingLeft>VQED_AncientMilitaryTurret</buildingLeft>
-				
+
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -611,9 +626,9 @@
 		<statBases>
 			<Flammability>0.7</Flammability>
 			<MaxHitPoints>400</MaxHitPoints>
-			
+
 		</statBases>
-		
+
 		<graphicData>
 			<texPath>Things/Security/AncientKennel_Full</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -627,7 +642,7 @@
 		<modExtensions>
 			<li Class="VanillaFurnitureExpanded.SwappableBuildingDetails">
 				<buildingLeft>VQED_EmptyAncientKennel</buildingLeft>
-				
+
 			</li>
 		</modExtensions>
 	</ThingDef>
