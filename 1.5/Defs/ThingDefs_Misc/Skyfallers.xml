@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="SkyfallerBase">
+        <defName>VQED_ICBMSkyfaller</defName>
+        <label>Deadlife ICBM</label>
+        <thingClass>VanillaQuestsExpandedDeadlife.Skyfaller_DeadlifeICBM</thingClass>
+        <altitudeLayer>MoteOverheadLow</altitudeLayer>
+        <graphicData>
+            <texPath>Skyfaller/DeadlifeICBM</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>6</drawSize>
+        </graphicData>
+        <skyfaller>
+            <movementType>Decelerate</movementType>
+            <reversed>true</reversed>
+            <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+            <shadowSize>(2, 2)</shadowSize>
+            <anticipationSound>DropPod_Leaving</anticipationSound>
+            <anticipationSoundTicks>-10</anticipationSoundTicks>
+            <ticksToImpactRange>
+                <min>-40</min>
+                <max>-15</max>
+            </ticksToImpactRange>
+            <speedCurve>
+                <points>
+                    <li>0, 0</li>
+                    <li>0.2, 0.1</li>
+                    <li>0.4, 0.2</li>
+                    <li>0.5, 0.5</li>
+                    <li>1, 1</li>
+                </points>
+            </speedCurve>
+        </skyfaller>
+    </ThingDef>
+
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>VQED_Smoke</defName>
+        <graphicData>
+            <texPath>Things/Mote/Smoke</texPath>
+            <renderInstanced>true</renderInstanced>
+        </graphicData>
+        <fadeInTime>0.50</fadeInTime>
+        <solidTime>6</solidTime>
+        <fadeOutTime>3.2</fadeOutTime>
+        <growthRate>0.005</growthRate>
+        <altitudeLayer>Building</altitudeLayer>
+        <altitudeLayerIncOffset>20</altitudeLayerIncOffset>
+    </FleckDef>
+</Defs>

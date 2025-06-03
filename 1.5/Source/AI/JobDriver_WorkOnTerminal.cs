@@ -144,10 +144,6 @@ namespace VanillaQuestsExpandedDeadlife
                 {
                     TriggerRandomTrapEffect();
                 }
-                else if (terminal.def == InternalDefOf.VQED_ICBMLaunchTerminal)
-                {
-                    Log.Message("ICBM Launch sequence completed by General!");
-                }
                 terminal.Notify_Swap();
             }
         }

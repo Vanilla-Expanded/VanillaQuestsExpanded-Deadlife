@@ -11,7 +11,6 @@ namespace VanillaQuestsExpandedDeadlife
         public override void Generate(Map map, GenStepParams parms)
         {
             StructureSetGenerator.Generate(map, structureSetDef);
-            Log.Message("Success?");
         }
     }
 }

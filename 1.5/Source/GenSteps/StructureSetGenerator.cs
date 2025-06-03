@@ -32,7 +32,7 @@ namespace VanillaQuestsExpandedDeadlife
                     GenOption.GetAllMineableIn(structureRect, map);
                     selectedDef.Generate(structureRect, map, map.ParentFaction);
                     generatedRects.Add(structureRect);
-                    var walkableCells = structureRect.Cells.Where(cell => cell.Walkable(map) && (layout.forceSpawnEnemiesIndoor is false || cell.Roofed(map))).ToList();
+                    var walkableCells = structureRect.Cells.Where(cell => cell.Walkable(map) && (layout.forceSpawnEnemiesIndoor is false || cell.Roofed(map) && cell.UsesOutdoorTemperature(map) is false)).ToList();
                     var pawns = new List<Pawn>();
                     if (layout.spawnEnemies != null)
                     {

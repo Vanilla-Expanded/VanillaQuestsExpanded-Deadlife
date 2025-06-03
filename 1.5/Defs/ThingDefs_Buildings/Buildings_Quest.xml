@@ -72,6 +72,8 @@
 		<defName>VQED_EmptyICBMSilo</defName>
 		<label>empty ICBM silo</label>
 		<description>A missile cradle with no payload. Maintenance ports are sealed and fused.</description>
+		<thingClass>VanillaQuestsExpandedDeadlife.EmptyICBMSilo</thingClass>
+		<tickerType>Normal</tickerType>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<passability>Impassable</passability>
 		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
@@ -153,6 +155,7 @@
 		<defName>VQED_LoadedICBMSilo</defName>
 		<label>loaded ICBM silo</label>
 		<description>A still-intact missile lies inside this silo. No signs of activation or maintenance in decades.</description>
+		<thingClass>VanillaQuestsExpandedDeadlife.ICBMSilo</thingClass>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<passability>Impassable</passability>
 		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
@@ -176,6 +179,11 @@
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
 		</building>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.SwappableBuildingDetails">
+				<buildingLeft>VQED_EmptyICBMSilo</buildingLeft>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
 		<defName>VQED_InertDarkPillar</defName>
@@ -362,7 +370,7 @@
 		<defName>VQED_ICBMLaunchTerminal</defName>
 		<label>ICBM launch terminal</label>
 		<description>An ancient set of computer terminals. The displays contain information about the preparation to launch a series of ICBMs containing deadlife payloads. Once the launch sequence is initiated, it cannot be stopped. It seems only the person in charge of the complex can initiate the launch.</description>
-		<thingClass>VanillaFurnitureExpanded.SwappableBuilding</thingClass>
+		<thingClass>VanillaQuestsExpandedDeadlife.ICBMLaunchTerminal</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>

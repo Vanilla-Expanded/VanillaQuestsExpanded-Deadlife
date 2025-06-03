@@ -60,6 +60,7 @@
 		<maxVoices>1</maxVoices>
 		<subSounds>
 			<li>
+				<onCamera>True</onCamera>
 				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
