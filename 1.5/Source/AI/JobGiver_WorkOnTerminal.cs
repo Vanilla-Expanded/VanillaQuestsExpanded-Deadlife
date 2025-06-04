@@ -2,6 +2,7 @@ using System.Linq;
 using Verse;
 using Verse.AI;
 using RimWorld;
+using Verse.AI.Group;
 
 namespace VanillaQuestsExpandedDeadlife
 {
@@ -9,7 +10,11 @@ namespace VanillaQuestsExpandedDeadlife
     {
         protected override Job TryGiveJob(Pawn pawn)
         {
-            pawn.jobs.debugLog = true;
+            return GetJob(pawn);
+        }
+
+        public static Job GetJob(Pawn pawn)
+        {
             Building activeTerminal = FindNearestActiveTerminal(pawn);
             if (activeTerminal != null)
             {
@@ -23,17 +28,17 @@ namespace VanillaQuestsExpandedDeadlife
             return null;
         }
 
-        private Building FindNearestActiveTerminal(Pawn pawn)
+        private static Building FindNearestActiveTerminal(Pawn pawn)
         {
             return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(InternalDefOf.VQED_ActiveTerminal), PathEndMode.InteractionCell, TraverseParms.For(pawn), 9999f, b => pawn.CanReach(b, PathEndMode.InteractionCell, Danger.Deadly)) as Building;
         }
 
-        private Building FindICBMLaunchTerminal(Pawn pawn)
+        private static Building FindICBMLaunchTerminal(Pawn pawn)
         {
             return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(InternalDefOf.VQED_ICBMLaunchTerminal), PathEndMode.InteractionCell, TraverseParms.For(pawn), 9999f, b => pawn.CanReach(b, PathEndMode.InteractionCell, Danger.Deadly)) as Building;
         }
 
-        private Job CreateTerminalJob(Building terminal)
+        private static Job CreateTerminalJob(Building terminal)
         {
             Job job = JobMaker.MakeJob(InternalDefOf.VQE_WorkOnTerminal, terminal);
             job.ignoreDesignations = true;

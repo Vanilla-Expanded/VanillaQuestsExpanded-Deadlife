@@ -50,7 +50,7 @@ namespace VanillaQuestsExpandedDeadlife
             contentsKnown = true;
             ticksToOpen = -1;
             var map = Map;
-                        
+
             Effecter effecter = EffecterDefOf.MonolithStage2.Spawn();
             effecter.Trigger(new TargetInfo(Position, map), new TargetInfo(Position, map));
             effecter.Cleanup();
@@ -61,11 +61,12 @@ namespace VanillaQuestsExpandedDeadlife
             Thing.allowDestroyNonDestroyable = false;
             var pod = ThingMaker.MakeThing(InternalDefOf.VQED_EmptyEerieSarcophagus);
             GenSpawn.Spawn(pod, Position, map, Rotation);
-            
+
             var hediff = generalPawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.CryptosleepSickness);
             hediff?.pawn.health.RemoveHediff(hediff);
+            generalPawn.health.AddHediff(InternalDefOf.VQED_General);
             InitializeGeneralAI(generalPawn);
-            
+
             var letterLabel = "VQED_GeneralAwakensLabel".Translate(generalPawn.Named("PAWN"));
             var letterText = "VQED_GeneralAwakensText".Translate(generalPawn.Named("PAWN"));
             Find.LetterStack.ReceiveLetter(letterLabel, letterText, LetterDefOf.ThreatBig, generalPawn);
