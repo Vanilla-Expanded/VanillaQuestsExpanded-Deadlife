@@ -31,15 +31,17 @@
       <li>VQE_TheGeneral</li>
     </fixedAdultBackstories>
     <isFighter>True</isFighter>
-    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-    <apparelMoney>9999</apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>0</apparelMoney>
     <apparelRequired Inherit="False">
       <li>Apparel_CollarShirt</li>
       <li>Apparel_Pants</li>
       <li>VQED_Apparel_MilitaryCoat</li>
-      <li>VQED_Apparel_GeneralsCap</li>
       <li>VQED_Apparel_GeneralsInsignia</li>
     </apparelRequired>
+    <fixedInventory>
+      <VQED_Apparel_GeneralsCap />
+    </fixedInventory>
     <requires Inherit="False">
       <li>ShamblerOverlord</li>
       <li>Disturbing</li>

@@ -20,6 +20,12 @@ namespace VanillaQuestsExpandedDeadlife
             var request = new SpawnRequest(list, pos, 1, 1);
             request.initialDelay = 40 * 60;
             Map.deferredSpawner.AddRequest(request, false);
+
+            var site = Map.Parent;
+            var signal = QuestNode_Root_AncientICBMLaunchSite.DeathlifeApocalypsisStarted;
+            Find.SignalManager.SendSignal(new Signal(signal, site.Named("SUBJECT")));
+            QuestUtility.SendQuestTargetSignals(site.questTags, signal, site.Named("SUBJECT"));
+            
             base.Notify_Swap();
         }
     }

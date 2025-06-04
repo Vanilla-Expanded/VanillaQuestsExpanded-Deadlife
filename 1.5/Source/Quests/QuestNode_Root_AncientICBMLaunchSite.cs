@@ -8,6 +8,9 @@ namespace VanillaQuestsExpandedDeadlife
 {
     public class QuestNode_Root_AncientICBMLaunchSite : QuestNode_Site
     {
+        public const string GeneralDefeated = "GeneralDefeated";
+        public const string DeathlifeApocalypsisStarted = "DeathlifeApocalypsisStarted";
+        
         public override SitePartDef QuestSite => QuestDefOf.VQE_AncientICBMLaunchSite;
         public override Predicate<Map, int> TileValidator => (Map map, int tile) => Find.WorldGrid.ApproxDistanceInTiles(tile, map.Tile) <= 50 && Find.WorldGrid[tile].hilliness < RimWorld.Planet.Hilliness.LargeHills;
 
@@ -24,7 +27,17 @@ namespace VanillaQuestsExpandedDeadlife
                 return;
             }
 
-            GenerateSite(points, tile, Faction.OfEntities, out string _, failWhenMapRemoved: true, timeoutTicks: 14 * GenDate.TicksPerDay);
+            var site = GenerateSite(points, tile, Faction.OfEntities, out string siteMapGeneratedSignal, failWhenMapRemoved: true, timeoutTicks: 14 * GenDate.TicksPerDay);
+            
+            QuestGen.quest.SignalPassActivable(delegate
+            {
+                QuestGen.quest.End(QuestEndOutcome.Fail, 0, null, null, QuestPart.SignalListenMode.OngoingOnly, sendStandardLetter: true);
+            }, siteMapGeneratedSignal, QuestGenUtility.HardcodedSignalWithQuestID("site." + DeathlifeApocalypsisStarted));
+
+            QuestGen.quest.SignalPassActivable(delegate
+            {
+                QuestGen.quest.End(QuestEndOutcome.Success, 0, null, null, QuestPart.SignalListenMode.OngoingOnly, sendStandardLetter: true);
+            }, siteMapGeneratedSignal, QuestGenUtility.HardcodedSignalWithQuestID("site." + GeneralDefeated));
         }
     }
 }
