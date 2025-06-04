@@ -55,5 +55,6 @@ namespace VanillaQuestsExpandedDeadlife
 		public static ThingDef VQED_ICBMSkyfaller;
 		public static SoundDef VQED_ICBMExplosionDistant;
 		public static FleckDef VQED_Smoke;
-    }
+		public static ThingDef VQED_DistantICBMExplosion;
+	}
 }

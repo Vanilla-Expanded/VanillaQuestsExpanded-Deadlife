@@ -2,11 +2,25 @@
 <Defs>
 
 	<ThingDef ParentName="PawnFlyerBase">
-		<defName>VQED_PawnFlyer_Stun</defName> 
+		<defName>VQED_PawnFlyer_Stun</defName>
 		<pawnFlyer>
 			<flightDurationMin>0.75</flightDurationMin>
 			<flightSpeed>8</flightSpeed>
 			<stunDurationTicksRange>60~180</stunDurationTicksRange>
 		</pawnFlyer>
-	</ThingDef> 
+	</ThingDef>
+
+	<ThingDef>
+		<defName>VQED_DistantICBMExplosion</defName>
+		<label>Distant ICBM Explosion</label>
+		<thingClass>VanillaQuestsExpandedDeadlife.DistantICBMExplosion</thingClass>
+		<category>Ethereal</category>
+		<useHitPoints>false</useHitPoints>
+		<neverMultiSelect>true</neverMultiSelect>
+		<isAltar>false</isAltar>
+		<altitudeLayer>WorldClipper</altitudeLayer>
+		<tickerType>Never</tickerType>
+		<selectable>false</selectable>
+		<drawerType>None</drawerType>
+	</ThingDef>
 </Defs>

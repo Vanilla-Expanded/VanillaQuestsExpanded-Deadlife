@@ -1,5 +1,7 @@
 using Verse;
 using System.Linq;
+using System.Collections.Generic;
+using RimWorld;
 namespace VanillaQuestsExpandedDeadlife
 {
     public class ICBMLaunchTerminal : VanillaFurnitureExpanded.SwappableBuilding
@@ -11,6 +13,13 @@ namespace VanillaQuestsExpandedDeadlife
             {
                 silo.Notify_Swap();
             }
+            var list = new List<Thing>();
+            list.Add(ThingMaker.MakeThing(InternalDefOf.VQED_DistantICBMExplosion));
+            var pos = new List<IntVec3>();
+            pos.Add(Position);
+            var request = new SpawnRequest(list, pos, 1, 1);
+            request.initialDelay = 40 * 60;
+            Map.deferredSpawner.AddRequest(request, false);
             base.Notify_Swap();
         }
     }
