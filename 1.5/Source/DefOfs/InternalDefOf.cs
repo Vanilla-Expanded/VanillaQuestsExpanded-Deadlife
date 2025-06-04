@@ -57,5 +57,6 @@ namespace VanillaQuestsExpandedDeadlife
 		public static FleckDef VQED_Smoke;
 		public static ThingDef VQED_DistantICBMExplosion;
 		public static HediffDef VQED_General;
-	}
+		public static FleckDef VFED_ICBMExplosionFlash;
+    }
 }

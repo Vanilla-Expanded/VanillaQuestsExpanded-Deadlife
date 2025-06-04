@@ -175,7 +175,7 @@ namespace VanillaQuestsExpandedDeadlife
                 };
                 int count = 0;
                 var targets = new List<TargetInfo>();
-                foreach (var building in toTransform)
+                foreach (var building in toTransform.ToList())
                 {
                     if (building is VanillaFurnitureExpanded.SwappableBuilding swappable)
                     {

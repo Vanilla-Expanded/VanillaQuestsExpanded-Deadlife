@@ -23,4 +23,16 @@
 		<selectable>false</selectable>
 		<drawerType>None</drawerType>
 	</ThingDef>
+
+	<FleckDef ParentName="FleckBase">
+		<defName>VFED_ICBMExplosionFlash</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>10</solidTime>
+		<fadeOutTime>1</fadeOutTime>
+		<drawOffscreen>true</drawOffscreen>
+		<graphicData>
+			<texPath>Things/Mote/LightningGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</FleckDef>
 </Defs>
