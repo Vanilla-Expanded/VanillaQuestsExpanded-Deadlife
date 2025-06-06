@@ -33,5 +33,6 @@ You must reach the command center and destroy the ICBM Launch Terminal before {P
 	<VQED_GeneralActivatedTurrets>To protect the launch site, General {0} has reactivated the military turrets throughout the complex.</VQED_GeneralActivatedTurrets>
 	<VQED_GeneralOpenedRotstinkVents>To protect the launch site, General {0} has opened the biomass vents that will flush the complex with rotstink.</VQED_GeneralOpenedRotstinkVents>
 	<VQED_GeneralReleasedAnimals>To protect the launch site, General {0} has let the animals out of the kennels.</VQED_GeneralReleasedAnimals>
-
+	<VQED_FactionBaseOverrun>{0} has been overrun by a horde of shamblers.</VQED_FactionBaseOverrun>
+	<VQED_ShamblersDefeated>The shambler horde has been defeated.</VQED_ShamblersDefeated>
 </LanguageData>
