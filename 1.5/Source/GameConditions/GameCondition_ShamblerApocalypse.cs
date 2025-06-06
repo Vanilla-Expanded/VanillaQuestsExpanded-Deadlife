@@ -61,6 +61,10 @@ namespace VanillaQuestsExpandedDeadlife
             base.Init();
             nextEventTicks = Find.TickManager.TicksGame + eventInterval.RandomInRange;
             nextHordeTicks = Find.TickManager.TicksGame + hordeInterval.RandomInRange;
+            for (var i = 0; i < 3; i++)
+            {
+                SpawnNewShamblerHorde();
+            }
         }
 
         private void TriggerRandomEvent()
@@ -99,16 +103,6 @@ namespace VanillaQuestsExpandedDeadlife
                 assaultDef.Worker.TryExecute(parms);
             }
         }
-
-        public override void PostMake()
-        {
-            base.PostMake();
-            for (var i = 0; i < 3; i++)
-            {
-                SpawnNewShamblerHorde();
-            }
-        }
-        
 
         private void SpawnNewShamblerHorde()
         {
