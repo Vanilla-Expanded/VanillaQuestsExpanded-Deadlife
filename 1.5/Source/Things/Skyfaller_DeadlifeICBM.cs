@@ -64,7 +64,11 @@ namespace VanillaQuestsExpandedDeadlife
             {
                 return;
             }
-            
+            else if (ticksUntilLaunch == SKYFALLER_LAUNCH_TICKS)
+            {
+                InternalDefOf.VQED_ICBMLaunch.PlayOneShot(new TargetInfo(Position, Map));
+            }
+
             var smokePos = DrawPos;
             Utils.ThrowSmoke(smokePos, this.Map, 3f);
 

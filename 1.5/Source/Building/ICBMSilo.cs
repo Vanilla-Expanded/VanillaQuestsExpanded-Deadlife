@@ -49,7 +49,6 @@ namespace VanillaQuestsExpandedDeadlife
             else
             {
                 ticksLaunching = 300;
-                InternalDefOf.VQED_ICBMLaunch.PlayOneShot(new TargetInfo(pos, map));
             }
         }
     }

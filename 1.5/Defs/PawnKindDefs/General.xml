@@ -2,14 +2,25 @@
 <Defs>
 
   <RulePackDef>
-    <defName>VQE_NamerPersonGeneral</defName>
+    <defName>VQE_GeneralMale</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_name(gender=Male)->[FirstNameMaleList] [LastNameList]</li>
-        <li>r_name(gender=Female)->[FirstNameFemaleList] [LastNameList]</li>
+        <li>r_name->[FirstNameMaleList] [LastNameList]</li>
       </rulesStrings>
       <rulesFiles>
         <li>FirstNameMaleList->Names/General_First_Male</li>
+        <li>LastNameList->Names/General_Last</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>VQE_GeneralFemale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FirstNameFemaleList] [LastNameList]</li>
+      </rulesStrings>
+      <rulesFiles>
         <li>FirstNameFemaleList->Names/General_First_Female</li>
         <li>LastNameList->Names/General_Last</li>
       </rulesFiles>
@@ -23,7 +34,8 @@
     <minGenerationAge>40</minGenerationAge>
     <maxGenerationAge>60</maxGenerationAge>
     <defaultFactionType>Entities</defaultFactionType>
-    <nameMaker>VQE_NamerPersonGeneral</nameMaker>
+    <nameMaker>VQE_GeneralMale</nameMaker>
+    <nameMakerFemale>VQE_GeneralFemale</nameMakerFemale>
     <fixedChildBackstories Inherit="False">
       <li>VQE_Childhood_OfficersShadow</li>
     </fixedChildBackstories>
