@@ -25,7 +25,7 @@
 	</ThingDef>
 
 	<FleckDef ParentName="FleckBase">
-		<defName>VFED_ICBMExplosionFlash</defName>
+		<defName>VQED_ICBMExplosionFlash</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<solidTime>10</solidTime>
 		<fadeOutTime>1</fadeOutTime>

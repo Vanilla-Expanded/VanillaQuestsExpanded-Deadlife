@@ -57,6 +57,13 @@ namespace VanillaQuestsExpandedDeadlife
 		public static FleckDef VQED_Smoke;
 		public static ThingDef VQED_DistantICBMExplosion;
 		public static HediffDef VQED_General;
-		public static FleckDef VFED_ICBMExplosionFlash;
+		public static FleckDef VQED_ICBMExplosionFlash;
+		public static GameConditionDef VQED_ShamblerApocalypse;
+		public static GameConditionDef DeathPall;
+		public static WorldObjectDef VQED_ShamblerHorde;
+		public static IncidentDef ShamblerAssault;
+		public static IncidentDef SmallShamblerSwarm;
+		public static IncidentDef ShamblerSwarmAnimals;
+		public static IncidentDef ShamblerSwarm;
     }
 }
