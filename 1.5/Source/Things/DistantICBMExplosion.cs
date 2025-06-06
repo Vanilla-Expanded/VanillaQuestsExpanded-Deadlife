@@ -13,11 +13,15 @@ namespace VanillaQuestsExpandedDeadlife
             var cells = map.AllCells.InRandomOrder().Take(4).ToList();
             foreach (var cell in cells)
             {
-                FleckMaker.Static(cell, map, InternalDefOf.VFED_ICBMExplosionFlash, 1000);
+                FleckMaker.Static(cell, map, InternalDefOf.VQED_ICBMExplosionFlash, 1000);
             }
             InternalDefOf.VQED_ICBMExplosionDistant.PlayOneShotOnCamera();
-            var cond = GameConditionMaker.MakeCondition(GameConditionDefOf.PsychicDrone, (int)(Rand.Range(1f, 3f) * GenDate.TicksPerDay));
+            var def = InternalDefOf.VQED_ShamblerApocalypse;
+            var cond = GameConditionMaker.MakeCondition(def, (int)(Rand.Range(45f, 180f) * GenDate.TicksPerDay));
             Find.World.GameConditionManager.RegisterCondition(cond);
+            IncidentParms parms = new IncidentParms();
+            parms.target = base.Map;
+            IncidentWorker.SendIncidentLetter(def.LabelCap, def.letterText, def.letterDef, parms, LookTargets.Invalid, null);
             Find.CameraDriver.shaker.DoShake(4f, 600);
             this.Destroy();
         }
