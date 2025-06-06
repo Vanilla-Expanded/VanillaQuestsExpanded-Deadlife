@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using VFECore;
 using System.Linq;
 using System;
+using UnityEngine;
 
 namespace VanillaQuestsExpandedDeadlife
 {
+    [HotSwappable]
     public class ShamblerHorde : MovingBase
     {
         private bool shouldBeDestroyed;
@@ -19,6 +21,25 @@ namespace VanillaQuestsExpandedDeadlife
             Scribe_Values.Look(ref shouldBeDestroyed, "shouldBeDestroyed", false);
         }
 
+        private Material cachedMat;
+        public override Material Material
+        {
+            get
+            {
+                if (cachedMat == null)
+                {
+                    cachedMat = MaterialPool.MatFrom(base.def.texture, ShaderDatabase.WorldOverlayTransparentLit, new ColorInt(50, 50, 50).ToColor, WorldMaterials.WorldObjectRenderQueue);
+                }
+                return cachedMat;
+            }
+        }
+        public override Texture2D ExpandingIcon => def.ExpandingIconTexture;
+        public override void Print(LayerSubMesh subMesh)
+        {
+            float averageTileSize = Find.WorldGrid.averageTileSize;
+            WorldRendererUtility.PrintQuadTangentialToPlanet(DrawPos, 0.7f * averageTileSize, 0.015f, subMesh, counterClockwise: false, randomizeRotation: false);
+        }
+        
         public override void Tick()
         {
             base.Tick();
@@ -32,12 +53,12 @@ namespace VanillaQuestsExpandedDeadlife
                 }
             }
 
-            if (!pather.Moving && !arrived && Map is null)
+            if (!arrived && !pather.Moving && Map is null && pather.Destination == Tile)
             {
                 HandleArrival();
                 arrived = true;
             }
-            else if (pather.Moving)
+            else if (arrived && pather.Moving)
             {
                 arrived = false;
             }
@@ -55,6 +76,7 @@ namespace VanillaQuestsExpandedDeadlife
                 Destroy();
             }
         }
+        
 
         private void CheckDefeated()
         {
@@ -72,7 +94,7 @@ namespace VanillaQuestsExpandedDeadlife
 
             if (settlement != null && !settlement.Faction.IsPlayer)
             {
-                if (Rand.Value < 0.6f)
+                if (Rand.ChanceSeeded(0.6f, this.ID))
                 {
                     Destroy();
                 }

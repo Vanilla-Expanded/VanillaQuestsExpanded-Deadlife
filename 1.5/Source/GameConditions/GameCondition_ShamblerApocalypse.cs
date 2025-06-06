@@ -47,6 +47,15 @@ namespace VanillaQuestsExpandedDeadlife
             }
         }
 
+        public override void End()
+        {
+            base.End();
+            foreach (var map in Find.Maps)
+            {
+                map.gameConditionManager.GetActiveCondition(InternalDefOf.DeathPall)?.End();
+            }
+        }
+
         public override void Init()
         {
             base.Init();
@@ -90,6 +99,16 @@ namespace VanillaQuestsExpandedDeadlife
                 assaultDef.Worker.TryExecute(parms);
             }
         }
+
+        public override void PostMake()
+        {
+            base.PostMake();
+            for (var i = 0; i < 3; i++)
+            {
+                SpawnNewShamblerHorde();
+            }
+        }
+        
 
         private void SpawnNewShamblerHorde()
         {

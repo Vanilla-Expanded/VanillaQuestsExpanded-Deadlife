@@ -5,13 +5,13 @@
         <label>shambler horde</label>
         <description>A roaming horde of shamblers traversing the world map.</description>
         <worldObjectClass>VanillaQuestsExpandedDeadlife.ShamblerHorde</worldObjectClass>
-        <texture>UI/ShamblerHordeExpanding</texture>
+        <texture>UI/ShamblerHorde</texture>
         <useDynamicDrawer>true</useDynamicDrawer>
         <expandingIcon>true</expandingIcon>
         <expandingIconTexture>UI/ShamblerHordeExpanding</expandingIconTexture>
         <expandingIconPriority>10</expandingIconPriority>
         <attackConfirmationMessage>You are about to attack a shambler horde. Are you sure you want to do that?</attackConfirmationMessage>
-        <ticksPerMove>4400</ticksPerMove>
+        <ticksPerMove>440</ticksPerMove>
         <comps>
             <li Class="WorldObjectCompProperties_FormCaravan" />
             <li Class="WorldObjectCompProperties_TimedDetectionRaids" />
