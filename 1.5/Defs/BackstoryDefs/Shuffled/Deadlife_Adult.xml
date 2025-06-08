@@ -25,7 +25,7 @@
   <defName>VQE_VaultEnforcer2</defName>
   <title>vault enforcer</title>
   <titleShort>enforcer</titleShort>
-  <description>[PAWN_nameDef] was stationed deep beneath the surface, tasked with protecting the bio-vaults that housed experimental regeneration tanks and failed prototypes. When containment alarms sounded, [PAWN_pronoun] didn’t flinch. The only thing [PAWN_pronoun] feared was failure-and fear had been surgically removed years ago.</description>
+  <description>[PAWN_nameDef] was stationed deep beneath the surface, tasked with protecting the bio-vaults that housed experimental regeneration tanks and failed prototypes. When containment alarms sounded, [PAWN_pronoun] didn’t flinch. The only thing [PAWN_pronoun] feared was failure, and fear had been surgically removed years ago.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Melee>4</Melee>
@@ -45,7 +45,7 @@
   <defName>VQE_Necroengineer3</defName>
   <title>necroengineer</title>
   <titleShort>engineer</titleShort>
-  <description>[PAWN_nameDef] was both soldier and scientist, one of the few entrusted to maintain the resurrection architecture embedded in elite corpses. [PAWN_pronoun] spliced code into spinal columns and rewrote death like it was faulty circuitry. Despite the grotesque procedures, [PAWN_pronoun] never hesitated-progress demanded flesh.</description>
+  <description>[PAWN_nameDef] was both soldier and scientist, one of the few entrusted to maintain the resurrection architecture embedded in elite corpses. [PAWN_pronoun] spliced code into spinal columns and rewrote death like it was faulty circuitry. Despite the grotesque procedures, [PAWN_pronoun] never hesitated, as progress demanded flesh.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>4</Intellectual>
@@ -85,7 +85,7 @@
   <defName>VQE_IndoctrinatedRevenant5</defName>
   <title>indoctrinated revenant</title>
   <titleShort>revenant</titleShort>
-  <description>[PAWN_nameDef] died in the field and was immediately reanimated under Directive Pale Flame-an experimental loop-binding protocol to override memory, identity, and morality. [PAWN_pronoun] still wears the scars of [PAWN_possessive] first death, though they’ve long ceased to matter. Now, [PAWN_pronoun] kills with the calm of someone who’s already passed judgment.</description>
+  <description>[PAWN_nameDef] died in the field and was immediately reanimated under Directive Pale Flame: an experimental loop-binding protocol to override memory, identity, and morality. [PAWN_pronoun] still wears the scars of [PAWN_possessive] first death, though they’ve long ceased to matter. Now, [PAWN_pronoun] kills with the calm of someone who’s already passed judgment.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Melee>5</Melee>
@@ -105,7 +105,7 @@
   <defName>VQE_TrenchAwakener6</defName>
   <title>trench awakener</title>
   <titleShort>awakener</titleShort>
-  <description>[PAWN_nameDef] was assigned to burial patrols-recovering fallen comrades and tagging them for reanimation. [PAWN_pronoun] slept among corpses, carried bone-thin bodies back to processing, and watched them twitch to life again. The stench never faded, but neither did [PAWN_possessive] unwavering obedience.</description>
+  <description>[PAWN_nameDef] was assigned to burial patrols, recovering fallen comrades and tagging them for reanimation. [PAWN_pronoun] slept among corpses, carried bone-thin bodies back to processing, and watched them twitch to life again. The stench never faded, but neither did [PAWN_possessive] unwavering obedience.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Medicine>2</Medicine>
@@ -125,7 +125,7 @@
   <defName>VQE_NullInfantry7</defName>
   <title>null infantry</title>
   <titleShort>null</titleShort>
-  <description>[PAWN_nameDef] was among the first inducted into the Null Corps-frontline troops chemically lobotomized to erase fear and memory. [PAWN_pronoun] received orders through skull-implanted transceivers, moving silently and without question. [PAWN_pronoun] does not remember pain, or why [PAWN_pronoun] enlisted-only the rifle in [PAWN_possessive] hands.</description>
+  <description>[PAWN_nameDef] was among the first inducted into the Null Corps: frontline troops chemically lobotomized to erase fear and memory. [PAWN_pronoun] received orders through skull-implanted transceivers, moving silently and without question. [PAWN_pronoun] does not remember pain, or why [PAWN_pronoun] enlisted. Only the rifle in [PAWN_possessive] hands.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Shooting>5</Shooting>
@@ -144,7 +144,7 @@
   <defName>VQE_FoglineObserver8</defName>
   <title>fogline observer</title>
   <titleShort>observer</titleShort>
-  <description>[PAWN_nameDef] was deployed alone into chemically saturated deadzones, tasked with recording troop decay rates and atmospheric effects. [PAWN_pronoun] watched comrades dissolve, regenerate, and march again-then noted the results with unblinking precision. [PAWN_pronoun] didn’t speak for years afterward, and no one asked [PAWN_objective] to.</description>
+  <description>[PAWN_nameDef] was deployed alone into chemically saturated deadzones, tasked with recording troop decay rates and atmospheric effects. [PAWN_pronoun] watched comrades dissolve, regenerate, and march again, then noted the results with unblinking precision. [PAWN_pronoun] didn’t speak for years afterward, and no one asked [PAWN_objective] to.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>3</Intellectual>
@@ -164,7 +164,7 @@
   <defName>VQE_OssuaryGuard9</defName>
   <title>ossuary guard</title>
   <titleShort>guard</titleShort>
-  <description>[PAWN_nameDef] was stationed in the ossuaries-vast chambers where failed soldiers were stacked and catalogued for parts. [PAWN_pronoun] patrolled in silence, rifle in hand, surrounded by the rattling echoes of half-living experiments. No one spoke in the ossuaries. No one had mouths.</description>
+  <description>[PAWN_nameDef] was stationed in the ossuaries: vast chambers where failed soldiers were stacked and catalogued for parts. [PAWN_pronoun] patrolled in silence, rifle in hand, surrounded by the rattling echoes of half-living experiments. No one spoke in the ossuaries. No one had mouths.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Shooting>4</Shooting>
@@ -183,7 +183,7 @@
   <defName>VQE_CompliantHusk10</defName>
   <title>compliant husk</title>
   <titleShort>husk</titleShort>
-  <description>[PAWN_nameDef] volunteered for cognitive stripping-removal of memory, name, and will. What remained was a body that obeyed. [PAWN_pronoun] stood in formation while storms raged and flesh fell from bone, waiting only for the next command pulse from the central stack.</description>
+  <description>[PAWN_nameDef] volunteered for cognitive stripping, which included the removal of memory, name, and will. What remained was a body that obeyed. [PAWN_pronoun] stood in formation while storms raged and flesh fell from bone, waiting only for the next command pulse from the central stack.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Melee>4</Melee>
@@ -222,7 +222,7 @@
   <defName>VQE_DustCourier12</defName>
   <title>dust courier</title>
   <titleShort>courier</titleShort>
-  <description>[PAWN_nameDef] ferried containers of deadlife dust from the extraction chamber to cold-vault containment zones. Escorts were forbidden-too much movement stirred the dust. [PAWN_pronoun] walked in silence, clutching steel boxes that sometimes wept from within.</description>
+  <description>[PAWN_nameDef] ferried containers of deadlife dust from the extraction chamber to cold-vault containment zones. Escorts were forbidden, as too much movement stirred the dust. [PAWN_pronoun] walked in silence, clutching steel boxes that sometimes wept from within.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Shooting>2</Shooting>
@@ -242,7 +242,7 @@
   <defName>VQE_GatewaySentinel13</defName>
   <title>gateway sentinel</title>
   <titleShort>sentinel</titleShort>
-  <description>[PAWN_nameDef] guarded the perimeter of the Death Door facility, tasked with eliminating anything that emerged-or tried to return. [PAWN_pronoun] saw shapes that didn’t reflect light, and heard commands that weren’t broadcast. The dust drifted past the line sometimes, and [PAWN_pronoun] learned not to breathe too deep.</description>
+  <description>[PAWN_nameDef] guarded the perimeter of the Death Door facility, tasked with eliminating anything that emerged or tried to return. [PAWN_pronoun] saw shapes that didn’t reflect light, and heard commands that weren’t broadcast. The dust drifted past the line sometimes, and [PAWN_pronoun] learned not to breathe too deep.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Shooting>4</Shooting>
@@ -262,7 +262,7 @@
   <defName>VQE_DoorTechnician14</defName>
   <title>door technician</title>
   <titleShort>technician</titleShort>
-  <description>[PAWN_nameDef] operated the containment pylons and extraction rigs around the Death Door. [PAWN_pronoun] calibrated siphons by eye and rebalanced psychic insulators mid-flow. The margin for error was one breath-and [PAWN_pronoun] hasn’t taken a full one since.</description>
+  <description>[PAWN_nameDef] operated the containment pylons and extraction rigs around the Death Door. [PAWN_pronoun] calibrated siphons by eye and rebalanced psychic insulators mid-flow. The margin for error was one breath, and [PAWN_pronoun] hasn’t taken a full one since.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Crafting>4</Crafting>
@@ -282,7 +282,7 @@
   <defName>VQE_AshTranslator15</defName>
   <title>ash translator</title>
   <titleShort>translator</titleShort>
-  <description>[PAWN_nameDef] analyzed the patterns left in deadlife dust as it settled-fractals of intent, echoing through silence. [PAWN_pronoun] claimed the dust was speaking, and spent hours tracing messages only [PAWN_pronoun] could see. The others stopped questioning it when [PAWN_pronoun] predicted a breach twelve hours before it happened.</description>
+  <description>[PAWN_nameDef] analyzed the patterns left in deadlife dust as it settled, fractals of intent, echoing through silence. [PAWN_pronoun] claimed the dust was speaking, and spent hours tracing messages only [PAWN_pronoun] could see. The others stopped questioning it when [PAWN_pronoun] predicted a breach twelve hours before it happened.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>5</Intellectual>
@@ -321,7 +321,7 @@
   <defName>VQE_VaultScrubber17</defName>
   <title>vault scrubber</title>
   <titleShort>scrubber</titleShort>
-  <description>[PAWN_nameDef] cleaned the insides of sealed dust vaults after they were purged. The walls were never truly clean-always humming, always whispering. [PAWN_pronoun] stopped using [PAWN_possessive] name after the third cycle. No one corrected [PAWN_objective].</description>
+  <description>[PAWN_nameDef] cleaned the insides of sealed dust vaults after they were purged. The walls were never truly clean, they were always humming, always whispering. [PAWN_pronoun] stopped using [PAWN_possessive] name after the third cycle. No one corrected [PAWN_objective].</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Plants>3</Plants>
@@ -341,7 +341,7 @@
   <defName>VQE_IntakeMonitor18</defName>
   <title>intake monitor</title>
   <titleShort>monitor</titleShort>
-  <description>[PAWN_nameDef] watched the flow of deadlife dust into containment silos, reporting clogs and pressure drops with precise timing. [PAWN_pronoun] wasn’t allowed to speak to other staff-too many went missing between shifts. The job required focus and silence, which [PAWN_pronoun] delivered perfectly.</description>
+  <description>[PAWN_nameDef] watched the flow of deadlife dust into containment silos, reporting clogs and pressure drops with precise timing. [PAWN_pronoun] wasn’t allowed to speak to other staff as too many went missing between shifts. The job required focus and silence, which [PAWN_pronoun] delivered perfectly.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>3</Intellectual>
@@ -361,7 +361,7 @@
   <defName>VQE_DockGunner19</defName>
   <title>dock gunner</title>
   <titleShort>gunner</titleShort>
-  <description>[PAWN_nameDef] manned the auto-cannons near the dust transfer docks, defending against "anomalous discharge movement"-whatever that meant. Nothing ever approached the dock, but [PAWN_pronoun] fired anyway. Better that than let the dust think [PAWN_pronoun] hesitated.</description>
+  <description>[PAWN_nameDef] manned the auto-cannons near the dust transfer docks, defending against "anomalous discharge movement", whatever that meant. Nothing ever approached the dock, but [PAWN_pronoun] fired anyway. Better that than let the dust think [PAWN_pronoun] hesitated.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Shooting>4</Shooting>
@@ -380,7 +380,7 @@
   <defName>VQE_FilterMechanic20</defName>
   <title>filter mechanic</title>
   <titleShort>mechanic</titleShort>
-  <description>[PAWN_nameDef] maintained the dust filtration systems that kept the air breathable and the death sealed. The filters clogged fast, screaming if left too long. [PAWN_pronoun] replaced them by hand-gloved, double-suited, and breathing recycled air laced with static.</description>
+  <description>[PAWN_nameDef] maintained the dust filtration systems that kept the air breathable and the death sealed. The filters clogged fast, screaming if left too long. [PAWN_pronoun] replaced them by hand, gloved, double-suited, and breathing recycled air laced with static.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Crafting>4</Crafting>
@@ -400,7 +400,7 @@
   <defName>VQE_SilenceOfficer21</defName>
   <title>silence officer</title>
   <titleShort>officer</titleShort>
-  <description>[PAWN_nameDef] enforced silence protocol within the dust-processing halls, where sound was said to attract unwanted responses. [PAWN_pronoun] walked the catwalks with a shock-rod and a clicker, punishing speech, coughs-even breath, if too loud. [PAWN_pronoun] hasn’t spoken in years, even off duty.</description>
+  <description>[PAWN_nameDef] enforced silence protocol within the dust-processing halls, where sound was said to attract unwanted responses. [PAWN_pronoun] walked the catwalks with a shock-rod and a clicker, punishing speech, coughs and even breath, if too loud. [PAWN_pronoun] hasn’t spoken in years, even off duty.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Social>-2</Social>
@@ -440,7 +440,7 @@
   <defName>VQE_ShiftRecorder23</defName>
   <title>shift recorder</title>
   <titleShort>recorder</titleShort>
-  <description>[PAWN_nameDef] logged every shift rotation, personnel movement, and anomaly ping near the Death Door. [PAWN_pronoun] noticed strange patterns in the logs-repeating names, people clocking in after confirmed deaths, whole hours missing. [PAWN_pronoun] kept recording anyway. The ink doesn't smudge anymore.</description>
+  <description>[PAWN_nameDef] logged every shift rotation, personnel movement, and anomaly ping near the Death Door. [PAWN_pronoun] noticed strange patterns in the logs: repeating names, people clocking in after confirmed deaths, whole hours missing. [PAWN_pronoun] kept recording anyway.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>4</Intellectual>
@@ -460,7 +460,7 @@
   <defName>VQE_MealDistributor24</defName>
   <title>meal distributor</title>
   <titleShort>distributor</titleShort>
-  <description>[PAWN_nameDef] handed out ration packs to workers exiting the sealed extraction halls. The meals were identical-grey, tasteless, pre-labeled. Sometimes one would whisper when opened. [PAWN_pronoun] never took one for [PAWN_objective]self, just in case.</description>
+  <description>[PAWN_nameDef] handed out ration packs to workers exiting the sealed extraction halls. The meals were identical, grey, tasteless, pre-labeled. Sometimes one would whisper when opened. [PAWN_pronoun] never took one for [PAWN_objective]self, just in case.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Cooking>4</Cooking>
@@ -499,7 +499,7 @@
   <defName>VQE_DustRegistrar26</defName>
   <title>dust registrar</title>
   <titleShort>registrar</titleShort>
-  <description>[PAWN_nameDef] catalogued every gram of deadlife dust processed through the sector, logging each shipment’s origin and intended experiment. [PAWN_pronoun] never asked what the dust did-just that the weights matched and the signatures were clean. Some days, the logbook filled itself.</description>
+  <description>[PAWN_nameDef] catalogued every gram of deadlife dust processed through the sector, logging each shipment’s origin and intended experiment. [PAWN_pronoun] never asked what the dust did, just that the weights matched and the signatures were clean. Some days, the logbook filled itself.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>3</Intellectual>
@@ -538,7 +538,7 @@
   <defName>VQE_SpecimenHandler28</defName>
   <title>specimen handler</title>
   <titleShort>handler</titleShort>
-  <description>[PAWN_nameDef] moved biological containers between cryo-labs, some twitching, some whispering. [PAWN_pronoun] never opened a crate, but sometimes the shadows inside moved with familiarity. [PAWN_pronoun] didn’t log what didn’t stop moving.</description>
+  <description>[PAWN_nameDef] moved biological containers between crypto-labs, some twitching, some whispering. [PAWN_pronoun] never opened a crate, but sometimes the shadows inside moved with familiarity. [PAWN_pronoun] didn’t log what didn’t stop moving.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Medicine>3</Medicine>
@@ -577,7 +577,7 @@
   <defName>VQE_ComplianceAuditor30</defName>
   <title>compliance auditor</title>
   <titleShort>auditor</titleShort>
-  <description>[PAWN_nameDef] reviewed personnel logs, behavioral reports, and incident transcripts, flagging deviations for reconditioning. [PAWN_pronoun] never met the people [PAWN_pronoun] condemned. Only once did [PAWN_pronoun] hesitate-when the file bore [PAWN_possessive] own name.</description>
+  <description>[PAWN_nameDef] reviewed personnel logs, behavioral reports, and incident transcripts, flagging deviations for reconditioning. [PAWN_pronoun] never met the people [PAWN_pronoun] condemned. Only once did [PAWN_pronoun] hesitate - when the file bore [PAWN_possessive] own name.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>4</Intellectual>
@@ -597,7 +597,7 @@
   <defName>VQE_VaultArchivist31</defName>
   <title>vault archivist</title>
   <titleShort>archivist</titleShort>
-  <description>[PAWN_nameDef] maintained ledgers of inventory buried deep in the sub-storage vaults. [PAWN_pronoun] documented sealed containers with unreadable glyphs and crates that hummed faintly when touched. One morning, an entry appeared in [PAWN_possessive] own handwriting-describing a box [PAWN_pronoun] hadn’t logged yet.</description>
+  <description>[PAWN_nameDef] maintained ledgers of inventory buried deep in the sub-storage vaults. [PAWN_pronoun] documented sealed containers with unreadable glyphs and crates that hummed faintly when touched. One morning, an entry appeared in [PAWN_possessive] own handwriting, describing a box [PAWN_pronoun] hadn’t logged yet.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>4</Intellectual>
@@ -656,7 +656,7 @@
   <defName>VQE_LabelOverseer34</defName>
   <title>label overseer</title>
   <titleShort>overseer</titleShort>
-  <description>[PAWN_nameDef] was in charge of verifying label integrity across the sealed vault grid. [PAWN_pronoun] spent entire shifts reading faded text under flickering lights, checking against catalogs no longer maintained. Some crates had no labels-just symbols that [PAWN_pronoun] could swear [PAWN_pronoun] remembered from dreams.</description>
+  <description>[PAWN_nameDef] was in charge of verifying label integrity across the sealed vault grid. [PAWN_pronoun] spent entire shifts reading faded text under flickering lights, checking against catalogs no longer maintained. Some crates had no labels, just symbols that [PAWN_pronoun] could swear [PAWN_pronoun] remembered from dreams.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>3</Intellectual>
@@ -676,7 +676,7 @@
   <defName>VQE_VaultEntryClerk35</defName>
   <title>vault entry clerk</title>
   <titleShort>clerk</titleShort>
-  <description>[PAWN_nameDef] verified access credentials for vault entrants and logged removals from sealed shelves. [PAWN_pronoun] noticed that names on the log began to repeat-dead soldiers requesting supplies long after they’d been archived. [PAWN_pronoun] flagged it once. Nothing changed.</description>
+  <description>[PAWN_nameDef] verified access credentials for vault entrants and logged removals from sealed shelves. [PAWN_pronoun] noticed that names on the log began to repeat: dead soldiers requesting supplies long after they’d been archived. [PAWN_pronoun] flagged it once. Nothing changed.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>3</Intellectual>
@@ -697,7 +697,7 @@
   <defName>VQE_DustDoctrineArchitect36</defName>
   <title>dust doctrine architect</title>
   <titleShort>architect</titleShort>
-  <description>[PAWN_nameDef] authored the central philosophy behind the use of deadlife dust-an ideology blending utility, inevitability, and transcendence through decay. [PAWN_pronoun] designed the program not to conquer death, but to industrialize it. Those who dissented were reassigned to dust-harvesting duties until compliant.</description>
+  <description>[PAWN_nameDef] authored the central philosophy behind the use of deadlife dust, an ideology blending utility, inevitability, and transcendence through decay. [PAWN_pronoun] designed the program not to conquer death, but to industrialize it. Those who dissented were reassigned to dust-harvesting duties until compliant.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>5</Intellectual>
@@ -718,7 +718,7 @@
   <defName>VQE_VaultCommissar37</defName>
   <title>vault commissar</title>
   <titleShort>commissar</titleShort>
-  <description>[PAWN_nameDef] ensured ideological purity among vault personnel, conducting loyalty evaluations and sanctioning disciplinary corrections. [PAWN_pronoun] maintained that those exposed to the Death Door too long became unreliable. [PAWN_pronoun] had many of them sealed behind the vaults-alive or not was irrelevant.</description>
+  <description>[PAWN_nameDef] ensured ideological purity among vault personnel, conducting loyalty evaluations and sanctioning disciplinary corrections. [PAWN_pronoun] maintained that those exposed to the Death Door too long became unreliable. [PAWN_pronoun] had many of them sealed behind the vaults, alive or not was irrelevant.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Social>4</Social>
@@ -739,7 +739,7 @@
   <defName>VQE_EternalLogisticsOfficer38</defName>
   <title>eternal logistics officer</title>
   <titleShort>officer</titleShort>
-  <description>[PAWN_nameDef] designed the warehouse and storage rotation protocol meant to function without human oversight for over a thousand years. [PAWN_pronoun] believed a perfect system outlived its masters-and had [PAWN_possessive] own heart replaced with a synthetic failsafe. [PAWN_pronoun] has not aged since activation.</description>
+  <description>[PAWN_nameDef] designed the warehouse and storage rotation protocol meant to function without human oversight for over a thousand years. [PAWN_pronoun] believed a perfect system outlived its masters, and had [PAWN_possessive] own heart replaced with a synthetic failsafe. [PAWN_pronoun] has not aged since activation.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Crafting>4</Crafting>
@@ -760,7 +760,7 @@
   <defName>VQE_ReanimationWarden39</defName>
   <title>reanimation warden</title>
   <titleShort>warden</titleShort>
-  <description>[PAWN_nameDef] oversaw the barracks of the reanimated units, managing deployment cycles and overseeing mental degradation thresholds. [PAWN_pronoun] insisted the undead required no names-only barcodes. When one subject regained a memory and spoke, [PAWN_pronoun] personally incinerated it.</description>
+  <description>[PAWN_nameDef] oversaw the barracks of the reanimated units, managing deployment cycles and overseeing mental degradation thresholds. [PAWN_pronoun] insisted the undead required no names, only barcodes. When one subject regained a memory and spoke, [PAWN_pronoun] personally incinerated it.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Shooting>4</Shooting>
@@ -781,7 +781,7 @@
   <defName>VQE_AshStrategist40</defName>
   <title>ash strategist</title>
   <titleShort>strategist</titleShort>
-  <description>[PAWN_nameDef] formulated long-term battle plans relying on the deployment of expendable, undead battalions into irradiated and cursed zones. [PAWN_pronoun] viewed humans as inefficient vessels, preferring dust-born constructs who didn’t sleep or retreat. [PAWN_pronoun] once approved a maneuver where only the dead returned-and called it a flawless victory.</description>
+  <description>[PAWN_nameDef] formulated long-term battle plans relying on the deployment of expendable, undead battalions into irradiated and cursed zones. [PAWN_pronoun] viewed humans as inefficient vessels, preferring dust-born constructs who didn’t sleep or retreat. [PAWN_pronoun] once approved a maneuver where only the dead returned and called it a flawless victory.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>4</Intellectual>
@@ -802,7 +802,7 @@
   <defName>VQE_WhisperHost41</defName>
   <title>whisper host</title>
   <titleShort>host</titleShort>
-  <description>[PAWN_nameDef] was assigned to monitor the auditory pulses emitted by the Death Door during lunar shifts. [PAWN_pronoun] began transcribing messages-words in no known language, yet perfectly understood. After the seventh day, [PAWN_pronoun] no longer required equipment to hear them.</description>
+  <description>[PAWN_nameDef] was assigned to monitor the auditory pulses emitted by the Death Door during lunar shifts. [PAWN_pronoun] began transcribing messages in no known language, yet perfectly understood. After the seventh day, [PAWN_pronoun] no longer required equipment to hear them.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Intellectual>4</Intellectual>
@@ -821,7 +821,7 @@
   <defName>VQE_ReturnedObserver42</defName>
   <title>returned observer</title>
   <titleShort>returned</titleShort>
-  <description>[PAWN_nameDef] was sent through the Death Door for a three-minute reconnaissance. The cameras failed instantly. [PAWN_pronoun] returned eighteen hours later, unharmed but altered-skin colder, voice slower, eyes not entirely [PAWN_possessive]. No one asked what [PAWN_pronoun] saw. No one does now.</description>
+  <description>[PAWN_nameDef] was sent through the Death Door for a three-minute reconnaissance. The cameras failed instantly. [PAWN_pronoun] returned eighteen hours later, unharmed but altered, with skin colder, voice slower, eyes not entirely [PAWN_possessive]. No one asked what [PAWN_pronoun] saw. No one does now.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Shooting>3</Shooting>
@@ -922,7 +922,7 @@
   <defName>VQE_RitualSubject47</defName>
   <title>ritual subject</title>
   <titleShort>subject</titleShort>
-  <description>[PAWN_nameDef] knelt willingly in the circle, surrounded by augurs and dark machines, and did not scream when the dust was poured into [PAWN_possessive] lungs. [PAWN_pronoun] was declared clinically dead-then reassigned to frontline duty two hours later. [PAWN_pronoun] no longer blinks. Nor stops.</description>
+  <description>[PAWN_nameDef] knelt willingly in the circle, surrounded by augurs and dark machines, and did not scream when the dust was poured into [PAWN_possessive] lungs. [PAWN_pronoun] was declared clinically dead, then reassigned to frontline duty two hours later. [PAWN_pronoun] no longer blinks. Nor stops.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Melee>5</Melee>
@@ -941,7 +941,7 @@
   <defName>VQE_ObediencePledge48</defName>
   <title>obedience pledge</title>
   <titleShort>pledged</titleShort>
-  <description>[PAWN_nameDef] signed the Oath of Obedience in blood, requesting permanent reassignment to non-cognitive labor. [PAWN_pronoun] underwent cerebral smoothing-then was sent to carry crates too heavy for the living. [PAWN_pronoun] does not stop until ordered to, even if bones crack.</description>
+  <description>[PAWN_nameDef] signed the Oath of Obedience in blood, requesting permanent reassignment to non-cognitive labor. [PAWN_pronoun] underwent cerebral smoothing, then was sent to carry crates too heavy for the living. [PAWN_pronoun] does not stop until ordered to, even if bones crack.</description>
   <slot>Adulthood</slot>
   <skillGains>
     <Construction>4</Construction>
