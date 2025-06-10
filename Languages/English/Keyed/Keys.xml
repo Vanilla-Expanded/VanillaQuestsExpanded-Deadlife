@@ -35,4 +35,5 @@ You must reach the command center and destroy the ICBM Launch Terminal before {P
 	<VQED_GeneralReleasedAnimals>To protect the launch site, General {0} has let the animals out of the kennels.</VQED_GeneralReleasedAnimals>
 	<VQED_FactionBaseOverrun>{0} has been overrun by a horde of shamblers.</VQED_FactionBaseOverrun>
 	<VQED_ShamblersDefeated>The shambler horde has been defeated.</VQED_ShamblersDefeated>
+	<VQED_GeneralReactivatedDeadlifeVents>To protect the launch site, General {0} reactivated the deadlife vents in an attempt to respawn any defeated shamblers.</VQED_GeneralReactivatedDeadlifeVents>
 </LanguageData>

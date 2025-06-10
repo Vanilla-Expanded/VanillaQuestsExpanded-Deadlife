@@ -20,6 +20,7 @@
                 <conditionSucceedQuestsCount>
                     <VQE_Deadlife_AncientSilo>3</VQE_Deadlife_AncientSilo>
                 </conditionSucceedQuestsCount>
+				<delayTicksAfterTriggering>60000~180000</delayTicksAfterTriggering>
             </li>
         </modExtensions>
     </QuestScriptDef>

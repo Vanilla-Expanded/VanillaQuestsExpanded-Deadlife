@@ -17,6 +17,7 @@ namespace VanillaQuestsExpandedDeadlife
                 var reason = building.GetComp<CompKinoScreen>().CanWork();
                 if (reason.Accepted is false)
                 {
+                    RemovePowerComp(__instance);
                     __instance.EndJobWith(JobCondition.Incompletable);
                     return false;
                 }
@@ -33,10 +34,19 @@ namespace VanillaQuestsExpandedDeadlife
         
         public static void Postfix(JobDriver_WatchTelevision __instance)
         {
-            var building = (Building)__instance.job.targetA.Thing;
+            RemovePowerComp(__instance);
+        }
+
+        private static void RemovePowerComp(JobDriver_WatchTelevision __instance)
+        {
+            var building = (Building)__instance.job?.targetA.Thing;
             if (building?.def == InternalDefOf.VQED_AncientKinoScreen)
             {
-                building.AllComps.Remove(building.AllComps.FirstOrDefault(x => x is CompPowerTrader));
+                var comp = building.AllComps.FirstOrDefault(x => x is CompPowerTrader);
+                if (comp != null)
+                {
+                    building.AllComps.Remove(comp);
+                }
             }
         }
     }
