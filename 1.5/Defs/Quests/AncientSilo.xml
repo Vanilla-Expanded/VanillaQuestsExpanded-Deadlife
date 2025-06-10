@@ -130,8 +130,8 @@
             <li Class="VFECore.QuestChainExtension">
                 <questChainDef>VQE_DeadlifeQuestChain</questChainDef>
                 <isRepeatable>True</isRepeatable>
-                <mtbDaysRepeat>120</mtbDaysRepeat>
-                <conditionMinDaysSinceStart>120</conditionMinDaysSinceStart>
+                <mtbDaysRepeat>60</mtbDaysRepeat>
+                <conditionMinDaysSinceStart>30</conditionMinDaysSinceStart>
             </li>
         </modExtensions>
     </QuestScriptDef>
