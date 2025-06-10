@@ -14,7 +14,7 @@ namespace VanillaQuestsExpandedDeadlife
         {
             if (map.Biome == InternalDefOf.VQE_AncientSiloBiome)
             {
-                __result.RemoveAll(t => t.Position.GetZone(map) is not Zone_Stockpile);
+                __result.RemoveAll(t => t.Position.GetZone(map) is not Zone_Stockpile && t.IsInAnyStorage() is false);
             }
         }
     }
