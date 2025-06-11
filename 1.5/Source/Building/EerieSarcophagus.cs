@@ -21,7 +21,7 @@ namespace VanillaQuestsExpandedDeadlife
                 questChainDef.Worker.State.RemoveFromDeepSave(generalPawn);
                 innerContainer.ClearAndDestroyContents();
                 innerContainer.TryAdd(generalPawn);
-                ticksToOpen = Rand.Range(3000, 4500);
+                ticksToOpen = Rand.Range(600, 1500);
             }
         }
 

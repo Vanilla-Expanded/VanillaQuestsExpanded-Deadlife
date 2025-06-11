@@ -12,7 +12,7 @@ namespace VanillaQuestsExpandedDeadlife
     public class JobDriver_WorkOnTerminal : JobDriver
     {
         public enum TrapCount { One, All, RandomCaskets }
-        private int WorkTicks => TargetThingA.def == InternalDefOf.VQED_ICBMLaunchTerminal ? 10000 : 2500;
+        private int WorkTicks => TargetThingA.def == InternalDefOf.VQED_ICBMLaunchTerminal ? 7200 : 1500;
         private Sustainer keyboardSustainer;
         private Sustainer icbmSirenSustainer;
 
@@ -25,7 +25,7 @@ namespace VanillaQuestsExpandedDeadlife
         {
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.InteractionCell);
             var work = Toils_General.Wait(WorkTicks);
-            WithProgressBarToilDelay(work, TargetIndex.A , interpolateBetweenActorAndTarget: true);
+            WithProgressBarToilDelay(work, TargetIndex.A, interpolateBetweenActorAndTarget: true);
             work.FailOnDespawnedOrNull(TargetIndex.A);
             work.FailOnCannotTouch(TargetIndex.A, PathEndMode.InteractionCell);
             work.tickAction = delegate
@@ -159,7 +159,8 @@ namespace VanillaQuestsExpandedDeadlife
                 (InternalDefOf.VQED_ClosedDeadlifeCasket, "VQED_GeneralAwakenedOfficers", TrapCount.RandomCaskets),
                 (InternalDefOf.VQED_DormantMilitaryTurret, "VQED_GeneralActivatedTurrets", TrapCount.All),
                 (InternalDefOf.VQED_ClosedRotstinkVent, "VQED_GeneralOpenedRotstinkVents", TrapCount.All),
-                (InternalDefOf.VQED_AncientKennel, "VQED_GeneralReleasedAnimals", TrapCount.All)
+                (InternalDefOf.VQED_AncientKennel, "VQED_GeneralReleasedAnimals", TrapCount.All),
+                (InternalDefOf.VQED_InactiveDeadlifeVent, "VQED_GeneralReactivatedDeadlifeVents", TrapCount.All)
             };
 
             var availableTrapEffects = trapEffects.Where(effect => map.listerThings.ThingsOfDef(effect.sourceDef).Any()).ToList();
