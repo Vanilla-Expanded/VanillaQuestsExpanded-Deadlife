@@ -590,4 +590,27 @@
 		<thing>VQED_UnwrappedAncientTank</thing>
 		<rotation>East</rotation>
 	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_UnwrappedAncientTank_West</defName>
+		<thing>VQED_UnwrappedAncientTank</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_AncientKinoScreen_North</defName>
+		<thing>VQED_AncientKinoScreen</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_AncientKinoProjector_South</defName>
+		<thing>VQED_AncientKinoProjector</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_ICBMLaunchTerminal_East</defName>
+		<thing>VQED_ICBMLaunchTerminal</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_EmptyICBMSilo</defName>
+		<thing>VQED_EmptyICBMSilo</thing>
+	</KCSG.SymbolDef>
 </Defs>
