@@ -30,7 +30,12 @@
 	</loadAfter>
 
 	<packageId>vanillaquestsexpanded.deadlife</packageId>
-	<description>Todo
+	<description>In Vanilla Quests Expanded - Deadlife, players will uncover the dark legacy of Operation: Deadlife, a forgotten initiative from a long-extinct government that sought to secure humanity’s future, or perhaps its end. Scattered across the planet lie sealed ancient silos, each one brimming with the resources once intended to rebuild civilization: steel, plasteel, medicine, books, weapons, and more. But unlocking their secrets will not come easy.
 
-Vanilla Quests Expanded is a series of mods featuring complex quest chains that give strong and impactful rewards upon completion. If you liked it and you'd like to see more, make sure to leave us a comment!</description>
+Each silo is encircled by a roaming horde of shamblers. These hordes typically stay near the silo, but will pursue any nearby caravan if provoked. Careful planning and stealthy movement are vital to reaching the site unharmed.
+
+Once at the silo, players must breach the massive reinforced entrance, revealing a staircase descending into complete darkness. Within the silo’s claustrophobic depths, dozens of shamblers lurk, wandering narrow corridors that connect various resource-filled chambers. Power must be restored to light the area, typically done using ancient burnout generators scattered throughout the complex.
+
+Beyond the dangers and rewards of each silo lies a deeper mystery. Hidden among the ruins are ancient map tables that, if studied, gradually reveal the location of the Command Center Silo, the true heart of Operation: Deadlife. Here, it is revealed that the former government discovered a mysterious archotech gateway leaking a strange new substance: deadlife particles. In their hubris, the nation’s leaders sought to weaponize this material, constructing a network of missile silos filled with warheads laced with deadlife dust.
+</description>
 </ModMetaData>
