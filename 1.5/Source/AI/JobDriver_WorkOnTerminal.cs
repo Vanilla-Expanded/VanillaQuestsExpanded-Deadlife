@@ -12,7 +12,7 @@ namespace VanillaQuestsExpandedDeadlife
     public class JobDriver_WorkOnTerminal : JobDriver
     {
         public enum TrapCount { One, All, RandomCaskets }
-        private int WorkTicks => TargetThingA.def == InternalDefOf.VQED_ICBMLaunchTerminal ? 10000 : 2500;
+        private int WorkTicks => TargetThingA.def == InternalDefOf.VQED_ICBMLaunchTerminal ? 7200 : 1500;
         private Sustainer keyboardSustainer;
         private Sustainer icbmSirenSustainer;
 
