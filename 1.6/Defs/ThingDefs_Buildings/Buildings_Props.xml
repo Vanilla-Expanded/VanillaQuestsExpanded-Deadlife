@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientHawk</defName>
+		<label>ancient hawk</label>
+		<description>An old fighter jet stored for future conflict. Time and corrosion have rendered it inoperative.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.5</fillPercent>
+		<size>(6,4)</size>
+		<costList>
+			<ChunkSlagSteel>8</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/AncientHawkA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientLandship</defName>
+		<label>ancient landship</label>
+		<description>A massive land vehicle stored for a peculiar purpose, perhaps for war. Its systems are dead and decayed.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.5</fillPercent>
+		<size>(3,6)</size>
+		<costList>
+			<ChunkSlagSteel>8</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/AncientLandship</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,8)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientTank</defName>
+		<label>ancient tank</label>
+		<description>A preserved armored vehicle. Its electronics and hydraulics have deteriorated with age.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.5</fillPercent>
+		<size>(2,4)</size>
+		<costList>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/AncientLightTank</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_UnwrappedAncientTank</defName>
+		<label>ancient tank</label>
+		<description>A preserved armored vehicle. Its electronics and hydraulics have deteriorated with age.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.5</fillPercent>
+		<size>(2,4)</size>
+		<costList>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/AncientLightTankUnwrapped</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientMilitaryCrate</defName>
+		<label>ancient military crate</label>
+		<description>A sealed storage crate from a military cache. The contents have degraded or fused shut.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/LargeMilitaryCrate</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientMilitaryBox</defName>
+		<label>ancient military box</label>
+		<description>A compact supply box once ready for emergency use. Now warped from decades of exposure.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.3</fillPercent>
+		<size>(1,1)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/SmallMilitaryCrate</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_DamagedTire</defName>
+		<label>damaged tire</label>
+		<description>A spare tire stored too long in dry conditions. Its rubber has cracked and failed.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.2</fillPercent>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/DamagedTire</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientOminousMachinery</defName>
+		<label>ancient ominous machinery</label>
+		<description>Complex equipment stored without documentation. Dust-clogged and inert after years of dormancy.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(1,1)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/AncientOminousMachinery</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_RustedStepladder</defName>
+		<label>rusted stepladder</label>
+		<description>A maintenance ladder placed here long ago. Metal fatigue has made it unsafe to use.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.2</fillPercent>
+		<size>(1,1)</size>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/RustedStepladder</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_PileOfCasings</defName>
+		<label>pile of casings</label>
+		<description>Old artillery casings swept into a pile. Likely remnants from storage-level live-fire testing.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.2</fillPercent>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/RustedShells</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_MountainOfCasings</defName>
+		<label>mountain of casings</label>
+		<description>A mass of rusted ammunition debris. Abandoned after an unknown training or malfunction event.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.3</fillPercent>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/LargePileRustedShells</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_RottenCrate</defName>
+		<label>rotten crate</label>
+		<description>A wooden crate stored too close to moisture. It collapsed under its own weight.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.3</fillPercent>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/SmallOldCrate</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_LargeRottenCrate</defName>
+		<label>large rotten crate</label>
+		<description>A heavy-duty storage crate that has warped and splintered with time.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.3</fillPercent>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/LargeOldCrate</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientSpool</defName>
+		<label>ancient spool</label>
+		<description>A large industrial spool for cabling or hose. Corrosion has rendered it brittle and unusable.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/AncientSpool</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_OldShippingContainer</defName>
+		<label>old shipping container</label>
+		<description>A heavy shipping container once locked down for safety. Hinges are fused shut from rust.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<selectable>true</selectable>
+		<fillPercent>1</fillPercent>
+		<size>(5,3)</size>
+		<costList>
+			<ChunkSlagSteel>8</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/OldShippingContainer</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,3)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_BustedVehicleElevator</defName>
+		<label>busted vehicle elevator</label>
+		<description>An old elevator platform designed to move heavy vehicles. Non-functional due to mechanical failure.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<selectable>true</selectable>
+		<fillPercent>1</fillPercent>
+		<size>(6,6)</size>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/VehicleElevator</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_DefunctTerminal</defName>
+		<label>defunct terminal</label>
+		<description>An ancient computer terminal. It’s disconnected from power, or simply not working.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.2</fillPercent>
+		<size>(1,1)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/OldTerminal</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_DefunctTerminalBank</defName>
+		<label>defunct terminal bank</label>
+		<description>An ancient set of computer terminals. It’s disconnected from power, or simply not working.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.2</fillPercent>
+		<size>(3,1)</size>
+		<costList>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/OldTerminalSet</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_RustedBarrel</defName>
+		<label>rusted barrel</label>
+		<description>A sealed industrial barrel. Its contents long dried or evaporated.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.3</fillPercent>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/RustedBarrel</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_UselessScripPallet</defName>
+		<label>useless scrip pallet</label>
+		<description>A rotting pallet stacked with damp paper slips. Possibly currency, though their purpose is lost to time.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/UselessScripPallet</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_TirePallet</defName>
+		<label>tire pallet</label>
+		<description>An organized set of spare tires. Time has made them brittle and unsafe.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/DamagedTirePallet</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_BustedMinigunTurret</defName>
+		<label>busted minigun turret</label>
+		<description>An old turret housing torn open by heavy impacts. The weapon system inside is shattered and inert.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/DestroyedMinigunTurret</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_RustedImmobilizer</defName>
+		<label>rusted immobilizer</label>
+		<description>A vertical restraint frame with metal straps and dark stains. Whatever was held here didn’t leave willingly.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(1,1)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/OldImmobilizer</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_RustedToolbox</defName>
+		<label>rusted toolbox</label>
+		<description>A heavy toolbox kept in reserve. The tools inside have fused with rust and dust.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,1)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/RustedToolbox</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientHoldingPlatform</defName>
+		<label>ancient holding platform</label>
+		<description>A reinforced platform meant to secure entities. The restraints are now inoperable.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/SmallHoldingPlatform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_RuinedInhibitorLeft</defName>
+		<label>ruined large inhibitor (left)</label>
+		<description>A containment structure of unknown function. Critical systems have failed from prolonged inactivity.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(3,3)</size>
+		<costList>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/RuinedLargeElectroInhibitor_Left</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_RuinedInhibitorRight</defName>
+		<label>ruined large inhibitor (right)</label>
+		<description>A containment structure of unknown function. Critical systems have failed from prolonged inactivity.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(3,3)</size>
+		<costList>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/RuinedLargeElectroInhibitor_Right</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_RustedAncientCot</defName>
+		<label>rusted ancient cot</label>
+		<description>A rusted-out military cot. It offers little comfort.</description>
+		<thingClass>Building_Bed</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<canOverlapZones>false</canOverlapZones>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<passability>PassThroughOnly</passability>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiOrder>2020</uiOrder>
+		<graphicData>
+			<texPath>Things/Beds/RustedAncientCot</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<castEdgeShadows>True</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Beauty>1</Beauty>
+			<WorkToBuild>2800</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>0.8</Flammability>
+			<BedRestEffectiveness>0.7</BedRestEffectiveness>
+			<Comfort>0.65</Comfort>
+			<ImmunityGainSpeedFactor>0.86</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.68</SurgerySuccessChanceFactor>
+			<BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">1.01</BirthRitualQualityOffset>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>VitalsMonitor</li>
+					<li>EndTable</li>
+					<li>Dresser</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>CompAssignableToPawn_Bed</compClass>
+			</li>
+		</comps>
+		<size>(1,2)</size>
+		<building>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<bed_healPerDay>10</bed_healPerDay>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
+			<buildingTags>
+				<li>Bed</li>
+			</buildingTags>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<techLevel>Medieval</techLevel>
+		<uiIconScale>0.90</uiIconScale>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_AncientFuelPipeline</defName>
+		<label>ancient fuel pipeline</label>
+		<description>A large fuel pipeline for transporting chemfuel. Now rusted and badly damaged.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,4)</size>
+		<costList>
+			<ChunkSlagSteel>6</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/AncientProps/FuelPipeline</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_OpenDeadlifeCasket</defName>
+		<label>empty deadlife casket</label>
+		<description>An ancient military casket that suspends a high ranking soldier using the deadlife particles. Whatever has lied inside is no longer there.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.5</fillPercent>
+		<size>(1,2)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+			<Steel>25</Steel>
+			<Uranium>3</Uranium>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<WorkToMake>2000</WorkToMake>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Security/AncientCasket_Empty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_EmptyAncientKennel</defName>
+		<label>empty ancient kennel</label>
+		<description>A large kennel that could hold several animals suspended in a deadlife dust-induced coma. It’s completely empty.</description>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Flammability>0.7</Flammability>
+			<MaxHitPoints>400</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Security/AncientKennel_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_BuriedDeathPit</defName>
+		<label>buried death pit</label>
+		<description>An old containment pit now completely covered in twisted metal and scrap, preventing anything that lied dormant inside from crawling out.</description>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<thingClass>VanillaQuestsExpandedDeadlife.BuriedDeathPit</thingClass>
+		<selectable>true</selectable>
+		<fillPercent>0</fillPercent>
+		<size>(5,5)</size>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<costList>
+			<ChunkSlagSteel>6</ChunkSlagSteel>
+		</costList>
+		<statBases>
+			<Flammability>0</Flammability>
+			<WorkToBuild>3500</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Security/BuriedDeathPit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<designationCategory>Furniture</designationCategory>
+		<clearBuildingArea>false</clearBuildingArea>
+	</ThingDef>
+</Defs>

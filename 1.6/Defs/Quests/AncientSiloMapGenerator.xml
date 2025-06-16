@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <MapGeneratorDef>
+    <defName>VQE_AncientSilo</defName>
+    <label>ancient silo</label>
+    <isUnderground>true</isUnderground>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <pocketMapProperties>
+      <biome>VQE_AncientSilo</biome>
+      <temperature>15</temperature>
+    </pocketMapProperties>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>GenStep_AncientSiloUnderground</li>
+      <li>Fog</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+  <GenStepDef>
+    <defName>GenStep_AncientSiloUnderground</defName>
+    <order>300</order>
+    <genStep Class="VanillaQuestsExpandedDeadlife.GenStep_AncientSiloUnderground">
+      <exitDef>VQED_SiloExitStaircase</exitDef>
+      <structureSetDef>VQED_AncientSilo</structureSetDef>
+    </genStep>
+  </GenStepDef>
+
+  <WeatherDef>
+    <defName>VQE_AncientSilo</defName>
+    <label>ancient silo</label>
+    <isBad>true</isBad>
+    <canOccurAsRandomForcedEvent>false</canOccurAsRandomForcedEvent>
+    <favorability>VeryBad</favorability>
+    <perceivePriority>3</perceivePriority>
+    <!-- Same as clear night -->
+    <skyColorsDay>
+      <sky>(0.482, 0.603, 0.682)</sky>
+      <shadow>(0.85, 0.85, 0.85)</shadow>
+      <overlay>(0.6, 0.6, 0.6)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsDay>
+    <skyColorsDusk>
+      <sky>(0.482, 0.603, 0.682)</sky>
+      <shadow>(0.85, 0.85, 0.85)</shadow>
+      <overlay>(0.6, 0.6, 0.6)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsDusk>
+    <skyColorsNightEdge>
+      <sky>(0.482, 0.603, 0.682)</sky>
+      <shadow>(0.85, 0.85, 0.85)</shadow>
+      <overlay>(0.6, 0.6, 0.6)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsNightEdge>
+    <skyColorsNightMid>
+      <sky>(0.482, 0.603, 0.682)</sky>
+      <shadow>(0.85, 0.85, 0.85)</shadow>
+      <overlay>(0.6, 0.6, 0.6)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>
+
+  <GameConditionDef>
+    <defName>VQE_AncientSiloUnderground</defName>
+    <label>ancient silo</label>
+    <description>It's dark and damp here.</description>
+    <conditionClass>VanillaQuestsExpandedDeadlife.GameCondition_AncientSiloUnderground</conditionClass>
+    <weatherDef>VQE_AncientSilo</weatherDef>
+    <preventNeutralVisitors>true</preventNeutralVisitors>
+    <preventIncidents>true</preventIncidents>
+    <canBePermanent>true</canBePermanent>
+    <displayOnUI>false</displayOnUI>
+    <natural>false</natural>
+    <allowUnderground>true</allowUnderground>
+  </GameConditionDef>
+
+  <BiomeDef>
+    <defName>VQE_AncientSilo</defName>
+    <label>ancient silo</label>
+    <description>This silo is filled with the putrid stench of rotting flesh.</description>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0</plantDensity>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <baseWeatherCommonalities>
+      <VQE_AncientSilo>1</VQE_AncientSilo>
+    </baseWeatherCommonalities>
+    <diseaseMtbDays>80</diseaseMtbDays>
+    <diseases>
+      <li>
+        <diseaseInc>Disease_Flu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Plague</diseaseInc>
+        <commonality>80</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_FibrousMechanites</diseaseInc>
+        <commonality>40</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_SensoryMechanites</diseaseInc>
+        <commonality>40</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_GutWorms</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_MuscleParasites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalFlu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalPlague</diseaseInc>
+        <commonality>80</commonality>
+      </li>
+    </diseases>
+  </BiomeDef>
+
+</Defs>

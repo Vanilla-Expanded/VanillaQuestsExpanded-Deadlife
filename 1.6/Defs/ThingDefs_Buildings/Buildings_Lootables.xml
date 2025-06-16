@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- Crates -->
+	<ThingDef Abstract="true" Name="VQED_LootableCrateBase" ParentName="VQE_DeadlifeBuildingBase">
+		<thingClass>VEF.Buildings.LootableBuilding</thingClass>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="VEF.Buildings.CompProperties_BouncingArrow">
+				<startBouncingArrowUponSpawning>True</startBouncingArrowUponSpawning>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_EmptyMilitaryCrate</defName>
+		<label>empty military crate</label>
+		<description>An empty, rusted military crate. Its contents are long gone.</description>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootableCrateBase">
+		<label>military crate of gold</label>
+		<defName>VQED_MilitaryCrateOfGold</defName>
+		<description>A rusted, military crate containing gold. The fact that the silo has been sealed for generations prevented it from being stolen.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_Gold</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Gold</thing>
+						<count>250</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootableCrateBase">
+		<label>military crate of silver</label>
+		<defName>VQED_MilitaryCrateOfSilver</defName>
+		<description>A rusted, military crate containing silver. The fact that the silo has been sealed for generations prevented it from being stolen.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_Silver</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Silver</thing>
+						<count>850</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootableCrateBase">
+		<label>military crate of deadlife shells</label>
+		<defName>VQED_MilitaryCrateOfDeadlifeShells</defName>
+		<description>A rusted military crate with deadlife shells. These artillery shells are packed with a dust-like substance that, after exploding into a cloud, will settle on nearby human and animal corpses and raise them as shamblers. Many of those shells have lost their potency, but some may still work.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_DeadlifeShells</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Shell_Deadlife</thing>
+						<count>6</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootableCrateBase">
+		<label>military crate of bioferrite</label>
+		<defName>VQED_MilitaryCrateOfBioferrite</defName>
+		<description>A rusted military crate, packed to the brim with bioferrite, extracted from some mysterious source by the ancient military.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_Bioferrite</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Bioferrite</thing>
+						<count>220</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootableCrateBase">
+		<label>military crate of medicine</label>
+		<defName>VQED_MilitaryCrateOfMedicine</defName>
+		<description>A rusted military crate containing advanced glitterworld medicine. While some of it may no longer be usable, it’s possible to recover a few intact boxes from the crate.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_GlitterworldMedicine</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>MedicineUltratech</thing>
+						<count>6</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootableCrateBase">
+		<label>military crate of hemogen</label>
+		<defName>VQED_MilitaryCrateOfHemogen</defName>
+		<description>A rusted military crate containing some old hemogen packs, mostly expired. With the right mindset, it’s possible to extract some hemogen packs from it.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_LargeMilitaryCrate_Hemogen</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li Name="HemogenPacks">
+						<thing>MedicineIndustrial</thing>
+						<count>2</count>
+					</li>
+				</contents>
+			
+				<buildingLeft>VQED_EmptyMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- Pallets -->
+	<ThingDef Abstract="true" Name="VQED_LootablePalletBase" ParentName="VQE_DeadlifeBuildingBase">
+		<thingClass>VEF.Buildings.LootableBuilding</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="VEF.Buildings.CompProperties_BouncingArrow">
+				<startBouncingArrowUponSpawning>True</startBouncingArrowUponSpawning>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_EmptyMilitaryPallet</defName>
+		<label>empty military pallet</label>
+		<description>An empty military pallet. If it held anything of value, it’s gone now.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Lootable/EmptyMilitaryPallet</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of steel</label>
+		<defName>VQED_MilitaryPalletOfSteel</defName>
+		<description>A storage pallet stacked with steel beams. The metal shows signs of surface oxidation but remains structurally sound.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Steel</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Steel</thing>
+						<count>250</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of plasteel</label>
+		<defName>VQED_MilitaryPalletOfPlasteel</defName>
+		<description>A tightly packed pallet of dense, lightweight plasteel. Still in usable condition.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Plasteel</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Plasteel</thing>
+						<count>75</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of industrial components</label>
+		<defName>VQED_MilitaryPalletOfComponents</defName>
+		<description>A reinforced pallet of industrial-grade components. Each part seems to be untouched since storage.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_IndustrialComponents</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>ComponentIndustrial</thing>
+						<count>10</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of advanced components</label>
+		<defName>VQED_MilitaryPalletOfAdvancedComponents</defName>
+		<description>A rare cache of precision-engineered components, carefully preserved for use in high-tech systems. Remarkably intact.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_SpacerComponents</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>ComponentSpacer</thing>
+						<count>4</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of medicine</label>
+		<defName>VQED_MilitaryPalletOfMedicine</defName>
+		<description>Boxes of standard-issue medical supplies, sealed against decay. Some packaging shows wear, but the contents remain viable.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Medicine</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>MedicineIndustrial</thing>
+						<count>18</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of rations</label>
+		<defName>VQED_MilitaryPalletOfRations</defName>
+		<description>Stacks of packaged survival meals, labeled for long-term emergency use. Still sealed, still edible. Probably.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_SurvivalMeals</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>MealSurvivalPack</thing>
+						<count>20</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of synthread</label>
+		<defName>VQED_MilitaryPalletOfSynthread</defName>
+		<description>Rolls of synthetic fiber cloth wrapped and labeled for logistics. Faint chemical odor suggests it’s been stored for decades.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Synthread</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Synthread</thing>
+						<count>125</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of hyperweave</label>
+		<defName>VQED_MilitaryPalletOfHyperweave</defName>
+		<description>A high-security fabric pallet containing rolls of hyperweave. The dense weave still resists tearing or decay.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Hyperweave</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Hyperweave</thing>
+						<count>75</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of high-explosive shells</label>
+		<defName>VQED_MilitaryPalletOfHEShells</defName>
+		<description>An ammunition pallet loaded with high-explosive artillery shells. Armed and dangerous.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_HEShells</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Shell_HighExplosive</thing>
+						<count>12</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="VEF.Weapons.CompProperties_Explosive_Shells">
+				<wickTicks>60~240</wickTicks>
+				<explosiveRadius>9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<shell>Shell_HighExplosive</shell>
+				<shellCount>4~4</shellCount>
+				<shellDist>3~20</shellDist>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of incendiary shells</label>
+		<defName>VQED_MilitaryPalletOfIncendiaryShells</defName>
+		<description>A cache of incendiary shells packed in insulated cases. Volatile, even after years of storage.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_IncendiaryShells</texPath>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Shell_Incendiary</thing>
+						<count>12</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="VEF.Weapons.CompProperties_Explosive_Shells">
+				<wickTicks>60~240</wickTicks>
+				<explosiveRadius>9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<shell>Shell_Incendiary</shell>
+				<shellCount>4~4</shellCount>
+				<shellDist>3~20</shellDist>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of chemfuel</label>
+		<defName>VQED_MilitaryPalletOfChemfuel</defName>
+		<description>A heavily marked pallet of sealed chemfuel containers. The liquid inside sloshes with worrying consistency.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Chemfuel</texPath>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>Chemfuel</thing>
+						<count>250</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>9.9</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<wickTicks>60~240</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of books</label>
+		<defName>VQED_MilitaryPalletOfBooks</defName>
+		<description>A crate of old books, many military-issue. Pages are slightly warped but readable, filled with technical and tactical data.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_Books</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>TextBook</thing>
+					</li>
+					<li>
+						<thing>Novel</thing>
+					</li>
+					<li>
+						<thing>Schematic</thing>
+					</li>
+				</contents>
+				<randomFromContents>true</randomFromContents>
+				<totalRandomLoops>4~4</totalRandomLoops>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of basic car parts</label>
+		<defName>VQED_MilitaryPalletOfBasicCarParts</defName>
+		<description>A stack of labeled vehicle components, built for standard-issue transport units. Light corrosion on outer frames.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_BasicCarParts</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li Name="BasicCarParts">
+						<thing>ComponentIndustrial</thing>
+						<count>4</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of advanced car parts</label>
+		<defName>VQED_MilitaryPalletOfAdvancedCarParts</defName>
+		<description>Precision vehicle parts, packed with extreme care. These components were never meant to be used lightly.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_AdvancedCarParts</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li Name="BasicCarParts">
+						<thing>ComponentIndustrial</thing>
+						<count>8</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_LootablePalletBase">
+		<label>military pallet of apparel</label>
+		<defName>VQED_MilitaryPalletOfApparel</defName>
+		<description>A crate of old military coats. Despite torn fabric and weird smell, they seem usable.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_MilitaryPallet_MilitaryCoats</texPath>
+		</graphicData>
+		<modExtensions>
+		<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>VQED_Apparel_MilitaryCoat</thing>
+					</li>
+				</contents>
+				<randomFromContents>true</randomFromContents>
+				<totalRandomLoops>3~5</totalRandomLoops>
+				<buildingLeft>VQED_EmptyMilitaryPallet</buildingLeft>
+			</li>
+			
+		</modExtensions>
+	</ThingDef>
+	<!-- Small crates -->
+	<ThingDef Abstract="true" Name="VQED_SmallLootableCrateBase" ParentName="VQE_DeadlifeBuildingBase">
+		<thingClass>VEF.Buildings.LootableBuilding</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(1,1)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_EmptySmallMilitaryCrate</defName>
+		<label>empty military box</label>
+		<description>A small, rusted and empty military box. Anything of value is gone.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_SmallEquipmentCrate_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(1,1)</size>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQED_SmallLootableCrateBase">
+		<label>military box of flares</label>
+		<defName>VQED_SmallMilitaryCrateOfFlares</defName>
+		<description>A small, rusted military box. It seems to contain some valuable disruptor flares.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_SmallEquipmentCrate_Flares</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li Name="BasicCarParts">
+						<thing>VQE_DisruptorFlare</thing>
+						<count>1</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptySmallMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_SmallLootableCrateBase">
+		<label>military box with an ancient tome</label>
+		<defName>VQED_SmallMilitaryCrateWithATome</defName>
+		<description>A small, rusted military box. It seems to hold some creepy, ancient knowledge in the form of a tome.</description>
+		<graphicData>
+			<texPath>Things/Lootable/Loot_SmallEquipmentCrate_AncientTome</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li Name="BasicCarParts">
+						<thing>Tome</thing>
+						<count>1</count>
+					</li>
+				</contents>
+				<buildingLeft>VQED_EmptySmallMilitaryCrate</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- Ancient weapon boxes -->
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<defName>VQED_EmptyAncientWeaponBox</defName>
+		<label>opened weapon box</label>
+		<description>A long, rotting wooden box that usually stores weapons. This one is empty.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,1)</size>
+		<costList>
+			<WoodLog>12</WoodLog>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Lootable/MysteriousWeaponCrate_Open</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_DeadlifeBuildingBase">
+		<label>mysterious weapon crate</label>
+		<defName>VQED_MysteriousAncientWeaponBox</defName>
+		<thingClass>VEF.Buildings.LootableBuilding</thingClass>
+		<description>A long, rotting wooden box that usually stores weapons. Can be opened, but there’s no way to tell what weapon is inside.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Lootable/MysteriousWeaponCrate</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<size>(2, 1)</size>
+		<statBases>
+			<Flammability>1</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<costList>
+			<WoodLog>12</WoodLog>
+		</costList>
+		<modExtensions>
+			<li Class="VEF.Buildings.LootableBuildingDetails">
+				<contents>
+					<li>
+						<thing>VQED_Gun_Autopistol_Ancient</thing>
+						<count>1</count>
+					</li>
+					<li>
+						<thing>VQED_Gun_MachinePistol_Ancient</thing>
+						<count>1</count>
+					</li>
+					<li>
+						<thing>VQED_Gun_PumpShotgun_Ancient</thing>
+						<count>1</count>
+					</li>
+					<li>
+						<thing>VQED_Gun_LMG_Ancient</thing>
+						<count>1</count>
+					</li>
+				</contents>
+				<randomFromContents>true</randomFromContents>
+				<totalRandomLoops>1~1</totalRandomLoops>
+				<buildingLeft>VQED_EmptyAncientWeaponBox</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseWeapon">
+		<defName>VQE_DisruptorFlare</defName>
+		<label>disruptor flare</label>
+		<description>Plastic tubes filled with bioferrite. On impact, the flare burns, creating a bright flash and a local psychic disruption. This stuns psychically sensitive creatures, revealing those that are invisible, and reducing their consciousness and movement speed for a short while. Afterwards, the flare continues to burn, lighting up a wide area for some time.</description>
+		<tickerType>Normal</tickerType>
+		<tradeability>Sellable</tradeability>
+		<graphicData>
+			<texPath>Things/Equipment/DisruptorFlares</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+			<MarketValue>120</MarketValue>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw disruptor flare</label>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<warmupTime>1.5</warmupTime>
+				
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>FlareLaunch</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Grenade_DisruptorFlare</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <VanillaQuestsExpandedDeadlife.StructureSetDef>
+        <defName>VQED_AncientICBMLaunchSite</defName>
+        <structureLayouts>
+            <li>
+                <pattern>HQMap_Left_.*</pattern>
+                <offset>(-1, 0, 0)</offset>
+                <spawnEnemies>
+                    <VQE_MilitaryShambler>3~7</VQE_MilitaryShambler>
+                </spawnEnemies>
+                <forceSpawnEnemiesIndoor>true</forceSpawnEnemiesIndoor>
+
+            </li>
+            <li>
+                <pattern>HQMap_Center_.*</pattern>
+                <offset>(0, 0, 0)</offset>
+                <spawnEnemies>
+                    <VQE_MilitaryShambler>3~7</VQE_MilitaryShambler>
+                </spawnEnemies>
+                <forceSpawnEnemiesIndoor>true</forceSpawnEnemiesIndoor>
+            </li>
+            <li>
+                <pattern>HQMap_Right_.*</pattern>
+                <offset>(1, 0, 0)</offset>
+                <spawnEnemies>
+                    <VQE_MilitaryShambler>3~7</VQE_MilitaryShambler>
+                </spawnEnemies>
+                <forceSpawnEnemiesIndoor>true</forceSpawnEnemiesIndoor>
+            </li>
+        </structureLayouts>
+    </VanillaQuestsExpandedDeadlife.StructureSetDef>
+</Defs>

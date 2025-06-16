@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef Name="VQED_DeadlifeFloorBase" Abstract="True">
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<tags>
+			<li>Floor</li>
+		</tags>
+		<fertility>0</fertility>
+		<constructEffect>ConstructMetal</constructEffect>
+	</TerrainDef>
+	<!-- ================= Misc ================= -->
+	<TerrainDef ParentName="VQED_DeadlifeFloorBase">
+		<defName>VQED_AncientHullTile</defName>
+		<label>ancient silo tile</label>
+		<description>Rusted tiles of an ancient silo.</description>
+		<texturePath>Terrains/AncientSiloFloor</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>71</renderPrecedence>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="VQED_DeadlifeFloorBase">
+		<defName>VQED_AncientMetalGrate</defName>
+		<label>ancient metal grate</label>
+		<description>Ancient, rusted metal grates with some machinery visible underneath.</description>
+		<texturePath>Terrains/SiloMetalGrates</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>71</renderPrecedence>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="VQED_DeadlifeFloorBase">
+		<defName>VQED_AncientSterileTile</defName>
+		<label>ancient sterile tile</label>
+		<renderPrecedence>243</renderPrecedence>
+		<description>Ancient sterile tiles with special cleanliness-enhancing properties. Now heavily rusted, with old blood stains still present.</description>
+		<texturePath>Terrains/AncientSterileFloor</texturePath>
+		<pollutionTintColor>(0.95, 0.95, 0.93, 1)</pollutionTintColor>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<Cleanliness>0.2</Cleanliness>
+			<CleaningTimeFactor>0.6</CleaningTimeFactor>
+			<Beauty>-1</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="VQED_DeadlifeFloorBase">
+		<defName>VQED_EerieFloor</defName>
+		<label>eerie floor</label>
+		<description>Mysterious floor of an unknown origin, with eerily smooth surface and etchings.</description>
+		<texturePath>Terrains/DeathFloor</texturePath>
+		<edgeType>Hard</edgeType>
+		<changeable>false</changeable>
+		<renderPrecedence>71</renderPrecedence>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+	</TerrainDef>
+</Defs>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef Name="VQE_DeadlifeBuildingBase" Abstract="true" ParentName="BuildingBase">
+
+	</ThingDef>
+	
+</Defs>

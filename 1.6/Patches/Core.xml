@@ -1,0 +1,8 @@
+﻿<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/JoyGiverDef[defName="WatchTelevision"]/thingDefs</xpath>
+		<value>
+			<li>VQED_AncientKinoScreen</li>
+		</value>
+	</Operation>
+</Patch>

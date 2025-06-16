@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SitePartDef>
+        <defName>VQE_AncientSilo</defName>
+        <label>ancient silo</label>
+        <description>An ancient underground silo.</description>
+        <siteTexture>UI/AncientSilo_ZoomedIn</siteTexture>
+        <expandingIconTexture>UI/AncientSilo</expandingIconTexture>
+        <tags>
+            <li>VQE_AncientSilo</li>
+        </tags>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>VQE_AncientSilo</defName>
+        <linkWithSite>VQE_AncientSilo</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedDeadlife.GenStep_AncientSilo">
+        </genStep>
+    </GenStepDef>
+    <SitePartDef>
+        <defName>VQE_AncientICBMLaunchSite</defName>
+        <label>ancient ICBM launch site</label>
+        <description>An ancient ICBM launch site.</description>
+        <siteTexture>UI/AncientICBMComplex_ZoomedIn</siteTexture>
+        <expandingIconTexture>UI/AncientICBMComplex</expandingIconTexture>
+        <tags>
+            <li>VQE_AncientICBMLaunchSite</li>
+        </tags>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>VQE_AncientICBMLaunchSite</defName>
+        <linkWithSite>VQE_AncientICBMLaunchSite</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedDeadlife.GenStep_AncientICBMLaunchSite">
+            <structureSetDef>VQED_AncientICBMLaunchSite</structureSetDef>
+        </genStep>
+    </GenStepDef>
+</Defs>

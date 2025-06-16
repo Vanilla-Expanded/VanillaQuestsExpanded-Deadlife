@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <JobDef>
+        <defName>VQE_WorkOnTerminal</defName>
+        <driverClass>VanillaQuestsExpandedDeadlife.JobDriver_WorkOnTerminal</driverClass>
+        <reportString>working on terminal.</reportString>
+        <alwaysShowWeapon>true</alwaysShowWeapon>
+        <casualInterruptible>false</casualInterruptible>
+        <playerInterruptible>false</playerInterruptible>
+    </JobDef>
+</Defs>

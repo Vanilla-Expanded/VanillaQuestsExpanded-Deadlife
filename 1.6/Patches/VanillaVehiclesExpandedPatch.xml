@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Vehicles Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "VQED_MilitaryPalletOfBasicCarParts"]/modExtensions/li[@Class="VEF.Buildings.LootableBuildingDetails"]/contents/li[@Name="BasicCarParts"]</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VQED_MilitaryPalletOfBasicCarParts"]/modExtensions/li[@Class="VEF.Buildings.LootableBuildingDetails"]/contents</xpath>
+					<value>
+						<li>
+							<thing>VVE_EngineBlock</thing>
+							<count>1</count>
+						</li>
+						<li>
+							<thing>VVE_CarAlternator</thing>
+							<count>1</count>
+						</li>
+						<li>
+							<thing>VVE_CarExhaust</thing>
+							<count>4</count>
+						</li>
+						<li>
+							<thing>VVE_CarSuspension</thing>
+							<count>4</count>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "VQED_MilitaryPalletOfAdvancedCarParts"]/modExtensions/li[@Class="VEF.Buildings.LootableBuildingDetails"]/contents/li[@Name="BasicCarParts"]</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VQED_MilitaryPalletOfAdvancedCarParts"]/modExtensions/li[@Class="VEF.Buildings.LootableBuildingDetails"]/contents</xpath>
+					<value>
+						<li>
+							<thing>VVE_CarBattery</thing>
+							<count>1</count>
+						</li>
+						<li>
+							<thing>VVE_CarFuelTank</thing>
+							<count>2</count>
+						</li>
+						<li>
+							<thing>VVE_CarTransmission</thing>
+							<count>1</count>
+						</li>
+						<li>
+							<thing>VVE_CarRadiator</thing>
+							<count>2</count>
+						</li>
+						<li>
+							<thing>VVE_CarWiring</thing>
+							<count>5</count>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RulePackDef>
+    <defName>VQE_GeneralMale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FirstNameMaleList] [LastNameList]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>FirstNameMaleList->Names/General_First_Male</li>
+        <li>LastNameList->Names/General_Last</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>VQE_GeneralFemale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FirstNameFemaleList] [LastNameList]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>FirstNameFemaleList->Names/General_First_Female</li>
+        <li>LastNameList->Names/General_Last</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <CreepJoinerFormKindDef ParentName="BaseCreepJoinerKind">
+    <defName>VQE_General</defName>
+    <label>general</label>
+    <weight>0</weight>
+    <minGenerationAge>40</minGenerationAge>
+    <maxGenerationAge>60</maxGenerationAge>
+    <defaultFactionType>Entities</defaultFactionType>
+    <nameMaker>VQE_GeneralMale</nameMaker>
+    <nameMakerFemale>VQE_GeneralFemale</nameMakerFemale>
+    <fixedChildBackstories Inherit="False">
+      <li>VQE_Childhood_OfficersShadow</li>
+    </fixedChildBackstories>
+    <fixedAdultBackstories Inherit="False">
+      <li>VQE_TheGeneral</li>
+    </fixedAdultBackstories>
+    <isFighter>True</isFighter>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>0</apparelMoney>
+    <apparelRequired Inherit="False">
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Pants</li>
+      <li>VQED_Apparel_MilitaryCoat</li>
+      <li>VQED_Apparel_GeneralsInsignia</li>
+    </apparelRequired>
+    <fixedInventory>
+      <VQED_Apparel_GeneralsCap />
+    </fixedInventory>
+    <requires Inherit="False">
+      <li>ShamblerOverlord</li>
+      <li>Disturbing</li>
+    </requires>
+    <modExtensions>
+      <li Class="VEF.Storyteller.UniqueCharacterExtension">
+        <tag>General</tag>
+      </li>
+    </modExtensions>
+  </CreepJoinerFormKindDef>
+</Defs>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <VEF.Planet.MovingBaseDef>
+        <defName>VQED_ShamblerHorde</defName>
+        <label>shambler horde</label>
+        <description>A roaming horde of shamblers traversing the world map.</description>
+        <worldObjectClass>VanillaQuestsExpandedDeadlife.ShamblerHorde</worldObjectClass>
+        <texture>UI/ShamblerHorde</texture>
+        <useDynamicDrawer>true</useDynamicDrawer>
+        <expandingIcon>true</expandingIcon>
+        <expandingIconTexture>UI/ShamblerHordeExpanding</expandingIconTexture>
+        <expandingIconPriority>10</expandingIconPriority>
+        <attackConfirmationMessage>You are about to attack a shambler horde. Are you sure you want to do that?</attackConfirmationMessage>
+        <ticksPerMove>4400</ticksPerMove>
+        <comps>
+            <li Class="WorldObjectCompProperties_FormCaravan" />
+            <li Class="WorldObjectCompProperties_TimedDetectionRaids" />
+        </comps>
+    </VEF.Planet.MovingBaseDef>
+</Defs>

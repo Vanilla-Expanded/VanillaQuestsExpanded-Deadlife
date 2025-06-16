@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="VQED_ApparelBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<selectable>True</selectable>
+		<pathCost>14</pathCost>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>280</MaxHitPoints>
+			<Beauty>0</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<burnableByRecipe>true</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQED_ApparelBase">
+		<defName>VQED_Apparel_MilitaryCoat</defName>
+		<label>military coat</label>
+		<description>A heavy military coat designed for harsh conditions, offering protection from cold, wind, and debris on the battlefield. Makes the wearer more confident. Since the coat has been mass-produced, individual items do not vary in quality at all.</description>
+		<graphicData>
+			<texPath>Things/Equipment/MilitaryCoat/MilitaryCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<statBases>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.32</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.11</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.29</ArmorRating_Heat>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>14</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Equipment/MilitaryCoat/MilitaryCoat</wornGraphicPath>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.416, 0.451, 0.431)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.557, 0.522, 0.431)</only>
+				</li>
+				<li>
+					<weight>2</weight>
+					<only>(0.827, 0.812, 0.773)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<generateAllowChance>0</generateAllowChance>
+	</ThingDef>
+	<ThingDef ParentName="VQED_ApparelBase">
+		<defName>VQED_Apparel_GeneralsInsignia</defName>
+		<label>general's insignia</label>
+		<description>Decorative golden epaulettes adorned with braided aiguillette cord and a polished ceremonial clasp. Once worn by high-ranking officers, these insignia instill a sense of duty and composure, making the wearer less prone to mental breaks.</description>
+		<graphicData>
+			<texPath>Things/Equipment/GeneralsInsignia/GeneralsInsignia</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<useHitPoints>false</useHitPoints>
+		<statBases Inherit="false">
+			<Mass>1</Mass>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.22</MentalBreakThreshold>
+			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0</CertaintyLossFactor>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<drawData>
+				<scale>1.25</scale>
+				<dataNorth>
+					<layer>90</layer>
+				</dataNorth>
+				<dataSouth>
+					<layer>30</layer>
+				</dataSouth>
+			</drawData>
+			<wornGraphicPath>Things/Equipment/GeneralsInsignia/Insignia</wornGraphicPath>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<layers>
+				<li>VFEC_OuterShell</li>
+			</layers>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<generateAllowChance>0</generateAllowChance>
+	</ThingDef>
+	<ThingDef ParentName="VQED_ApparelBase">
+		<defName>VQED_Apparel_GeneralsCap</defName>
+		<label>general’s cap</label>
+		<description>A distinguished peaked cap with a stiff brim, adorned with embroidered insignia and a gilded band. While it offers little physical protection, its commanding design enhances the wearer's presence, greatly improving negotiation ability.</description>
+		<graphicData>
+			<texPath>Things/Equipment/GeneralsCap/GeneralsCap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
+		<useHitPoints>false</useHitPoints>
+		<statBases Inherit="false">
+			<ArmorRating_Sharp>0.14</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<Mass>0.1</Mass>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Equipment/GeneralsCap/GeneralsCap</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<equippedStatOffsets>
+			<NegotiationAbility>0.6</NegotiationAbility>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.2</SuppressionPower>
+		</equippedStatOffsets>
+	</ThingDef>
+</Defs>
