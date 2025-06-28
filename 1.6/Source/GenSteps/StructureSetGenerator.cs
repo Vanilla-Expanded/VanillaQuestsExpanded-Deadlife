@@ -58,7 +58,7 @@ namespace VanillaQuestsExpandedDeadlife
 
                     if (pawns.Any())
                     {
-                        var lordJob = new LordJob_DefendBaseNoEat(Faction.OfEntities, walkableCells.RandomElement());
+                        var lordJob = new LordJob_DefendBaseNoEat(Faction.OfEntities, walkableCells.RandomElement(), 180000);
                         var lord = LordMaker.MakeNewLord(Faction.OfEntities, lordJob, map, pawns);
                     }
                 }
