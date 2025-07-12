@@ -27,18 +27,6 @@ public class CustomPortalExit : MapPortal
         return portalEntry.Position;
     }
 
-    public override void OnEntered(Pawn pawn)
-    {
-        base.OnEntered(pawn);
-        if (Find.CurrentMap == base.Map)
-        {
-            CustomPortalComp.Props.traverseSound?.PlayOneShot(SoundInfo.InMap(this));
-        }
-        else if (Find.CurrentMap == portalEntry.Map)
-        {
-            CustomPortalComp.Props.traverseSound?.PlayOneShot(SoundInfo.InMap(portalEntry));
-        }
-    }
 
     public override IEnumerable<Gizmo> GetGizmos()
     {

@@ -82,17 +82,19 @@
 		</building>
 		<thingClass>VanillaQuestsExpandedDeadlife.CustomPortalEntry</thingClass>
 		<tickerType>Normal</tickerType>
+    <portal>
+      <pocketMapGenerator>VQE_AncientSilo</pocketMapGenerator>
+      <exitDef>VQED_SiloExitStaircase</exitDef>
+      <pocketMapSize>100</pocketMapSize>
+		<traverseSound>TraversePitGate</traverseSound>
+    </portal>
 		<comps>
 			<li Class="VanillaQuestsExpandedDeadlife.CompProperties_CustomPortal">
-				<mapSize>(100,1,100)</mapSize>
-				<exitDef>VQED_SiloExitStaircase</exitDef>
-				<mapGeneratorDef>VQE_AncientSilo</mapGeneratorDef>
 				<enterTexPath>Things/Misc/SiloStaircase_Open</enterTexPath>
 				<viewDestinationTexPath>UI/ViewSilo</viewDestinationTexPath>
 				<enterCommandKey>VQE_EnterSilo</enterCommandKey>
 				<viewDestinationCommandKey>VQE_ViewSilo</viewDestinationCommandKey>
 				<viewDestinationDescKey>VQE_ViewSiloDesc</viewDestinationDescKey>
-				<traverseSound>TraversePitGate</traverseSound>
 			</li>
 		</comps>
 	</ThingDef>
@@ -126,17 +128,17 @@
 		</building>
 		<thingClass>VanillaQuestsExpandedDeadlife.CustomPortalExit</thingClass>
 		<tickerType>Normal</tickerType>
+    <portal>
+      <exitDef>VQED_SiloStaircase</exitDef>
+		<traverseSound>TraversePitGate</traverseSound>
+    </portal>
 		<comps>
 			<li Class="VanillaQuestsExpandedDeadlife.CompProperties_CustomPortal">
-				<mapSize>(100,1,100)</mapSize>
-				<exitDef>VQED_SiloStaircase</exitDef>
-				<mapGeneratorDef>VQE_AncientSilo</mapGeneratorDef>
 				<enterTexPath>Things/Misc/SiloStaircase_Exit</enterTexPath>
 				<viewDestinationTexPath>UI/ViewSilo</viewDestinationTexPath>
 				<enterCommandKey>VQE_ExitSilo</enterCommandKey>
 				<viewDestinationCommandKey>ViewSurface</viewDestinationCommandKey>
 				<viewDestinationDescKey>ViewSurfaceDesc</viewDestinationDescKey>
-				<traverseSound>TraversePitGate</traverseSound>
 			</li>
 		</comps>
 	</ThingDef>

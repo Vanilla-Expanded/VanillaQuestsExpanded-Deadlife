@@ -37,19 +37,6 @@ public class CustomPortalEntry : MapPortal
         return destinationExit?.Position ?? IntVec3.Invalid;
     }
 
-    public override void OnEntered(Pawn pawn)
-    {
-        base.OnEntered(pawn);
-        if (Find.CurrentMap == base.Map)
-        {
-            CustomPortalComp.Props.traverseSound?.PlayOneShot(this);
-        }
-        else if (Find.CurrentMap == destinationExit.Map)
-        {
-            CustomPortalComp.Props.traverseSound?.PlayOneShot(destinationExit);
-        }
-    }
-
     public override IEnumerable<Gizmo> GetGizmos()
     {
         foreach (var gizmo in base.GetGizmos())
@@ -73,15 +60,13 @@ public class CustomPortalEntry : MapPortal
 
     private void GenerateDestinationMap()
     {
-        var mapSize = CustomPortalComp.Props.mapSize;
-        var exitDef = CustomPortalComp.Props.exitDef;
-        var mapGeneratorDef = CustomPortalComp.Props.mapGeneratorDef;
-
-        destinationMap = PocketMapUtility.GeneratePocketMap(mapSize, mapGeneratorDef, null, base.Map);
-        destinationExit = destinationMap.listerThings.ThingsOfDef(exitDef).First() as MapPortal;
+        PocketMapUtility.currentlyGeneratingPortal = this;
+        destinationMap = PocketMapUtility.GeneratePocketMap(new IntVec3(def.portal.pocketMapSize, 1, def.portal.pocketMapSize), def.portal.pocketMapGenerator, null, base.Map);
+        destinationExit = destinationMap.listerThings.ThingsOfDef(def.portal.exitDef).First() as MapPortal;
         if (destinationExit != null)
         {
             ((CustomPortalExit)destinationExit).portalEntry = this;
         }
+        PocketMapUtility.currentlyGeneratingPortal = null;
     }
 }
