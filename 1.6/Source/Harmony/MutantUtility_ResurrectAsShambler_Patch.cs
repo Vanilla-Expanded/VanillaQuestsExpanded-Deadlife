@@ -11,12 +11,35 @@ namespace VanillaQuestsExpandedDeadlife
     [HarmonyPatch(typeof(MutantUtility), nameof(MutantUtility.ResurrectAsShambler))]
     public static class MutantUtility_ResurrectAsShambler_Patch
     {
+        public static bool IsDeadlifeQuestMap(this Map map)
+        {
+            if (map is null) return false;
+            var parent = map.Parent is PocketMapParent parent2 ? parent2.sourceMap.Parent : map.Parent;
+            if (parent is Site site && site.parts.Any(p => p.def == InternalDefOf.VQE_AncientSilo || p.def == InternalDefOf.VQE_AncientICBMLaunchSite))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static void Prefix(Pawn pawn, ref Faction faction)
+        {
+            if (faction != Faction.OfEntities)
+            {
+                var map = pawn.MapHeld;
+                if (map.IsDeadlifeQuestMap())
+                {
+                    faction = Faction.OfEntities;
+                }
+            }
+        }
+
         public static void Postfix(Pawn pawn, Faction faction)
         {
             if (faction == Faction.OfEntities)
             {
                 var map = pawn.Map;
-                if (map != null && map.Parent is Site site && site.parts.Any(p => p.def == InternalDefOf.VQE_AncientSilo || p.def == InternalDefOf.VQE_AncientICBMLaunchSite))
+                if (map.IsDeadlifeQuestMap())
                 {
                     var lord = map.lordManager.lords.Where(l => l.faction == faction && l.LordJob is LordJob_DefendBaseNoEat).MinBy(x => x.ownedPawns.First().Position.DistanceTo(pawn.Position));
                     if (lord != null)
@@ -32,8 +55,8 @@ namespace VanillaQuestsExpandedDeadlife
                         }
                         else
                         {
-                            var lordJob = new LordJob_DefendBaseNoEat(pawn.Faction, pawn.Position, 180000);
-                            lord = LordMaker.MakeNewLord(pawn.Faction, lordJob, map);
+                            var lordJob = new LordJob_DefendBaseNoEat(faction, pawn.Position, 180000);
+                            lord = LordMaker.MakeNewLord(faction, lordJob, map);
                             lord.AddPawn(pawn);
                         }
                     }
