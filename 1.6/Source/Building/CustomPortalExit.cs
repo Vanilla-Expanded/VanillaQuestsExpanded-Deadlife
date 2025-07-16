@@ -7,7 +7,7 @@ using RimWorld.Planet;
 
 namespace VanillaQuestsExpandedDeadlife;
 
-public class CustomPortalExit : MapPortal
+public class CustomPortalExit : PocketMapExit
 {
     public MapPortal portalEntry;
 

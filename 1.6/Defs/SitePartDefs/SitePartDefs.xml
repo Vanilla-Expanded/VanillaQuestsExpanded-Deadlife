@@ -9,6 +9,7 @@
         <tags>
             <li>VQE_AncientSilo</li>
         </tags>
+		<gravShipsCanLandOn>true</gravShipsCanLandOn>
     </SitePartDef>
 
     <GenStepDef>
@@ -27,6 +28,7 @@
         <tags>
             <li>VQE_AncientICBMLaunchSite</li>
         </tags>
+		<gravShipsCanLandOn>true</gravShipsCanLandOn>
     </SitePartDef>
 
     <GenStepDef>
