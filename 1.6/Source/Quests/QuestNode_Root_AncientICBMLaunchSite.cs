@@ -3,6 +3,7 @@ using RimWorld.QuestGen;
 using Verse;
 using System.Linq;
 using VEF.Storyteller;
+using RimWorld.Planet;
 
 namespace VanillaQuestsExpandedDeadlife
 {
@@ -13,7 +14,9 @@ namespace VanillaQuestsExpandedDeadlife
         public const string TerminalDestroyed = "TerminalDestroyed";
 
         public override SitePartDef QuestSite => QuestDefOf.VQE_AncientICBMLaunchSite;
-        public override Predicate<Map, int> TileValidator => (Map map, int tile) => Find.WorldGrid.ApproxDistanceInTiles(tile, map.Tile) <= 50 && Find.WorldGrid[tile].hilliness < RimWorld.Planet.Hilliness.LargeHills;
+        public override Predicate<Map, PlanetTile> TileValidator => (Map map, PlanetTile tile)
+            => Find.WorldGrid.ApproxDistanceInTiles(tile, map.Tile) <= 50 
+        && Find.WorldGrid[tile].hilliness < RimWorld.Planet.Hilliness.LargeHills;
 
         protected override void RunInt()
         {

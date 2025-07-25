@@ -1,21 +1,20 @@
 using RimWorld;
 using RimWorld.Planet;
 using RimWorld.QuestGen;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
-using VEF.Storyteller;
 
 namespace VanillaQuestsExpandedDeadlife
 {
     public abstract class QuestNode_Site : QuestNode
     {
         public abstract SitePartDef QuestSite { get; }
-        public virtual Predicate<Map, int> TileValidator { get; }
+        public virtual Predicate<Map, PlanetTile> TileValidator { get; }
         public virtual List<BiomeDef> AllowedBiomes { get; }
-        protected bool TryFindSiteTile(out int tile)
+        protected bool TryFindSiteTile(out PlanetTile tile)
         {
+            tile = PlanetTile.Invalid;
             var allowedBiomes = AllowedBiomes;
             if (allowedBiomes != null && Find.WorldGrid.Tiles.Any(x => allowedBiomes.Contains(x.PrimaryBiome)) is false)
             {
@@ -23,7 +22,8 @@ namespace VanillaQuestsExpandedDeadlife
             }
             var predicator = TileValidator;
             var map = QuestGen_Get.GetMap();
-            var tiles = Find.World.tilesInRandomOrder.Tiles.Where((int x) => (predicator == null || predicator(map, x)) && IsValidTile(x, allowedBiomes));
+            if (map is null) return false;
+            var tiles = Find.WorldGrid.Surface.Tiles.Select(x => x.tile).Where((PlanetTile x) => (predicator == null || predicator(map, x)) && IsValidTile(x, allowedBiomes));
             if (tiles.TryRandomElement(out tile))
             {
                 return true;
@@ -32,9 +32,9 @@ namespace VanillaQuestsExpandedDeadlife
             return false;
         }
 
-        public static bool IsValidTile(int tile, List<BiomeDef> allowedBiomes = null)
+        public static bool IsValidTile(PlanetTile tile, List<BiomeDef> allowedBiomes = null)
         {
-            Tile tile2 = Find.WorldGrid[tile];
+            Tile tile2 = tile.Tile;
             if (!tile2.PrimaryBiome.canBuildBase)
             {
                 return false;
@@ -124,7 +124,7 @@ namespace VanillaQuestsExpandedDeadlife
         }
 
         protected bool PrepareQuest(out Map map, out float points,
-        out int tile)
+        out PlanetTile tile)
         {
             var slate = QuestGen.slate;
             map = QuestGen_Get.GetMap();

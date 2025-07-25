@@ -2,13 +2,15 @@ using RimWorld;
 using RimWorld.QuestGen;
 using Verse;
 using System.Linq;
+using RimWorld.Planet;
 
 namespace VanillaQuestsExpandedDeadlife
 {
     public class QuestNode_Root_AncientSilo : QuestNode_Site
     {
         public override SitePartDef QuestSite => InternalDefOf.VQE_AncientSilo;
-        public override Predicate<Map, int> TileValidator => (Map map, int tile) => Find.WorldGrid.ApproxDistanceInTiles(tile, map.Tile) <= 50;
+        public override Predicate<Map, PlanetTile> TileValidator => (Map map, PlanetTile tile) 
+            => map == null || Find.WorldGrid.ApproxDistanceInTiles(tile, map.Tile) <= 50;
         public static bool noAsker;
         protected override bool TestRunInt(Slate slate)
         {
