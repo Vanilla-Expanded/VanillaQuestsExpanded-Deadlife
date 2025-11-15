@@ -15,8 +15,8 @@ namespace VanillaQuestsExpandedDeadlife
 
         public override SitePartDef QuestSite => QuestDefOf.VQE_AncientICBMLaunchSite;
         public override Predicate<Map, PlanetTile> TileValidator => (Map map, PlanetTile tile)
-            => Find.WorldGrid.ApproxDistanceInTiles(tile, map.Tile) <= 50 
-        && Find.WorldGrid[tile].hilliness < RimWorld.Planet.Hilliness.LargeHills;
+            => Find.WorldGrid.ApproxDistanceInTiles(tile, map.Tile) <= 50
+        && Find.WorldGrid[tile].hilliness < Hilliness.LargeHills;
 
         protected override void RunInt()
         {
@@ -47,8 +47,6 @@ namespace VanillaQuestsExpandedDeadlife
             {
                 var triggerGameConditionPart = new QuestPart_TriggerGameCondition();
                 triggerGameConditionPart.inSignal = siteMapRemovedSignal;
-                triggerGameConditionPart.gameConditionDef = GameConditionDefOf.PsychicDrone;
-                triggerGameConditionPart.durationTicks = (int)(Rand.Range(1f, 3f) * GenDate.TicksPerDay);
                 QuestGen.quest.AddPart(triggerGameConditionPart);
             }, siteMapGeneratedSignal, siteMapRemovedSignal);
 

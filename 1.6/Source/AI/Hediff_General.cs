@@ -34,6 +34,10 @@ namespace VanillaQuestsExpandedDeadlife
             {
                 if (currentLordJob is not LordJob_General)
                 {
+                    if (currentLordJob is not null)
+                    {
+                        currentLordJob.lord.RemovePawn(pawn);
+                    }
                     LordJob newLordJob = new LordJob_General();
                     var lord = LordMaker.MakeNewLord(pawn.Faction, newLordJob, pawn.Map);
                     lord.AddPawn(pawn);

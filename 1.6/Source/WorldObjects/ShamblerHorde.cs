@@ -40,11 +40,11 @@ namespace VanillaQuestsExpandedDeadlife
             float averageTileSize = Find.WorldGrid.AverageTileSize;
             WorldRendererUtility.PrintQuadTangentialToPlanet(DrawPos, 0.7f * averageTileSize, 0.015f, subMesh, counterClockwise: false);
         }
-        
+
         protected override void Tick()
         {
             base.Tick();
-            if (pather.Moving && pather.Destination != -1)
+            if (pather.Moving && pather.Destination != PlanetTile.Invalid)
             {
                 var settlementAtDestination = Find.WorldObjects.SettlementAt(pather.Destination);
                 if (settlementAtDestination == null)
@@ -63,7 +63,7 @@ namespace VanillaQuestsExpandedDeadlife
             {
                 arrived = false;
             }
-            
+
             if (Map != null)
             {
                 if (pather.Moving)
@@ -77,7 +77,6 @@ namespace VanillaQuestsExpandedDeadlife
                 Destroy();
             }
         }
-        
 
         private void CheckDefeated()
         {
@@ -119,7 +118,7 @@ namespace VanillaQuestsExpandedDeadlife
             }
         }
 
-        public static ShamblerHorde SpawnShamblerHorder(int tile)
+        public static ShamblerHorde SpawnShamblerHorder(PlanetTile tile)
         {
             var newHorde = (ShamblerHorde)WorldObjectMaker.MakeWorldObject(InternalDefOf.VQED_ShamblerHorde);
             newHorde.SetFaction(Faction.OfEntities);
