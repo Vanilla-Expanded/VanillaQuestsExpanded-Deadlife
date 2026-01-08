@@ -103,7 +103,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MentalBreakThreshold>-0.22</MentalBreakThreshold>
-			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0</CertaintyLossFactor>
+			
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -130,6 +130,13 @@
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<generateAllowChance>0</generateAllowChance>
+		<modExtensions>
+			<li Class="VEF.Apparels.ApparelExtension">
+				<equippedStatFactors>
+					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0</CertaintyLossFactor>
+				</equippedStatFactors>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="VQED_ApparelBase">
 		<defName>VQED_Apparel_GeneralsCap</defName>
