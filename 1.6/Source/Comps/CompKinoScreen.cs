@@ -18,16 +18,17 @@ namespace VanillaQuestsExpandedDeadlife
 
         public override string CompInspectStringExtra()
         {
+            string text = base.CompInspectStringExtra();
             if (parent.Map is null)
             {
-                return null;
+                return text;
             }
             var reason = CanWork();
             if (!reason.Accepted)
             {
-                return reason.Reason;
+                return text += reason.Reason;
             }
-            return null;
+            return text;
         }
         
         public AcceptanceReport CanWork()

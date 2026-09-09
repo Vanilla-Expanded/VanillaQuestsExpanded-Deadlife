@@ -148,6 +148,9 @@
 		</graphicData>
 		<uiIconScale>1.25</uiIconScale>
 		<useHitPoints>false</useHitPoints>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
 		<statBases Inherit="false">
 			<ArmorRating_Sharp>0.14</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.06</ArmorRating_Blunt>
