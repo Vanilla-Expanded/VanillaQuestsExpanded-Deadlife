@@ -21,9 +21,10 @@ namespace VanillaQuestsExpandedDeadlife
                 allowedBiomes = null;
             }
             var predicator = TileValidator;
-            var map = QuestGen_Get.GetMap();
+            var map = QuestGen_Get.GetMap(canBeSpace: true);
             if (map is null) return false;
-            var tiles = Find.WorldGrid.Surface.Tiles.Select(x => x.tile).Where((PlanetTile x) => (predicator == null || predicator(map, x)) && IsValidTile(x, allowedBiomes));
+            bool spaceAnchor = map.Tile.LayerDef.isSpace;
+            var tiles = Find.WorldGrid.Surface.Tiles.Select(x => x.tile).Where((PlanetTile x) => (predicator == null || spaceAnchor || predicator(map, x)) && IsValidTile(x, allowedBiomes));
             if (tiles.TryRandomElement(out tile))
             {
                 return true;
